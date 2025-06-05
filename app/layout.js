@@ -1,14 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Merriweather, Lato } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const merriweather = Merriweather({
+  weight: ['300', '400', '700', '900'],
   subsets: ["latin"],
+  display: 'swap',
+  variable: '--font-merriweather',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lato = Lato({
+  weight: ['100', '300', '400', '700', '900'],
   subsets: ["latin"],
+  display: 'swap',
+  variable: '--font-lato',
 });
 
 export const metadata = {
@@ -45,10 +49,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="es" className={`${merriweather.variable} ${lato.variable}`}>
+      <body className="font-lato antialiased">
         {children}
       </body>
     </html>

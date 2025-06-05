@@ -13,6 +13,10 @@ module.exports = {
         'text-primary': '#FFFFFF',
         'text-secondary': '#B0B9C2',
       },
+      fontFamily: {
+        merriweather: ['var(--font-merriweather)'],
+        lato: ['var(--font-lato)'],
+      },
     },
   },
   plugins: [],
