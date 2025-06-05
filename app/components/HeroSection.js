@@ -21,9 +21,9 @@ export default function HeroSection() {
         <h1 className="text-4xl text-white font-bold text-center">
           Abogados especialistas en Derecho Penal y Civil
         </h1>
-        <p className="text-xl text-white mt-4 text-center">
+        <h2 className="text-xl text-white mt-4 text-center">
           Defendemos tus derechos con compromiso y experiencia. Asesoramiento legal personalizado.
-        </p>
+        </h2>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <CustomButton variant="primary">
             Solicitar consulta gratuita
