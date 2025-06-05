@@ -3,7 +3,7 @@ import CustomButton from "../ui/CustomButton";
 
 export default function HeroSection() {
   return (
-    <div className="relative h-screen ">
+    <div className="relative h-screen">
       <Image
         src="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp"
         alt="abogados especialistas en buenos aires"
@@ -11,15 +11,10 @@ export default function HeroSection() {
         fill
         fetchPriority="high"
         className="absolute inset-0 w-full h-full object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       {/* Overlay with background color and opacity */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundColor: "#183852",
-          opacity: 0.65,
-          zIndex: 1,
-        }}
+      <div className="absolute inset-0 bg-[#183852] opacity-65 z-[1]"
         aria-hidden="true"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
