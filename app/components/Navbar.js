@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useRef } from "react";
 import Link from "next/link";
+import CustomButton from "../ui/CustomButton";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -216,16 +217,13 @@ export default function Navbar() {
             </li>
             {/* Mobile "Hablá con un abogado" button */}
             <li className="block lg:hidden mt-2">
-              <button
+              <CustomButton
                 className="w-full rounded-full px-6 py-2 font-merriweather font-bold"
-                style={{
-                  backgroundColor: "#CBA240",
-                  color: "#183852",
-                }}
+                variant="primary"
                 onClick={handleMenuLinkClick}
               >
                 Hablá con un abogado
-              </button>
+                </CustomButton>
             </li>
           </ul>
         </div>
