@@ -1,115 +1,231 @@
 "use client";
 
 import Image from "next/image";
+import { useState, useRef } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownTimeout = useRef(null);
+
+  // Handles dropdown open/close for both desktop and mobile
+  const handleDropdownToggle = () => {
+    setDropdownOpen((open) => !open);
+  };
+
+  // Handles closing dropdown with delay (for blur)
+  const handleDropdownBlur = () => {
+    dropdownTimeout.current = setTimeout(() => setDropdownOpen(false), 150);
+  };
+
+  // Cancel dropdown close if focus returns
+  const handleDropdownFocus = () => {
+    if (dropdownTimeout.current) {
+      clearTimeout(dropdownTimeout.current);
+    }
+  };
+
+  // Close mobile menu when a link is clicked (for better UX)
+  const handleMenuLinkClick = () => {
+    setMobileOpen(false);
+    setDropdownOpen(false);
+  };
+
   return (
-    <nav className=" ">
-      <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-            <Image
-              src="/logo.png"
-              alt="Estudio López Gómez Logo"
-              width={100}
-              height={100}
-              priority
-            />
-        <div className="flex items-center lg:order-2">
-          <div className="hidden mt-2 mr-4 sm:inline-block">
-            <span></span>
-          </div>
-          <a
-            href="https://themesberg.com/product/tailwind-css/landing-page"
-            className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+    <nav className="bg-primary shadow-md w-full z-20 top-0 left-0">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+        {/* Logo */}
+        <a href="/" className="flex items-center" onClick={handleMenuLinkClick}>
+          <Image
+            src="/logo.png"
+            alt="Estudio López Gómez Logo"
+            width={80}
+            height={80}
+            priority
+          />
+        </a>
+        {/* Mobile menu button */}
+        <button
+          className="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg lg:hidden hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-secondary"
+          aria-controls="navbar-menu"
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((open) => !open)}
+        >
+          <span className="sr-only">Abrir menú principal</span>
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            aria-hidden="true"
           >
-            Download
-          </a>
+            {mobileOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+        {/* Right side button */}
+        <div className="hidden lg:flex items-center lg:order-2">
           <button
-            data-collapse-toggle="mobile-menu-2"
-            type="button"
-            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="mobile-menu-2"
-            aria-expanded="true"
+            className="rounded-full px-6 py-2 font-merriweather font-bold"
+            style={{
+              backgroundColor: "#CBA240",
+              color: "#183852",
+            }}
           >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-            <svg
-              className="hidden w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
+            Hablá con un abogado
           </button>
         </div>
+        {/* Menu */}
         <div
-          className="items-center justify-between w-full lg:flex lg:w-auto lg:order-1"
-          id="mobile-menu-2"
+          className={`${
+            mobileOpen ? "block" : "hidden"
+          } w-full lg:flex lg:w-auto lg:order-1`}
+          id="navbar-menu"
         >
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul className="flex flex-col font-merriweather font-medium text-white mt-4 lg:flex-row lg:space-x-8 lg:mt-0 lg:ml-auto">
             <li>
-              <a
+              <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather"
                 aria-current="page"
+                onClick={handleMenuLinkClick}
               >
-                Home
-              </a>
+                Inicio
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather"
+                onClick={handleMenuLinkClick}
               >
-                Company
-              </a>
+                Sobre la firma
+              </Link>
+            </li>
+            <li
+              className={`relative ${dropdownOpen ? "z-30" : ""}`}
+              onFocus={handleDropdownFocus}
+              onBlur={handleDropdownBlur}
+            >
+              <button
+                type="button"
+                className="flex items-center w-full py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors focus:outline-none font-merriweather"
+                onClick={handleDropdownToggle}
+                aria-haspopup="true"
+                aria-expanded={dropdownOpen}
+                tabIndex={0}
+              >
+                Servicios
+                <svg
+                  className="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {/* Dropdown: always absolute for desktop, static for mobile */}
+              {(dropdownOpen || (mobileOpen && dropdownOpen)) && (
+                <ul
+                  className={`${
+                    mobileOpen
+                      ? "static mt-2 w-full bg-primary"
+                      : "absolute left-0 mt-2 w-56 bg-white"
+                  } z-20 text-primary rounded shadow-lg font-merriweather`}
+                >
+                  <li>
+                    <Link
+                      href="#"
+                      className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
+                        mobileOpen ? "text-white" : "text-primary"
+                      }`}
+                      onClick={handleMenuLinkClick}
+                    >
+                      Derecho penal
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
+                        mobileOpen ? "text-white" : "text-primary"
+                      }`}
+                      onClick={handleMenuLinkClick}
+                    >
+                      Derecho laboral
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
+                        mobileOpen ? "text-white" : "text-primary"
+                      }`}
+                      onClick={handleMenuLinkClick}
+                    >
+                      Derecho civil
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
+                        mobileOpen ? "text-white" : "text-primary"
+                      }`}
+                      onClick={handleMenuLinkClick}
+                    >
+                      Periféricas caligráficas
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
             <li>
-              <a
+              <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather"
+                onClick={handleMenuLinkClick}
               >
-                Marketplace
-              </a>
+                Contacto
+              </Link>
             </li>
             <li>
-              <a
+                <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather"
+                onClick={handleMenuLinkClick}
               >
-                Features
-              </a>
+                Blog
+              </Link>
             </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+            {/* Mobile "Hablá con un abogado" button */}
+            <li className="block lg:hidden mt-2">
+              <button
+                className="w-full rounded-full px-6 py-2 font-merriweather font-bold"
+                style={{
+                  backgroundColor: "#CBA240",
+                  color: "#183852",
+                }}
+                onClick={handleMenuLinkClick}
               >
-                Team
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Contact
-              </a>
+                Hablá con un abogado
+              </button>
             </li>
           </ul>
         </div>
