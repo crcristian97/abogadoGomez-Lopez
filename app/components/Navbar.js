@@ -92,10 +92,10 @@ export default function Navbar() {
         <div
           className={`${
             mobileOpen ? "block" : "hidden"
-          } w-full lg:flex lg:w-auto lg:order-1`}
+          } w-full lg:flex lg:w-auto lg:order-1 mt-4 ml-auto `}
           id="navbar-menu"
         >
-          <ul className="flex flex-col font-merriweather font-medium text-white mt-4 lg:flex-row lg:space-x-8 lg:mt-0 lg:ml-auto">
+          <ul className="flex flex-col font-merriweather font-medium text-white lg:flex-row lg:space-x-8 lg:mt-0 lg:ml-auto">
             <li>
               <Link
                 href="#"
@@ -146,7 +146,7 @@ export default function Navbar() {
                   className={`${
                     mobileOpen
                       ? "static mt-2 w-full bg-primary"
-                      : "absolute left-0 mt-2 w-56 bg-white"
+                      : "absolute left-0 mt-2 w-56"
                   } z-20 text-primary rounded shadow-lg font-merriweather`}
                 >
                   <li>
