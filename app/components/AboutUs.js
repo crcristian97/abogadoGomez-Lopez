@@ -47,14 +47,14 @@ export default function AboutUs() {
           Conocé más sobre nosotros
         </CustomButton>
       </div>
-      <div className="flex-1 flex justify-center min-w-0 mt-8 md:mt-0 p-2 md:p-4">
-        <div className="rounded-xl overflow-hidden border-4 border-[#183852] w-full max-w-lg">
+      <div className="flex-1 flex justify-center items-center min-w-0 mt-8 md:mt-0 p-2 md:p-4">
+        <div className="rounded-2xl overflow-hidden w-full max-w-xl bg-[#183852] opacity-80 z-[1] shadow-2xl">
           <Image
-            src="https://res.cloudinary.com/dgzi8i2ji/image/upload/v1717432327/estudio-lopez-gomez/biblioteca-legal.webp"
-            alt="Biblioteca legal"
-            width={640}
-            height={400}
-            className="object-cover w-full h-64 md:h-80"
+            src="https://res.cloudinary.com/dgzi8i2ji/image/upload/estudio-abogados-en-buenos-aires.webp"
+            alt="estudio Gomez y Lopez de abogados en buenos aires"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-80 md:h-[28rem]"
             priority
           />
         </div>
