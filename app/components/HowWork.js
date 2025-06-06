@@ -4,24 +4,28 @@ import CustomButton from "../ui/CustomButton";
 
 const steps = [
   {
+    key: "consulta-inicial",
     icon: <Contact />,
     title: "Consulta inicial",
     description:
       "Nos contactás y nos contás tu situación. Analizamos tu caso y te orientamos sobre los pasos a seguir.",
   },
   {
+    key: "estrategia-legal",
     icon: <Laptop />,
     title: "Estrategia legal",
     description:
       "Evaluamos las alternativas y diseñamos una estrategia personalizada para tu caso.",
   },
   {
+    key: "gestion-acompanamiento",
     icon: <PenLine />,
     title: "Gestión y acompañamiento",
     description:
       "Nos ocupamos de la gestión legal y te acompañamos en cada instancia del proceso.",
   },
   {
+    key: "resolucion",
     icon: <Check />,
     title: "Resolución",
     description:
@@ -52,7 +56,7 @@ export default function HowWork() {
         <div className="md:w-1/2 w-full flex flex-col gap-8">
           {steps.map((step, idx) => (
             <div
-              key={step.icon}
+              key={step.key}
               className="flex items-start gap-4 relative "
             >
               <div className="flex flex-col items-center mr-2">
