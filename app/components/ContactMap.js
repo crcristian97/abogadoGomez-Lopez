@@ -37,32 +37,10 @@ const ContactMap = () => {
   return (
     <section className={`${lightBg} body-font relative py-20 px-2`}>
       <div className="container mx-auto flex flex-col lg:flex-row gap-12 items-stretch">
-        {/* MAPA */}
-        <div
-          className={`lg:w-2/3 w-full ${primaryBg} rounded-2xl overflow-hidden flex flex-col justify-end relative shadow-2xl min-h-[400px]`}
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.045859176801!2d-58.38344648747715!3d-34.60300185734959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf2558b3af%3A0xed6e034fe6d8b650!2sCarlos%20Pellegrini%20465%20Piso%209%C2%B0%2C%20Oficina%2071%2C%20C1084%20San%20Nicolas%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1749248958418!5m2!1ses-419!2sar"
-            width="100%"
-            height="100%"
-            className="absolute inset-0"
-            style={{
-              border: 0,
-              filter: "grayscale(1) contrast(1.2) opacity(0.4)",
-              minHeight: 400,
-              borderRadius: "1rem",
-            }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Ubicación Estudio Lopez Gomez"
-          ></iframe>
-     
-        </div>
         {/* FORMULARIO */}
-        <div className={`lg:w-1/3 w-full ${white} flex flex-col justify-center items-center md:ml-auto rounded-2xl shadow-2xl p-10 border border-[#CBA240]`}>
+        <div className={`lg:w-1/3 w-full ${white} flex flex-col justify-center items-center md:mr-auto rounded-2xl shadow-2xl p-10 border border-[#CBA240]`}>
           <h2 className={`${accent} text-2xl mb-2 font-bold title-font text-center`}>
-            Contacto rápido
+            Contacto 
           </h2>
           <p className={`leading-relaxed mb-6 ${darkText} text-center text-base`}>
             Envíanos tu consulta y te responderemos a la brevedad.
@@ -137,6 +115,27 @@ const ContactMap = () => {
           <p className="text-xs text-[#CBA240] mt-5 text-center">
             Tus datos serán tratados con confidencialidad.
           </p>
+        </div>
+        {/* MAPA */}
+        <div
+          className={`lg:w-2/3 w-full ${primaryBg} rounded-2xl overflow-hidden flex flex-col justify-end relative shadow-2xl min-h-[400px]`}
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.045859176801!2d-58.38344648747715!3d-34.60300185734959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf2558b3af%3A0xed6e034fe6d8b650!2sCarlos%20Pellegrini%20465%20Piso%209%C2%B0%2C%20Oficina%2071%2C%20C1084%20San%20Nicolas%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1749248958418!5m2!1ses-419!2sar"
+            width="100%"
+            height="100%"
+            className="absolute inset-0"
+            style={{
+              border: 0,
+              filter: "grayscale(1) contrast(1.2) opacity(0.4)",
+              minHeight: 400,
+              borderRadius: "1rem",
+            }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Ubicación Estudio Lopez Gomez"
+          ></iframe>
         </div>
       </div>
     </section>
