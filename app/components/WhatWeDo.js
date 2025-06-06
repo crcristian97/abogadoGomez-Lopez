@@ -35,7 +35,7 @@ const whatWeDoData = [
 
 export default function WhatWeDo() {
   return (
-    <section className="w-full py-12 px-2 md:px-0 bg-[#b8c2cc] flex flex-col items-center">
+    <section className="w-full py-12 px-2 md:px-0 bg-[#B0B9C2] flex flex-col items-center">
       <h2 className="text-[#183852] text-2xl md:text-3xl font-merriweather font-bold text-center mb-2">
         ¿Qué hacemos?
       </h2>
