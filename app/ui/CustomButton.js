@@ -7,16 +7,20 @@ export default function CustomButton({
     ...props
   }) {
     // Define styles based on variant
-    let style = {};
+    let style = {
+      fontSize: "16px",
+    };
     let className =
-      "rounded-full px-8 py-3 font-merriweather font-bold text-base transition-colors";
+      "rounded-full px-8 py-3 font-merriweather font-bold transition-colors cursor-pointer";
     if (variant === "primary") {
       style = {
+        ...style,
         backgroundColor: "#CBA240",
         color: "#183852",
       };
     } else if (variant === "outline") {
       style = {
+        ...style,
         backgroundColor: "transparent",
         color: "#CBA240",
         borderColor: "#CBA240",

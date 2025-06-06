@@ -218,7 +218,7 @@ export default function Navbar() {
             {/* Mobile "Hablá con un abogado" button */}
             <li className="block lg:hidden mt-2">
               <CustomButton
-                className="w-full rounded-full px-6 py-2 font-merriweather font-bold"
+                className="w-full rounded-full px-6 py-2 font-merriweather font-bold cursor-pointer"
                 variant="primary"
                 onClick={handleMenuLinkClick}
               >

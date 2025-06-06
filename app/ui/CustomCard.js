@@ -19,7 +19,7 @@ export default function CustomCard({ title = '', description = '', link = '', bg
       <div className="absolute inset-0 bg-[#183852] opacity-65 z-0" />
       <div className="relative z-10">
         <h3 className="text-white text-lg font-bold mb-2">{title}</h3>
-        <p className="text-[#ededed] text-sm mb-4">{description}</p>
+        <p className="text-[#ededed] mb-4">{description}</p>
       </div>
       <Link
         href={link}
