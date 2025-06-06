@@ -4,6 +4,8 @@ import AboutUs from "./components/AboutUs";
 import WhatWeDo from "./components/WhatWeDo";
 import HowWork from "./components/HowWork";
 import Testimonials from "./components/Testimonials";
+import BannerCTA from "./components/BannerCTA";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <WhatWeDo />
       <HowWork />
       <Testimonials />
+      <BannerCTA />
+      <Contact />
     </div>
   );
 }
