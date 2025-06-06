@@ -1,27 +1,28 @@
 import React from "react";
+import { Contact, Laptop, PenLine, Check } from "lucide-react";
 import CustomButton from "../ui/CustomButton";
 
 const steps = [
   {
-    number: 1,
+    icon: <Contact />,
     title: "Consulta inicial",
     description:
       "Nos contactás y nos contás tu situación. Analizamos tu caso y te orientamos sobre los pasos a seguir.",
   },
   {
-    number: 2,
+    icon: <Laptop />,
     title: "Estrategia legal",
     description:
       "Evaluamos las alternativas y diseñamos una estrategia personalizada para tu caso.",
   },
   {
-    number: 3,
+    icon: <PenLine />,
     title: "Gestión y acompañamiento",
     description:
       "Nos ocupamos de la gestión legal y te acompañamos en cada instancia del proceso.",
   },
   {
-    number: 4,
+    icon: <Check />,
     title: "Resolución",
     description:
       "Buscamos la mejor solución para tu situación, defendiendo siempre tus derechos.",
@@ -30,8 +31,8 @@ const steps = [
 
 export default function HowWork() {
   return (
-    <section className="w-full py-12 px-2 md:px-0 bg-[#B0B9C2] flex flex-col items-center">
-      <div className="w-full max-w-5xl flex flex-col md:flex-row gap-10 items-start">
+    <section className="w-full py-12 px-2 md:px-0 bg-[#B0B9C2] flex flex-col items-center ">
+      <div className="w-full max-w-5xl flex flex-col md:flex-row gap-10 items-start mt-16">
         {/* Texto a la izquierda */}
         <div className="md:w-1/2 w-full flex flex-col items-start md:items-start mb-8 md:mb-0">
           <h2 className="text-[#183852] text-2xl md:text-3xl font-merriweather font-bold mb-2 text-left">
@@ -51,12 +52,12 @@ export default function HowWork() {
         <div className="md:w-1/2 w-full flex flex-col gap-8">
           {steps.map((step, idx) => (
             <div
-              key={step.number}
-              className="flex items-start gap-4 relative"
+              key={step.icon}
+              className="flex items-start gap-4 relative "
             >
               <div className="flex flex-col items-center mr-2">
-                <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#183852] text-white text-2xl font-bold shadow-lg border-4 border-[#CBA240] mb-2">
-                  {step.number}
+                <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#183852] text-[#CBA240] text-2xl font-bold shadow-lg border-4 border-[#CBA240] mb-2">
+                  {step.icon}
                 </div>
                 {/* Línea vertical excepto en el último paso */}
                 {idx !== steps.length - 1 && (
