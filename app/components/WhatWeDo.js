@@ -4,30 +4,30 @@ const whatWeDoData = [
   {
     title: "Derecho Penal",
     description:
-      "Especialistas en estudios, denuncias, defensa, asesoramiento, seguimiento y representación en todas las instancias. Defensa eficaz en todas las instancias.",
+      "Especialistas en estafas, contrabando, denuncias por abuso sexual, amenazas y lesiones.Defensa eficaz en todas las instancias.",
     link: "#",
-    bg: "bg-[url('https://res.cloudinary.com/dgzi8i2ji/image/upload/especialista-derecho-penal.webp')]",
+    bg: "https://res.cloudinary.com/dgzi8i2ji/image/upload/especialista-derecho-penal.webp",
   },
   {
     title: "Derecho Civil",
     description:
-      "Arreglos extrajud., sucesiones, divorcios, contratos, herencias, daños y perjuicios, contratos de locación.",
+      "Amparos de salud, sucesiones, divorcios y contratos, tanto generales como de  sociedades..",
     link: "#",
-    bg: "bg-[url('https://res.cloudinary.com/dgzi8i2ji/image/upload/v1717690000/civil-bg.jpg')]",
+    bg: "https://res.cloudinary.com/dgzi8i2ji/image/upload/derecho-civil-en-bueno-aires.webp",
   },
   {
     title: "Derecho laboral",
     description:
-      "Asesoría a empresas y/o trabajadores. Asistencia en contratación y desvinculación laboral, representación ante el Servicio de Conciliación Laboral Obligatoria (SECLO).",
+      "Atención a empresas en juicios laborales. Asesoramiento en contratación y desvinculación laboral, según normativa vigente. Representación ante el Servicio de Conciliación Laboral Obligatoria (SECLO).",
     link: "#",
-    bg: "bg-[url('https://res.cloudinary.com/dgzi8i2ji/image/upload/v1717690000/laboral-bg.jpg')]",
+    bg: "https://res.cloudinary.com/dgzi8i2ji/image/upload/derecho-laboral-en-buenos-aires.webp",
   },
   {
     title: "Pericias caligráficas y documentológicas",
     description:
-      "Nuestro Departamento Pericial elabora informes de parte en expedientes judiciales, asesoría en autenticidad, falsificación y estudios documentales.",
+      "Nuestro Departamento Pericial dispone de peritos de parte en materia penal y consultores técnicos en materia civil, especialistas en seguridad documental.",
     link: "#",
-    bg: "bg-[url('https://res.cloudinary.com/dgzi8i2ji/image/upload/v1717690000/pericias-bg.jpg')]",
+    bg: "https://res.cloudinary.com/dgzi8i2ji/image/upload/pericias-caligr%C3%A1ficas-en-buenos-aires.webp",
   },
 ];
 
