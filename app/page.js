@@ -6,7 +6,7 @@ import HowWork from "./components/HowWork";
 import Testimonials from "./components/Testimonials";
 import BannerCTA from "./components/BannerCTA";
 import Contact from "./components/Contact";
-
+import ContactMap from "./components/ContactMap";
 export default function Home() {
   return (
     <div>
@@ -18,6 +18,7 @@ export default function Home() {
       <Testimonials />
       <BannerCTA />
       <Contact />
+      <ContactMap />
     </div>
   );
 }
