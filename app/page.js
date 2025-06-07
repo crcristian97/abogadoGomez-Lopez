@@ -8,6 +8,7 @@ import BannerCTA from "./components/BannerCTA";
 import Contact from "./components/Contact";
 import ContactMap from "./components/ContactMap";
 import Ourblog from "./components/Ourblog";
+import FAQHome from "./components/FAQHome";
 export default function Home() {
   return (
     <div>
@@ -21,6 +22,7 @@ export default function Home() {
       <Contact />
       <ContactMap />
       <Ourblog />
+      <FAQHome />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { Merriweather, Lato } from "next/font/google";
 import "./globals.css";
-
+import Footer from "./components/Footer";
 const merriweather = Merriweather({
   weight: ['300', '400', '700', '900'],
   subsets: ["latin"],
@@ -52,6 +52,7 @@ export default function RootLayout({ children }) {
     <html lang="es" className={`${merriweather.variable} ${lato.variable}`}>
       <body className="font-lato antialiased">
         {children}
+        <Footer />
       </body>
     </html>
   );
