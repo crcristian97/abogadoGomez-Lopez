@@ -35,7 +35,7 @@ export default function Ourblog() {
   return (
     <section
       id="ourblog"
-      className="w-full py-10 px-2 md:px-0 bg-[#B0B9C2] flex flex-col items-center mt-10"
+      className="w-full py-10 px-2 md:px-0 bg-[#B0B9C2] flex flex-col items-center "
     >
       <h2 className="text-[#183852] text-2xl md:text-3xl font-merriweather font-bold text-center mb-8">
         Conocé nuestro blog
