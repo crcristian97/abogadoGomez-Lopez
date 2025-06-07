@@ -1,13 +1,13 @@
 import Image from "next/image";
 import CustomButton from "../ui/CustomButton";
 
-export default function HeroSection() {
+export default function HeroSection({ src = "", alt = "", title = "", subtitle = "" }) {
   return (
     <div className="relative h-screen">
       <Image
-        src="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp"
-        alt="abogados especialistas en buenos aires"
-        title="abogados especialistas en buenos aires"
+        src={src}
+        alt={alt}
+        title={title}
         fill
         fetchPriority="high"
         className="absolute inset-0 w-full h-full object-cover"
@@ -19,10 +19,10 @@ export default function HeroSection() {
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
         <h1 className="text-4xl text-white font-bold text-center">
-          Abogados especialistas en Derecho Penal y Civil
+          {title}
         </h1>
         <h2 className="text-xl text-white mt-4 text-center">
-          Defendemos tus derechos con compromiso y experiencia. Asesoramiento legal personalizado.
+          {subtitle}
         </h2>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <CustomButton variant="primary">

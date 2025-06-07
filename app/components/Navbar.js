@@ -110,7 +110,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/sobre-la-firma"
                 className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
                 onClick={handleMenuLinkClick}
               >
