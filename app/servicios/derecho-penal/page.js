@@ -4,7 +4,7 @@ import HeroServices from "../../components/HeroServices";
 import BannerProduct from "../../components/BannerProduct";
 import Ourblog from "../../components/Ourblog";
 import Team from "../../sobre-la-firma/components/Team";
-
+import Service from "./components/Service";
 export default function DerechoPenal() {
   return (
     <div>
@@ -14,7 +14,6 @@ export default function DerechoPenal() {
         title="Asesoría Especializada en Derecho Penal"
         description="Defensa penal técnica y comprometida con más de 30 años de experiencia. Protegemos tus derechos en todas las instancias del proceso penal."
       />
-
       <Team
         image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-penal-en-buenos-aires.webp"
         title="Abogados penales en Buenos Aires"
@@ -35,6 +34,7 @@ export default function DerechoPenal() {
         imagePosition="right"
         rounder={false}
       />
+      <Service />
 
       <BannerProduct />
       <Ourblog />
