@@ -37,7 +37,7 @@ export default function Navbar() {
     <nav className="bg-primary shadow-md w-full z-20 top-0 left-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         {/* Logo */}
-        <a href="/" className="flex items-center" onClick={handleMenuLinkClick}>
+        <a href="/" className="flex items-center cursor-pointer" onClick={handleMenuLinkClick}>
           <Image
             src="/logo.png"
             alt="Estudio López Gómez Logo"
@@ -48,7 +48,7 @@ export default function Navbar() {
         </a>
         {/* Mobile menu button */}
         <button
-          className="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg lg:hidden hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-secondary"
+          className="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg lg:hidden hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer"
           aria-controls="navbar-menu"
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((open) => !open)}
@@ -80,7 +80,7 @@ export default function Navbar() {
         {/* Right side button */}
         <div className="hidden lg:flex items-center lg:order-2">
           <button
-            className="rounded-full px-6 py-2 font-merriweather font-bold"
+            className="rounded-full px-6 py-2 font-merriweather font-bold cursor-pointer"
             style={{
               backgroundColor: "#CBA240",
               color: "#183852",
@@ -100,7 +100,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather"
+                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
                 aria-current="page"
                 onClick={handleMenuLinkClick}
               >
@@ -110,7 +110,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather"
+                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
                 onClick={handleMenuLinkClick}
               >
                 Sobre la firma
@@ -123,7 +123,7 @@ export default function Navbar() {
             >
               <button
                 type="button"
-                className="flex items-center w-full py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors focus:outline-none font-merriweather"
+                className="flex items-center w-full py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors focus:outline-none font-merriweather cursor-pointer"
                 onClick={handleDropdownToggle}
                 aria-haspopup="true"
                 aria-expanded={dropdownOpen}
@@ -155,7 +155,7 @@ export default function Navbar() {
                       href="#"
                       className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
                         mobileOpen ? "text-white" : "text-primary"
-                      }`}
+                      } cursor-pointer`}
                       onClick={handleMenuLinkClick}
                     >
                       Derecho penal
@@ -166,7 +166,7 @@ export default function Navbar() {
                       href="#"
                       className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
                         mobileOpen ? "text-white" : "text-primary"
-                      }`}
+                      } cursor-pointer`}
                       onClick={handleMenuLinkClick}
                     >
                       Derecho laboral
@@ -177,7 +177,7 @@ export default function Navbar() {
                       href="#"
                       className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
                         mobileOpen ? "text-white" : "text-primary"
-                      }`}
+                      } cursor-pointer`}
                       onClick={handleMenuLinkClick}
                     >
                       Derecho civil
@@ -188,7 +188,7 @@ export default function Navbar() {
                       href="#"
                       className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
                         mobileOpen ? "text-white" : "text-primary"
-                      }`}
+                      } cursor-pointer`}
                       onClick={handleMenuLinkClick}
                     >
                       Periféricas caligráficas
@@ -200,7 +200,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather"
+                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
                 onClick={handleMenuLinkClick}
               >
                 Contacto
@@ -209,7 +209,7 @@ export default function Navbar() {
             <li>
                 <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather"
+                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
                 onClick={handleMenuLinkClick}
               >
                 Blog

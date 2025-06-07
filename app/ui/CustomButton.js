@@ -1,59 +1,48 @@
 export default function CustomButton({
-    children,
-    href,
-    onClick,
-    variant = "primary",
-    type = "button",
-    ...props
-  }) {
-    // Define styles based on variant
-    let style = {
-      fontSize: "16px",
-    };
-    let className =
-      "rounded-full px-8 py-3 font-merriweather font-bold transition-colors cursor-pointer";
-    if (variant === "primary") {
-      style = {
-        ...style,
-        backgroundColor: "#CBA240",
-        color: "#183852",
-      };
-    } else if (variant === "outline") {
-      style = {
-        ...style,
-        backgroundColor: "transparent",
-        color: "#CBA240",
-        borderColor: "#CBA240",
-        borderStyle: "solid",
-        borderWidth: "2px",
-      };
-      className += " border-2";
-    }
-  
-    // Render as <a> if href is provided, else as <button>
-    if (href) {
-      return (
-        <a
-          href={href}
-          target={props.target || "_self"}
-          rel={props.rel}
-          className={className}
-          style={style}
-          {...props}
-        >
-          {children}
-        </a>
-      );
-    }
+  children,
+  href,
+  onClick,
+  variant = "primary",
+  type = "button",
+  className = "",
+  ...props
+}) {
+  let baseClass =
+    "rounded-full px-8 py-3 font-merriweather font-bold transition-colors cursor-pointer";
+  let variantClass = "";
+
+  if (variant === "primary") {
+    variantClass =
+      "bg-[#CBA240] text-[#183852] hover:bg-[#b08d36] hover:text-white";
+  } else if (variant === "outline") {
+    variantClass =
+      "bg-transparent text-[#CBA240] border-2 border-[#CBA240] hover:bg-[#CBA240] hover:text-[#183852]";
+  }
+
+  const combinedClass = `${baseClass} ${variantClass} ${className}`.trim();
+
+  // Render as <a> if href is provided, else as <button>
+  if (href) {
     return (
-      <button
-        type={type}
-        onClick={onClick}
-        className={className}
-        style={style}
+      <a
+        href={href}
+        target={props.target || "_self"}
+        rel={props.rel}
+        className={combinedClass}
         {...props}
       >
         {children}
-      </button>
+      </a>
     );
   }
+  return (
+    <button
+      type={type}
+      onClick={onClick}
+      className={combinedClass}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+}

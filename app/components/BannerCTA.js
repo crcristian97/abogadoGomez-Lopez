@@ -9,7 +9,6 @@ const BannerCTA = () => {
         alt="Facultad de Derecho Buenos Aires"
         fill
         title="Facultad de Derecho Buenos Aires"
-        loading="lazy"
         style={{
           objectFit: "cover",
           objectPosition: "center 40%",
@@ -18,6 +17,8 @@ const BannerCTA = () => {
           transition: "filter 0.3s"
         }}
         quality={90}
+        loading="lazy"
+        priority={false}
       />
       <div
         style={{
@@ -28,15 +29,15 @@ const BannerCTA = () => {
         }}
       />
       <div className="max-w-7xl w-full flex flex-col md:flex-row gap-16 text-white relative z-10 justify-center items-center py-36 px-6">
-        <div className="rounded-xl p-16 flex flex-col items-center text-center shadow-2xl min-w-[340px] max-w-md backdrop-blur-sm bg-white/0">
+        <div className="rounded-xl p-16 flex flex-col items-center text-center  min-w-[340px] max-w-md  bg-white/0">
           <h3 className="text-5xl font-bold mb-6">Experiencia</h3>
           <p className="text-2xl font-medium">Más de 20 años brindando asesoramiento jurídico de excelencia en diversas áreas del derecho.</p>
         </div>
-        <div className="rounded-xl p-16 flex flex-col items-center text-center shadow-2xl min-w-[340px] max-w-md backdrop-blur-sm bg-white/0">
+        <div className="rounded-xl p-16 flex flex-col items-center text-center  min-w-[340px] max-w-md  bg-white/0">
           <h3 className="text-5xl font-bold mb-6">Compromiso</h3>
           <p className="text-2xl font-medium">Nos comprometemos con cada cliente, ofreciendo atención personalizada y soluciones efectivas.</p>
         </div>
-        <div className="rounded-xl p-16 flex flex-col items-center text-center shadow-2xl min-w-[340px] max-w-md backdrop-blur-sm bg-white/0">
+        <div className="rounded-xl p-16 flex flex-col items-center text-center  min-w-[340px] max-w-md  bg-white/0">
           <h3 className="text-5xl font-bold mb-6">Confianza</h3>
           <p className="text-2xl font-medium">Construimos relaciones basadas en la confianza, la ética profesional y la transparencia.</p>
         </div>

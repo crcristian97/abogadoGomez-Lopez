@@ -106,7 +106,8 @@ const ContactMap = () => {
               </div>
               <button
                 type="submit"
-                className={`py-3 px-8 rounded-full text-lg font-bold ${accentButton} ${accentButtonText} border-0 focus:outline-none transition-colors duration-200 mt-2 shadow-md`}
+                title="Enviar mensaje"
+                className={`py-3 px-8 rounded-full text-lg font-bold ${accentButton} ${accentButtonText} border-0 focus:outline-none transition-colors duration-200 mt-2 shadow-md hover:bg-[#b08d36] hover:text-white`}
               >
                 Enviar
               </button>
