@@ -55,7 +55,8 @@ export default function AboutUs() {
             width={1200}
             height={800}
             className="object-cover w-full h-80 md:h-[28rem]"
-            priority
+            priority={false}
+            title="estudio Gomez y Lopez de abogados en buenos aires"
           />
         </div>
       </div>

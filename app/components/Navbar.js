@@ -43,7 +43,8 @@ export default function Navbar() {
             alt="Estudio López Gómez Logo"
             width={80}
             height={80}
-            priority
+            priority={false}
+            title="Estudio López Gómez Logo"
           />
         </a>
         {/* Mobile menu button */}

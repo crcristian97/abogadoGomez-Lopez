@@ -5,6 +5,8 @@ export default function CustomButton({
   variant = "primary",
   type = "button",
   className = "",
+  title = "",
+  ariaLabel = "",
   ...props
 }) {
   let baseClass =
@@ -29,6 +31,8 @@ export default function CustomButton({
         target={props.target || "_self"}
         rel={props.rel}
         className={combinedClass}
+        title={title}
+        aria-label={ariaLabel}
         {...props}
       >
         {children}
@@ -40,6 +44,8 @@ export default function CustomButton({
       type={type}
       onClick={onClick}
       className={combinedClass}
+      title={title}
+      aria-label={ariaLabel}
       {...props}
     >
       {children}

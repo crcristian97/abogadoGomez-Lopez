@@ -16,6 +16,8 @@ const Contact = () => {
             <a
               href="mailto:contacto@slgabogados.com"
               className="text-[#CBA240] underline text-base break-all"
+              title="Correo de contacto"
+              aria-label="Correo de contacto"
             >
               contacto@slgabogados.com
             </a>
@@ -28,6 +30,8 @@ const Contact = () => {
             <a
               href="tel:+5491134644620"
               className="text-[#CBA240] underline text-base"
+              title="Teléfono de contacto"
+              aria-label="Teléfono de contacto"
             >
               096-011-3464-4620
             </a>

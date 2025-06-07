@@ -31,6 +31,8 @@ export default function HeroSection() {
           <CustomButton
             variant="outline"
             href="https://wa.me/"
+            title="Hablá ahora por WhatsApp"
+            aria-label="Hablá ahora por WhatsApp"
             target="_blank"
             rel="noopener noreferrer"
           >
