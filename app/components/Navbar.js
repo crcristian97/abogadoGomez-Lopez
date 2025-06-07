@@ -153,7 +153,7 @@ export default function Navbar() {
                 >
                   <li>
                     <Link
-                      href="#"
+                      href="/servicios/derecho-penal"
                       className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
                         mobileOpen ? "text-white" : "text-primary"
                       } cursor-pointer`}
@@ -164,7 +164,7 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/servicios/derecho-laboral"
                       className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
                         mobileOpen ? "text-white" : "text-primary"
                       } cursor-pointer`}
@@ -175,7 +175,7 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/servicios/derecho-civil"
                       className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
                         mobileOpen ? "text-white" : "text-primary"
                       } cursor-pointer`}
@@ -186,13 +186,13 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/servicios/peritajes-caligraficos"
                       className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
                         mobileOpen ? "text-white" : "text-primary"
                       } cursor-pointer`}
                       onClick={handleMenuLinkClick}
                     >
-                      Periféricas caligráficas
+                      Peritajes caligráficos
                     </Link>
                   </li>
                 </ul>
