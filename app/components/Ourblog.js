@@ -95,14 +95,7 @@ export default function Ourblog() {
       </div>
       <CustomButton
         variant="primary"
-        style={{
-          backgroundColor: "#183852",
-          color: "#ffffff",
-          fontSize: "22px",
-          padding: "20px 48px",
-          minWidth: "220px",
-        }}
-        className="rounded-full px-12 py-5 font-merriweather font-bold text-xl md:text-2xl mt-8 cursor-pointer"
+        className="rounded-full px-12 py-5 font-merriweather font-bold text-xl md:text-2xl mt-8 cursor-pointer hover:bg-[#CBA240] hover:text-[#183852] transition-colors  min-w-[220px]"
       >
         Leer más
       </CustomButton>
