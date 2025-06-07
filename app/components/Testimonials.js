@@ -1,119 +1,14 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Star, StarHalf, Star as StarOutline } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import TestimonialCard from "../ui/TestimonialCard";
+import { testimonials } from "../mock/testimonials";
 
-// Adapted testimonials data (in Spanish, as in your original)
-const testimonials = [
-  {
-    text: "Excelente atención y profesionalismo. Me ayudaron en todo momento y resolvieron mi caso rápidamente.",
-    name: "María González",
-    stars: 5,
-    role: "Cliente de Derecho Penal",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    text: "Muy recomendables, claros y atentos. Explicaron todo el proceso y me sentí acompañado.",
-    name: "Juan Pérez",
-    stars: 4,
-    role: "Cliente de Derecho Civil",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    text: "Gran equipo de abogados, resolvieron mi situación laboral de manera eficiente.",
-    name: "Lucía Fernández",
-    stars: 5,
-    role: "Cliente de Derecho Laboral",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    text: "Me brindaron confianza y seguridad desde el primer momento. ¡Gracias!",
-    name: "Carlos López",
-    stars: 5,
-    role: "Cliente de Derecho Penal",
-    avatar: "https://randomuser.me/api/portraits/men/45.jpg",
-  },
-  {
-    text: "Atención personalizada y resultados favorables. Los recomiendo.",
-    name: "Ana Torres",
-    stars: 4,
-    role: "Cliente de Pericias Caligráficas",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
-  },
-  {
-    text: "Profesionales y humanos. Se ocuparon de mi caso con dedicación.",
-    name: "Sofía Ramírez",
-    stars: 5,
-    role: "Cliente de Derecho Civil",
-    avatar: "https://randomuser.me/api/portraits/women/12.jpg",
-  },
-  {
-    text: "El estudio me acompañó en todo el proceso y resolvieron mi consulta con rapidez.",
-    name: "Martín Gómez",
-    stars: 5,
-    role: "Cliente de Derecho Laboral",
-    avatar: "https://randomuser.me/api/portraits/men/23.jpg",
-  },
-];
-
-// Star rating component using lucide-react icons
-function StarRating({ count }) {
-  // count: integer 0-5
-  const fullStars = Math.floor(count);
-  const hasHalf = count - fullStars >= 0.5;
-  const emptyStars = 5 - fullStars - (hasHalf ? 1 : 0);
-
-  return (
-    <div className="flex space-x-1 text-yellow-400" aria-label={`Valoración: ${count} de 5 estrellas`}>
-      {[...Array(fullStars)].map((_, i) => (
-        <Star key={`full-${i}`} size={18} fill="#facc15" stroke="#facc15" />
-      ))}
-      {hasHalf && <StarHalf size={18} fill="#facc15" stroke="#facc15" />}
-      {[...Array(emptyStars)].map((_, i) => (
-        <StarOutline key={`empty-${i}`} size={18} stroke="#e5e7eb" />
-      ))}
-    </div>
-  );
-}
-
-// Testimonial card
-function TestimonialCard({ testimonial }) {
-  return (
-    <div
-      className="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 animate-fade"
-      tabIndex={0}
-      aria-label={`Testimonio de ${testimonial.name}`}
-    >
-      <div className="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100 flex flex-col justify-between">
-        <div>
-          <div className="flex items-center mb-4">
-            <StarRating count={testimonial.stars} />
-          </div>
-          <p className="text-gray-600 mb-6 italic">"{testimonial.text}"</p>
-        </div>
-        <div className="flex items-center mt-2">
-          <img
-            src={testimonial.avatar}
-            alt={`Foto de ${testimonial.name}`}
-            className="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100"
-            loading="lazy"
-          />
-          <div>
-            <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
-            <p className="text-gray-500 text-sm">{testimonial.role}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-// Main carousel component
 export default function Testimonials() {
   const trackRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(1);
 
-  // Responsive: update visibleCards on resize
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth >= 1024) setVisibleCards(3);
@@ -125,7 +20,6 @@ export default function Testimonials() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Auto slide
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) =>
@@ -179,10 +73,6 @@ export default function Testimonials() {
     });
   }, [currentIndex, visibleCards]);
 
-  // Styles for fade and carousel
-  // (Tailwind can't do keyframes for custom names, so use global style tag)
-  // Also, .testimonial-card:hover effect and .active-dot
-  // (see below in JSX)
 
   return (
     <div className="bg-[#B0B9C2] h-full flex items-center justify-center p-4">

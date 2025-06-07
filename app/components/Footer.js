@@ -1,22 +1,24 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
           <a href="/" aria-label="Go home" title="Estudio López Gómez" className="inline-flex items-center">
-            <svg className="w-8 text-[#CBA240]" viewBox="0 0 24 24" strokeLinejoin="round" strokeWidth="2" strokeLinecap="round" strokeMiterlimit="10" stroke="currentColor" fill="none">
-              <rect x="3" y="1" width="7" height="12"></rect>
-              <rect x="3" y="17" width="7" height="6"></rect>
-              <rect x="14" y="1" width="7" height="6"></rect>
-              <rect x="14" y="11" width="7" height="12"></rect>
-            </svg>
-            <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">López Gómez</span>
+            <Image
+              src="/logo.png"
+              alt="Estudio López Gómez Logo"
+              title="Estudio López Gómez"
+              width={80}
+              height={80}
+              className="w-20 h-20"
+            />
           </a>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-white">
               Estudio Jurídico López Gómez: especialistas en Derecho Penal y Civil en Buenos Aires. Defendemos tus derechos con compromiso, experiencia y asesoramiento legal personalizado.
             </p>
-            
           </div>
         </div>
         <div className="space-y-2 text-sm">
@@ -65,17 +67,20 @@ export default function Footer() {
         <p className="text-sm text-white">
           © {new Date().getFullYear()} Estudio López Gómez. Todos los derechos reservados.
         </p>
-        <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-          <li>
-            <a href="#faq" className="text-sm text-white transition-colors duration-300 hover:text-[#CBA240]">F.A.Q</a>
-          </li>
-          <li>
-            <a href="/privacidad" className="text-sm text-white transition-colors duration-300 hover:text-[#CBA240]">Política de Privacidad</a>
-          </li>
-          <li>
-            <a href="/terminos" className="text-sm text-white transition-colors duration-300 hover:text-[#CBA240]">Términos &amp; Condiciones</a>
-          </li>
-        </ul>
+        <div className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+          <span className="text-sm text-white">
+            Desarrollado por{" "}
+            <a
+              href="https://www.wemakeitlab.com"
+              target="_blank"
+              rel="noopener"
+              title="Desarrollado por We make it Lab"
+              className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]"
+            >
+              We make it Lab
+            </a>
+          </span>
+        </div>
       </div>
     </footer>
   );

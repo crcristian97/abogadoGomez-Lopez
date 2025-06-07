@@ -54,6 +54,7 @@ export default function Ourblog() {
             <Image
               src={blogPosts[1].image}
               alt={blogPosts[1].title}
+              title={blogPosts[1].title}
               width={500}
               height={500}
               className="absolute inset-0 w-full h-full object-cover z-0"
