@@ -23,6 +23,7 @@ Se ha desempeñado como docente universitario en la Facultad de Derecho y Cienci
 Su enfoque ético, compromiso con el cliente y profundo conocimiento en materia Penal y Civil lo posicionan como un referente en la profesión"
             buttonText="Hablar con el Dr. José Luis López"
             imagePosition="right"
+            rounder={true}
         />
         <Team 
             image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg"
@@ -32,6 +33,7 @@ Además, es Calígrafo Público Nacional en ejercicio desde 2014, matriculada en
 Actualmente, se desempeña como Secretaria del Colegio de Calígrafos de la Ciudad de Buenos Aires y como docente universitaria. También forma parte activa del Colegio Público de la Abogacía de la Capital Federal, con matrícula federal vigente."
             buttonText="Hablar con la Dra. Estefanía Gómez"
             imagePosition="left"
+            rounder={true}
         />
         <BannerProduct />
         <Ourblog />
