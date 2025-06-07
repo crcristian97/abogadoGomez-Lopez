@@ -12,21 +12,48 @@ export default function CardTeam({
   // Determine card rounding class
   const cardRoundingClass = rounder ? "rounded-full" : "rounded-2xl";
 
+  // Overlay effect style (from @file_context_0)
+  const overlayStyle = {
+    position: "absolute",
+    inset: 0,
+    backgroundColor: "#183852",
+    opacity: 0.65,
+    zIndex: 1,
+    pointerEvents: "none",
+  };
+
+  // Wrapper for image with overlay effect
+  function ImageWithOverlay({ src, alt, title, className, style }) {
+    return (
+      <div className="relative">
+        <Image
+          src={src}
+          alt={alt}
+          width={1200}
+          height={1200}
+          title={title}
+          className={className}
+          style={style}
+          aria-hidden="true"
+          loading="lazy"
+        />
+        <div style={overlayStyle} aria-hidden="true" />
+      </div>
+    );
+  }
+
   return (
     <div className={`flex flex-col md:flex-row items-center bg-[#183852] ${cardRoundingClass} overflow-hidden my-8`}>
       {/* Image on the left */}
       {imagePosition === "left" && (
         <div className="w-full md:w-1/2 flex justify-center items-center p-6 md:p-10 bg-[#183852]">
-          <Image
+          <ImageWithOverlay
             src={image}
             alt={title}
-            width={1200}
-            height={1200}
             title={title}
             className={`object-cover w-72 h-72 md:w-[28rem] md:h-[28rem] shadow-2xl ${cardRoundingClass}`}
-            // Added from @file_context_0
             style={{ backgroundColor: "#183852", opacity: 0.95 }}
-            aria-hidden="true"
+            loading="lazy"
           />
         </div>
       )}
@@ -48,16 +75,13 @@ export default function CardTeam({
       {/* Image on the right */}
       {imagePosition === "right" && (
         <div className="w-full md:w-1/2 flex justify-center items-center p-6 md:p-10 bg-[#183852]">
-          <Image
+          <ImageWithOverlay
             src={image}
             alt={title}
-            width={1200}
-            height={1200}
             title={title}
             className={`object-cover w-72 h-72 md:w-[28rem] md:h-[28rem] shadow-2xl ${cardRoundingClass}`}
-            // Added from @file_context_0
             style={{ backgroundColor: "#183852", opacity: 0.95 }}
-            aria-hidden="true"
+            loading="lazy"
           />
         </div>
       )}
