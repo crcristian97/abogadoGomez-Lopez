@@ -41,29 +41,49 @@ export default function Ourblog() {
         Conocé nuestro blog
       </h2>
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        {/* Left big card */}
-        <div className="rounded-xl bg-[#8E98A3] p-8 flex flex-col justify-between min-h-[260px] md:row-span-2 shadow-lg">
-          <h3 className="text-[#CBA240] text-lg md:text-xl font-bold mb-2 leading-snug">
-            {blogPosts[0].title}
-          </h3>
-          <p className="text-[#ededed] text-base">{blogPosts[0].excerpt}</p>
+        {/* Left big card with image */}
+        <div className="rounded-xl bg-[#8E98A3] p-0 overflow-hidden flex flex-col justify-end min-h-[260px] md:row-span-2 shadow-lg relative">
+          {blogPosts[0].image && (
+            <>
+              <Image
+                src={blogPosts[0].image}
+                alt={blogPosts[0].title}
+                title={blogPosts[0].title}
+                width={800}
+                height={400}
+                className="absolute inset-0 w-full h-full object-cover z-0"
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority={true}
+              />
+              <div className="absolute inset-0 bg-[#183852] opacity-65 z-0" />
+            </>
+          )}
+          <div className="relative z-10 px-8 py-6 flex flex-col gap-2 h-auto justify-end">
+            <h3 className="text-[#CBA240] text-lg md:text-xl font-bold mb-1 leading-snug">
+              {blogPosts[0].title}
+            </h3>
+            <p className="text-[#ededed] text-base">{blogPosts[0].excerpt}</p>
+          </div>
         </div>
         {/* Top right card */}
         <div className="rounded-xl overflow-hidden relative min-h-[120px] shadow-lg flex flex-col justify-end">
           {blogPosts[1].image && (
-            <Image
-              src={blogPosts[1].image}
-              alt={blogPosts[1].title}
-              title={blogPosts[1].title}
-              width={500}
-              height={500}
-              className="absolute inset-0 w-full h-full object-cover z-0"
-              style={{ objectFit: "cover" }}
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority={false}
-            />
+            <>
+              <Image
+                src={blogPosts[1].image}
+                alt={blogPosts[1].title}
+                title={blogPosts[1].title}
+                width={500}
+                height={500}
+                className="absolute inset-0 w-full h-full object-cover z-0"
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority={false}
+              />
+              <div className="absolute inset-0 bg-[#183852] opacity-65 z-0" />
+            </>
           )}
-          <div className="absolute inset-0 bg-[#183852] opacity-65 z-0" />
           <div className="relative z-10 p-6">
             <h3 className="text-[#CBA240] text-base md:text-lg font-bold mb-1 leading-snug">
               {blogPosts[1].title}
@@ -74,18 +94,21 @@ export default function Ourblog() {
         {/* Bottom right card */}
         <div className="rounded-xl overflow-hidden relative min-h-[120px] shadow-lg flex flex-col justify-end">
           {blogPosts[2].image && (
-            <Image
-              src={blogPosts[2].image}
-              alt={blogPosts[2].title}
-              width={500}
-              height={500}
-              className="absolute inset-0 w-full h-full object-cover z-0"
-              style={{ objectFit: "cover" }}
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority={false}
-            />
+            <>
+              <Image
+                src={blogPosts[2].image}
+                alt={blogPosts[2].title}
+                width={500}
+                height={500}
+                title={blogPosts[2].title}
+                className="absolute inset-0 w-full h-full object-cover z-0"
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority={false}
+              />
+              <div className="absolute inset-0 bg-[#183852] opacity-65 z-0" />
+            </>
           )}
-          <div className="absolute inset-0 bg-[#183852] opacity-65 z-0" />
           <div className="relative z-10 p-6">
             <h3 className="text-[#CBA240] text-base md:text-lg font-bold mb-2 leading-snug">
               {blogPosts[2].title}
