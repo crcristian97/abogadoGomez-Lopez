@@ -203,13 +203,13 @@ export default function Testimonials() {
         }
         .active-dot {
           transform: scale(1.4);
-          background-color: #4F46E5;
+          background-color: #183852;
         }
         .nav-button {
           transition: all 0.3s ease;
         }
         .nav-button:hover {
-          background-color: #4F46E5;
+          background-color: #183852;
           color: white;
         }
       `}</style>

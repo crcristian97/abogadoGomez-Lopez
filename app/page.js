@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import AboutUs from "./components/AboutUs";
 import WhatWeDo from "./components/WhatWeDo";
@@ -12,7 +11,6 @@ import FAQHome from "./components/FAQHome";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <HeroSection />
       <AboutUs />
       <WhatWeDo />

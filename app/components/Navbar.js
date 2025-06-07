@@ -148,7 +148,7 @@ export default function Navbar() {
                     mobileOpen
                       ? "static mt-2 w-full bg-primary"
                       : "absolute left-0 mt-2 w-56"
-                  } z-20 text-primary rounded shadow-lg font-merriweather`}
+                  } z-20 text-primary rounded shadow-lg font-merriweather bg-[#183852]`}
                 >
                   <li>
                     <Link
