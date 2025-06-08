@@ -5,6 +5,7 @@ import Team from "../../sobre-la-firma/components/Team";
 import Service from "./components/Service";
 import BenefitsSevices from "./components/BenefitsSevices";
 import InfoService from "./components/InfoService";
+import Stats from "../../ui/Stats";
 
 export default function DerechoPenal() {
   return (
@@ -38,6 +39,7 @@ export default function DerechoPenal() {
       <Service />
       <BenefitsSevices />
       <InfoService />
+      <Stats />
       <BannerProduct />
       <Ourblog />
     </div>
