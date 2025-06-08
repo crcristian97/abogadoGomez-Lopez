@@ -4,7 +4,8 @@ import BannerProduct from "../../components/BannerProduct";
 import Ourblog from "../../components/Ourblog";
 import ReclamoLaboral from "./components/ReclamoLaboral";
 import BanneCTALaboral from "./components/BanneCTALaboral";
-
+import ListLaboral from "./components/ListLaboral";
+ 
 export default function DerechoLaboral() {
   return (
     <div>
@@ -18,6 +19,7 @@ Si sufriste un despido injustificado, estás en un contexto de trabajo en negro 
 </>}
       />  
       <ReclamoLaboral />
+      <ListLaboral />
       <BanneCTALaboral />
       <BannerProduct />
       <Ourblog />
