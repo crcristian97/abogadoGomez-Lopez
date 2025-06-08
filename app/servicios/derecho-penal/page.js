@@ -5,6 +5,8 @@ import BannerProduct from "../../components/BannerProduct";
 import Ourblog from "../../components/Ourblog";
 import Team from "../../sobre-la-firma/components/Team";
 import Service from "./components/Service";
+import BenefitsSevices from "./components/BenefitsSevices";
+
 export default function DerechoPenal() {
   return (
     <div>
@@ -35,7 +37,7 @@ export default function DerechoPenal() {
         rounder={false}
       />
       <Service />
-
+      <BenefitsSevices />
       <BannerProduct />
       <Ourblog />
     </div>

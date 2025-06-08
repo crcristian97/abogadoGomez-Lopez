@@ -8,6 +8,8 @@ import Contact from "./components/Contact";
 import ContactMap from "./components/ContactMap";
 import Ourblog from "./components/Ourblog";
 import FAQHome from "./components/FAQHome";
+import BannerProduct from "./components/BannerProduct";
+
 export default function Home() {
   return (
     <div>
@@ -25,6 +27,7 @@ export default function Home() {
       <Contact />
       <ContactMap />
       <Ourblog />
+      <BannerProduct />
       <FAQHome />
     </div>
   );
