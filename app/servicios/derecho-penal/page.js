@@ -1,11 +1,10 @@
-"use client";
-
 import HeroServices from "../../components/HeroServices";
 import BannerProduct from "../../components/BannerProduct";
 import Ourblog from "../../components/Ourblog";
 import Team from "../../sobre-la-firma/components/Team";
 import Service from "./components/Service";
 import BenefitsSevices from "./components/BenefitsSevices";
+import InfoService from "./components/InfoService";
 
 export default function DerechoPenal() {
   return (
@@ -38,6 +37,7 @@ export default function DerechoPenal() {
       />
       <Service />
       <BenefitsSevices />
+      <InfoService />
       <BannerProduct />
       <Ourblog />
     </div>
