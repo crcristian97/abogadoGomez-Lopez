@@ -1,7 +1,7 @@
 "use client";
 import CustomButton from "../../../ui/CustomButton";
 
-export default function BanneCTALaboral() {
+export default function BanneCTALaboral({ title, description }) {
   return (
     <section
       className="w-full relative flex items-center justify-center min-h-[340px] py-20 px-4"
@@ -14,12 +14,10 @@ export default function BanneCTALaboral() {
     >
       <div className="w-full max-w-5xl flex flex-col items-center justify-center text-center relative z-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          ¿Cómo iniciar un reclamo laboral?
+          {title}
         </h2>
         <p className="text-lg sm:text-2xl text-white mb-8 max-w-2xl mx-auto">
-          Los reclamos laborales se inician ante la <span className="font-semibold text-[#CBA240]">SECLO</span> (Servicio de Conciliación Laboral Obligatoria). Esta instancia permite llegar a un acuerdo previo al inicio de un juicio, con la posibilidad de resolver el conflicto de manera ágil y sin desgaste. 
-          <br />
-          Si no se logra un acuerdo, <span className="font-semibold text-[#CBA240]">te asesoramos</span> para continuar con la demanda laboral de forma segura y eficiente.
+          {description}
         </p>
 
         <CustomButton

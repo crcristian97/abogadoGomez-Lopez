@@ -22,7 +22,7 @@ Si sufriste un despido injustificado, estás en un contexto de trabajo en negro 
 </>}
       />  
       <ReclamoLaboral />
-      <BanneCTALaboral />
+      <BanneCTALaboral  title="¿Cómo iniciar un reclamo laboral?" description="Los reclamos laborales se inician ante la SECLO (Servicio de Conciliación Laboral Obligatoria). Esta instancia permite llegar a un acuerdo previo al inicio de un juicio, con la posibilidad de resolver el conflicto de manera ágil y sin desgaste. Si no se logra un acuerdo, te asesoramos para continuar con la demanda laboral de forma segura y eficiente."/>
       <ListLaboral />
       <Stats />
       <BannerProduct />
