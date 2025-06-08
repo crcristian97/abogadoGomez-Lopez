@@ -2,6 +2,8 @@
 import HeroServices from "../../components/HeroServices";
 import BannerProduct from "../../components/BannerProduct";
 import Ourblog from "../../components/Ourblog";
+import ReclamoLaboral from "./components/ReclamoLaboral";
+import BanneCTALaboral from "./components/BanneCTALaboral";
 
 export default function DerechoLaboral() {
   return (
@@ -14,7 +16,9 @@ description={<>
 En nuestro estudio jurídico somos especialistas en derecho laboral. Representamos a trabajadores y empresas con más de 30 años de experiencia en conflictos laborales. 
 Si sufriste un despido injustificado, estás en un contexto de trabajo en negro o necesitás asesoría para evitar juicios, estamos acá para ayudarte.
 </>}
-      />
+      />  
+      <ReclamoLaboral />
+      <BanneCTALaboral />
       <BannerProduct />
       <Ourblog />
     </div>
