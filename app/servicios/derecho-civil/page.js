@@ -4,6 +4,8 @@ import HeroServices from "../../components/HeroServices";
 import BannerProduct from "../../components/BannerProduct";
 import Ourblog from "../../components/Ourblog";
 import Team from "../../sobre-la-firma/components/Team";
+import BeneftisDC from "./components/BeneftisDC";
+import { benefitsOne, benefitsTwo, benefitsThree } from "../../mock/BenefitsDCOne";
 
 export default function DerechoCivil() {
   return (
@@ -28,6 +30,25 @@ Nos especializamos en causas relacionadas con <span className="font-bold text-[#
         }
         imagePosition="left"
         rounder={false}
+      />
+      <BeneftisDC  />
+      <BeneftisDC  
+        heading="Sucesiones: tramitamos tu herencia con profesionalismo"
+        intro="Gestionamos sucesiones testamentarias e intestadas en la Ciudad y Provincia de Buenos Aires, incluyendo casos con herederos domiciliados en el extranjero. Nuestros servicios incluyen:"
+        benefits={benefitsOne}
+        outro="Nuestro objetivo es que el proceso sucesorio se desarrolle de forma ordenada, transparente y sin complicaciones innecesarias."
+      />
+      <BeneftisDC  
+        heading="Derecho de familia y divorcios: acompañamiento en procesos delicados"
+        intro="Sabemos que las cuestiones familiares requieren sensibilidad y profesionalismo. Brindamos asesoramiento y representación en:"
+        benefits={benefitsTwo}
+        outro="Buscamos soluciones que prioricen el bienestar de las familias y fomenten acuerdos duraderos, evitando litigios prolongados y desgastantes."
+      />
+      <BeneftisDC  
+        heading="Contratos y responsabilidad civil: seguridad y defensa en tus relaciones jurídicas"
+        intro="Ofrecemos la redacción, revisión y asesoramiento integral en contratos civiles y comerciales para proteger tus intereses. Además, gestionamos reclamos y acciones por daños y perjuicios, tanto de forma extrajudicial como judicial, incluyendo:"
+        benefits={benefitsThree}
+        outro="Si sufriste un perjuicio ocasionado por otra persona o empresa, te ayudamos a reclamar la indemnización correspondiente para resarcir los daños sufridos."
       />
       <BannerProduct />
       <Ourblog />
