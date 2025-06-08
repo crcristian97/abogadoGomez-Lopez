@@ -6,6 +6,9 @@ import Ourblog from "../../components/Ourblog";
 import Team from "../../sobre-la-firma/components/Team";
 import BeneftisDC from "./components/BeneftisDC";
 import { benefitsOne, benefitsTwo, benefitsThree } from "../../mock/BenefitsDCOne";
+import Stats from "../../ui/Stats";
+import FAQHome from "../../components/FAQHome";
+import { faqDC } from "../../mock/faqDC";
 
 export default function DerechoCivil() {
   return (
@@ -50,8 +53,10 @@ Nos especializamos en causas relacionadas con <span className="font-bold text-[#
         benefits={benefitsThree}
         outro="Si sufriste un perjuicio ocasionado por otra persona o empresa, te ayudamos a reclamar la indemnización correspondiente para resarcir los daños sufridos."
       />
+      <Stats />
       <BannerProduct />
       <Ourblog />
+      <FAQHome faqs={faqDC} />
     </div>
   );
 } 
