@@ -5,7 +5,10 @@ import Ourblog from "../../components/Ourblog";
 import ReclamoLaboral from "./components/ReclamoLaboral";
 import BanneCTALaboral from "./components/BanneCTALaboral";
 import ListLaboral from "./components/ListLaboral";
- 
+import Stats from "../../ui/Stats";
+import FAQHome from "../../components/FAQHome";
+import { faqDL } from "../../mock/faqDL";
+
 export default function DerechoLaboral() {
   return (
     <div>
@@ -19,10 +22,12 @@ Si sufriste un despido injustificado, estás en un contexto de trabajo en negro 
 </>}
       />  
       <ReclamoLaboral />
-      <ListLaboral />
       <BanneCTALaboral />
+      <ListLaboral />
+      <Stats />
       <BannerProduct />
       <Ourblog />
+      <FAQHome faqs={faqDL} />
     </div>
   );
 } 
