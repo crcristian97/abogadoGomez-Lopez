@@ -2,10 +2,14 @@
 import { useState } from "react";
 import CustomButton from "../ui/CustomButton";
 import { ChevronDown } from "lucide-react";
-import { faqs } from "../mock/faqs";
 
-export default function FAQHome() {
+export default function FAQHome({ faqs = [] }) {
   const [openIndex, setOpenIndex] = useState(null);
+
+  // If no faqs prop is provided, show nothing
+  if (!faqs || !Array.isArray(faqs) || faqs.length === 0) {
+    return null;
+  }
 
   return (
     <div className="relative isolate overflow-hidden bg-custom" id="faq">

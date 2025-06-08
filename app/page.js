@@ -9,6 +9,7 @@ import ContactMap from "./components/ContactMap";
 import Ourblog from "./components/Ourblog";
 import FAQHome from "./components/FAQHome";
 import BannerProduct from "./components/BannerProduct";
+import { faqs } from "./mock/faqs";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
       <ContactMap />
       <Ourblog />
       <BannerProduct />
-      <FAQHome />
+      <FAQHome faqs={faqs} />
     </div>
   );
 }

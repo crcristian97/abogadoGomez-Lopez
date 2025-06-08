@@ -6,6 +6,8 @@ import Service from "./components/Service";
 import BenefitsSevices from "./components/BenefitsSevices";
 import InfoService from "./components/InfoService";
 import Stats from "../../ui/Stats";
+import FAQHome from "../../components/FAQHome";
+import { faqsDP } from "../../mock/faqsDP";
 
 export default function DerechoPenal() {
   return (
@@ -42,6 +44,7 @@ export default function DerechoPenal() {
       <Stats />
       <BannerProduct />
       <Ourblog />
+      <FAQHome faqs={faqsDP} />
     </div>
   );
 }
