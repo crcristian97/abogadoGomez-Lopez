@@ -4,7 +4,6 @@ import CustomButton from "../ui/CustomButton";
 import { ChevronDown } from "lucide-react";
 
 export default function FAQHome({ faqs = [] }) {
-  console.log(faqs);
   const [openIndex, setOpenIndex] = useState(null);
 
   // If no faqs prop is provided, show nothing
