@@ -100,7 +100,7 @@ export default function Navbar() {
           <ul className="flex flex-col font-merriweather font-medium text-white lg:flex-row lg:space-x-8 lg:mt-0 lg:ml-auto">
             <li>
               <Link
-                href="#"
+                href="/"
                 className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
                 aria-current="page"
                 onClick={handleMenuLinkClick}
@@ -200,7 +200,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/contacto"
                 className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
                 onClick={handleMenuLinkClick}
               >
@@ -209,7 +209,7 @@ export default function Navbar() {
             </li>
             <li>
                 <Link
-                href="#"
+                href="/blog"
                 className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
                 onClick={handleMenuLinkClick}
               >
