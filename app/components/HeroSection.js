@@ -25,12 +25,10 @@ export default function HeroSection({ src = "", alt = "", title = "", subtitle =
           {subtitle}
         </h2>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <CustomButton variant="primary">
-            Solicitar consulta gratuita
-          </CustomButton>
+          
           <CustomButton
             variant="outline"
-            href="https://wa.me/"
+            href={`https://wa.me/5491161280168?text=${encodeURIComponent('Hola, me comunico porque quisiera asesoramiento legal')}`}
             title="Hablá ahora por WhatsApp"
             aria-label="Hablá ahora por WhatsApp"
             target="_blank"

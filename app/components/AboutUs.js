@@ -1,6 +1,6 @@
 import Image from "next/image";
-import CustomButton from "../ui/CustomButton";
-import { Shield, Users, Scale } from "lucide-react";
+import { Shield, Users, Scale } from "lucide-react";    
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -43,9 +43,13 @@ export default function AboutUs() {
             </span>
           </li>
         </ul>
-        <CustomButton variant="primary" >
+        <Link
+          href="/sobre-la-firma"
+          prefetch={false}
+          className="inline-block px-6 py-3 rounded-full bg-transparent border-2 border-[#CBA240] text-[#CBA240] font-bold transition-colors hover:bg-[#CBA240] hover:text-[#183852] focus:outline-none focus:ring-2 focus:ring-[#CBA240] focus:ring-offset-2"
+        >
           Conocé más sobre nosotros
-        </CustomButton>
+        </Link>
       </div>
       <div className="flex-1 flex justify-center items-center min-w-0 mt-8 md:mt-0 p-2 md:p-4">
         <div className="rounded-2xl overflow-hidden w-full max-w-xl bg-[#183852] opacity-80 z-[1] shadow-2xl">
