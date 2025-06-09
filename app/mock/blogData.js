@@ -84,6 +84,7 @@ export const blogData = [
     author: "Dr. López",
     date: "09 Junio 2025",
     category: "Derecho a la salud",
+    readingTime: "5",
     introduction: "Analizamos el derecho a la salud en Argentina y el amparo como herramienta fundamental para proteger a los afiliados de obras sociales y prepagas ante la negativa de medicamentos o prestaciones médicas.",
     pregunta1: "¿Qué es el amparo en materia de salud?",
     respuesta1: "El amparo es una acción judicial rápida y efectiva prevista en la Ley 16.986, utilizada para proteger derechos fundamentales, como el acceso a la salud, cuando existen situaciones de urgencia o la vía ordinaria resulta ineficaz.",
@@ -175,5 +176,107 @@ export const blogData = [
       </div>    
     )
   },
-  
+  {
+    slug: "trabajo-freelance-en-argentina",
+    title: "EL TRABAJO FREELANCE – DISTINCIÓN ENTRE EMPLEADO Y CONTRATISTA PRIVADO",
+    image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749250677/trabajo-freelancer-abogado-buenos-aires.webp",
+    author: "Dra. Estefanía Gómez",
+    date: "09 Junio 2025",
+    category: "Derecho laboral",
+    readingTime: "5",
+    avatar: "EG",
+    featured: false,
+    introduction: "Diferencias legales y prácticas entre empleados y contratistas independientes en Argentina tras la Ley 27.742 y el Decreto 847/24. Qué sectores emplean freelancers, cómo distinguir la relación laboral y claves para contratos de trabajo independiente.",
+    pregunta1: "¿Qué es un trabajador freelance o contratista independiente?",
+    respuesta1: "En Argentina, un freelancer es una persona que presta servicios de manera autónoma, sin estar bajo relación de dependencia, y que puede trabajar para uno o varios clientes. La figura del contratista independiente se diferencia del empleado tradicional porque no está sujeto a las directivas, horarios ni estructura organizacional del contratante, y asume sus propios riesgos y obligaciones fiscales y de seguridad social.",
+    lista1: [
+      "Tecnología y TI: Desarrolladores de software, diseñadores web, consultores de TI, analistas de datos, especialistas en ciberseguridad.",
+      "Servicios Creativos: Diseñadores gráficos, redactores, creadores de contenido, fotógrafos, videógrafos, consultores de marketing.",
+      "Consultoría: Consultores de negocios, asesores financieros, consultores de recursos humanos, gerentes de proyectos.",
+    ],
+    blockquote: "La legislación base de Argentina (la Ley de Contrato de Trabajo) protege esencialmente el trabajo en relación de dependencia. Por lo tanto, la distinción entre el empleado y el contratista independiente debe hacerse en base a cómo se presenta en la realidad la relación y no en cómo las partes contratantes quieran hacerla ver.",
+    titleText1: "¿Qué sectores o industrias utilizan estos trabajadores o contratistas independientes?",
+    text1: "Los trabajadores independientes o contratistas privados se encuentran en diversos sectores y industrias, como la tecnología, el diseño gráfico, la consultoría, la educación y la capacitación. Su flexibilidad y especialización los hacen especialmente valiosos en proyectos específicos o tareas altamente especializadas.",
+    text1lista1: [
+      "Tecnología y TI: Desarrolladores de software, diseñadores web, consultores de TI, analistas de datos, especialistas en ciberseguridad.",
+      "Servicios Creativos: Diseñadores gráficos, redactores, creadores de contenido, fotógrafos, videógrafos, consultores de marketing.",
+      "Consultoría: Consultores de negocios, asesores financieros, consultores de recursos humanos, gerentes de proyectos.",
+      "Educación y Capacitación: Tutores, formadores corporativos, desarrolladores de contenido de e-learning.",
+    ],
+    titleText2: "¿Qué cambió con la Ley 27.742 y el Decreto 847/24?",
+    text2: "La Ley 27.742, conocida como Bases y Puntos de Partida para la Libertad de los Argentinos, junto con el Decreto 847/24, introdujo la posibilidad de que los trabajadores independientes puedan contratar hasta tres colaboradores para desarrollar su actividad, sin que esto implique la existencia de una relación de dependencia laboral. Además, se simplificaron los trámites fiscales y de seguridad social, y se creó un nuevo régimen de registración para estos trabajadores ante la AFIP (actual ARCA).",
+    text2lista1: [
+      "Ley 27.742: Bases y Puntos de Partida para la Libertad de los Argentinos.",  
+      "Decreto 847/24: Reglamento de la Ley 27.742.",
+      "AFIP (actual ARCA): Autoridad fiscal argentina.",
+    ],
+    titleText3: "¿Cómo distinguir entre relación de dependencia y trabajo independiente?",
+    text3: "La legislación base de Argentina (la Ley de Contrato de Trabajo) protege esencialmente el trabajo en relación de dependencia. Por lo tanto, la distinción entre el empleado y el contratista independiente debe hacerse en base a cómo se presenta en la realidad la relación y no en cómo las partes contratantes quieran hacerla ver.",
+    content: (
+      <div className="my-8 p-6 md:p-10 bg-[#f9f7f3] rounded-xl shadow-md">
+        <h2 className="text-xl font-bold mb-4 text-[#183852]">EL TRABAJO FREELANCE – DISTINCIÓN ENTRE EMPLEADO Y CONTRATISTA PRIVADO.</h2>
+        <p className="text-[#183852] mb-4">
+          Un tema interesante dentro del ámbito laboral ha surgido con la Ley N° 27.742 y el Decreto N° 847/24 dispuesta por la AFIP (ahora denominada ARCA) en cuanto se introduce un cambio crucial para los trabajadores independientes en Argentina, permitiendo una colaboración regulada sin perder autonomía. 
+        </p>
+        <p className="text-[#183852] mb-4">
+          Desde la sanción de la Ley 27.3742 - denominada Bases y Puntos de Partida para la Libertad de los Argentinos – los trabajadores independientes ahora pueden formar equipos propios pero sin tener una relación de dependencia, fomentando la creación de redes productivas y  permitiendo que un trabajador independiente cuente con hasta tres colaboradores, sin generar una relación de dependencia laboral. 
+        </p>
+        <p className="text-[#183852] mb-4">
+          Además, simplifica las obligaciones fiscales y de seguridad social, ofreciendo flexibilidad y protección para todos los involucrados.
+        </p>
+        <h3 className="font-bold mb-2 text-[#183852]">¿Qué sectores o industrias utilizan éstos trabajadores o contratistas independientes?</h3>
+        <ul className="list-disc pl-6 text-[#183852] mb-4">
+          <li><strong>Tecnología y TI:</strong> Desarrolladores de software, diseñadores web, consultores de TI, analistas de datos, especialistas en ciberseguridad.</li>
+          <li><strong>Servicios Creativos:</strong> Diseñadores gráficos, redactores, creadores de contenido, fotógrafos, videógrafos, consultores de marketing.</li>
+          <li><strong>Consultoría:</strong> Consultores de negocios, asesores financieros, consultores de recursos humanos, gerentes de proyectos.</li>
+          <li><strong>Servicios Profesionales:</strong> Abogados (para casos específicos), contadores (para proyectos específicos), arquitectos, ingenieros.</li>
+          <li><strong>Educación y Capacitación:</strong> Tutores, formadores corporativos, desarrolladores de contenido de e-learning.</li>
+        </ul>
+        <p className="text-[#183852] mb-4">
+          Estos sectores utilizan usualmente trabajadores o contratistas independientes para proyectos específicos, o tareas altamente especializadas que no requieren una relación laboral por tiempo indeterminado, como son las que regula la Ley de Contrato de Trabajo en Argentina.
+        </p>
+        <p className="text-[#183852] mb-4">
+          En éste punto es importante resaltar que la legislación base de Argentina (la Ley de Contrato de Trabajo) protege esencialmente el trabajo en relación de dependencia. Por lo tanto la distinción entre el empleado y el contratista independiente debe hacerse en base a como se presenta en la realidad la relación y no en como las partes contratantes quieran hacerla ver.
+        </p>
+        <p className="text-[#183852] mb-2">
+          De esa forma, tal como la ha establecido la doctrina y la jurisprudencia en materia laboral, la determinación de la “dependencia” de un empleado se hace en base a los siguientes parámetros:
+        </p>
+        <ul className="list-disc pl-6 text-[#183852] mb-4">
+          <li><strong>Dependencia Económica:</strong> El trabajador depende principalmente o exclusivamente de la entidad contratante para sus ingresos.</li>
+          <li><strong>Dependencia Técnica:</strong> El trabajador sigue instrucciones y está sujeto a la dirección técnica y supervisión de la entidad contratante.</li>
+          <li><strong>Dependencia Legal:</strong> El trabajador está sujeto al poder disciplinario de la entidad contratante.</li>
+          <li><strong>Dependencia Organizacional:</strong> El trabajador está integrado en la estructura organizacional de la entidad contratante, usando sus herramientas, instalaciones y trabajando en horarios fijos.</li>
+        </ul>
+        <p className="text-[#183852] mb-2">
+          A diferencia del empleado en relación de dependencia, el trabajo freelance o de contratista privado, ofrece las siguientes características:
+        </p>
+        <ul className="list-disc pl-6 text-[#183852] mb-4">
+          <li>Operan su propio negocio</li>
+          <li>Ofrecen servicios a múltiples clientes</li>
+          <li>Usan sus propias herramientas y métodos</li>
+          <li>No están sujetos a supervisión directa ni control disciplinario</li>
+          <li>Se les paga por proyectos específicos o resultados en lugar de por tiempo trabajado bajo dirección.</li>
+        </ul>
+        <p className="text-[#183852] mb-4">
+          Por dicho motivo es muy importante que el contrato se realice en base a:
+        </p>
+        <ol className="list-decimal pl-6 text-[#183852] mb-4">
+          <li>Una identificación clara del alcance del trabajo;</li>
+          <li>Definición clara de los resultados esperados y los plazos;</li>
+          <li>Cómo  y cuándo se pagará al freelancer o contratista privado (por ejemplo, tarifa fija, tarifa por hora, cronograma de pagos);</li>
+          <li>El plazo del acuerdo (período fijo o por proyecto);</li>
+          <li>Declaración explícita de que las partes pretenden crear una relación de contratista independiente, no de empleo y por un tiempo determinado que tiene relación con la tarea encomendada;</li>
+          <li>Clarificación de que el contratista independiente es responsable de sus propios impuestos, seguridad social y seguros;</li>
+          <li>Condiciones bajo las cuales cualquiera de las partes puede terminar el acuerdo;</li>
+          <li>Cláusulas que aborden la propiedad del trabajo creado.</li>
+        </ol>
+        <p className="text-[#183852] mb-4">
+          Con respecto a éste último punto es importante resaltar que, en base a lo dispuesto por la Ley de Propiedad Intelectual (Ley 11.723) el autor de una obra es el propietario original de los derechos de propiedad intelectual.
+        </p>
+        <p className="text-[#183852] mb-4">
+          Es por ello que, para que la empresa contratante de un trabajador freelance posea la propiedad intelectual creada por éste, el contrato debe incluir una cláusula de cesión clara. Esta cláusula debe declarar explícitamente que el freelancer cede todos los derechos, títulos e intereses en la obra creada bajo el acuerdo a la entidad contratante al finalizar o al realizar el pago. Sin dicha cláusula, la entidad contratante puede tener solo una licencia para usar la obra, no la propiedad total.
+        </p>
+      </div>
+    )
+  }
 ];

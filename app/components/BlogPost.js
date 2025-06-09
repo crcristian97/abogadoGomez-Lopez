@@ -7,11 +7,11 @@ const BlogPost = ({
   introduction,
   pregunta1,
   respuesta1,
-  lista1,
+  lista1 = [],
   blockquote,
   titleText1,
   text1,
-  text1lista1,
+  text1lista1 = [],
   content,
   image,
   author,
@@ -50,7 +50,7 @@ const BlogPost = ({
       {/* Author Info */}
       <div className="flex items-center gap-3 mb-8">
         <div className="w-10 h-10 rounded-full bg-[#cba240] flex items-center justify-center text-white font-bold">
-          {author.charAt(0)}
+          {author?.charAt(0)}
         </div>
         <div>
           <p className="font-semibold text-[#183852]">{author}</p>
@@ -59,50 +59,68 @@ const BlogPost = ({
       </div>
 
       <div className="prose prose-lg max-w-none">
-        <h2 className="text-2xl font-bold text-[#183852] mb-4">
-          Introducción
-        </h2>
-        <p className="mb-6 text-[#183852] ">
-          {introduction}
-        </p>
+        {introduction && (
+          <>
+            <h2 className="text-2xl font-bold text-[#183852] mb-4">
+              Introducción
+            </h2>
+            <p className="mb-6 text-[#183852]">
+              {introduction}
+            </p>
+          </>
+        )}
 
-        <h2 className="text-2xl font-bold text-[#183852] mb-4">
-          {pregunta1}
-        </h2>
-        <p className="mb-6 text-[#183852]">
-          {respuesta1}
-        </p>
+        {pregunta1 && (
+          <>
+            <h2 className="text-2xl font-bold text-[#183852] mb-4">
+              {pregunta1}
+            </h2>
+            <p className="mb-6 text-[#183852]">
+              {respuesta1}
+            </p>
+          </>
+        )}
 
-        <ol className="list-decimal pl-6 mb-6">
-          {lista1.map((item, index) => (
-            <li key={index} className="text-[#183852]">{item}</li>
-          ))}
-        </ol>
+        {lista1 && lista1.length > 0 && (
+          <ol className="list-decimal pl-6 mb-6">
+            {lista1.map((item, index) => (
+              <li key={index} className="text-[#183852]">{item}</li>
+            ))}
+          </ol>
+        )}
 
-        <blockquote className="border-l-4 border-[#cba240] pl-4 py-2 my-6 italic">
-          <p className="text-[#183852]">
-            {blockquote}
-          </p>
-        </blockquote>
+        {blockquote && (
+          <blockquote className="border-l-4 border-[#cba240] pl-4 py-2 my-6 italic">
+            <p className="text-[#183852]">
+              {blockquote}
+            </p>
+          </blockquote>
+        )}
 
-        <h2 className="text-2xl font-bold text-[#183852] mb-4">
-          {titleText1}
-        </h2>
-        <p className="mb-4 text-[#183852]">
-          {text1}
-        </p>
-        <ul className="list-disc pl-6 mb-6">
-          {text1lista1.map((item, index) => (
-            <li key={index} className="text-[#183852]">{item}</li>
-          ))}
-        </ul>
+        {titleText1 && (
+          <>
+            <h2 className="text-2xl font-bold text-[#183852] mb-4">
+              {titleText1}
+            </h2>
+            <p className="mb-4 text-[#183852]">
+              {text1}
+            </p>
+          </>
+        )}
 
-      
-        <h2 className="text-2xl font-bold text-[#183852] mb-4">
-          {introduction}
-        </h2>
+        {text1lista1 && text1lista1.length > 0 && (
+          <ul className="list-disc pl-6 mb-6">
+            {text1lista1.map((item, index) => (
+              <li key={index} className="text-[#183852]">{item}</li>
+            ))}
+          </ul>
+        )}
 
-        {content}
+        {content && (
+          <div className="mt-8">
+            {content}
+          </div>
+        )}
 
         {/* CTA Banner */}
         <div className="bg-[#183852] text-white p-8 rounded-xl my-8">

@@ -25,7 +25,7 @@ const blogPosts = [
     time: "5 min read",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749250677/trabajo-freelancer-abogado-buenos-aires.webp",
     featured: false,
-    slug: "trabajo-freelance-distincion-empleado-contratista",
+    slug: "trabajo-freelance-en-argentina",
     avatar: "EG", // Simulated avatar
 
   },
