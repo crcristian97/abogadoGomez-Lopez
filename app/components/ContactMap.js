@@ -1,8 +1,34 @@
 "use client";
 import { useState } from "react";
 
+// Simple error icon SVG
+const ErrorIcon = () => (
+  <svg
+    className="inline-block mr-1"
+    width="16"
+    height="16"
+    fill="none"
+    viewBox="0 0 20 20"
+    aria-hidden="true"
+  >
+    <circle cx="10" cy="10" r="10" fill="#dc2626" />
+    <path
+      d="M10 5v5m0 3h.01"
+      stroke="#fff"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 const ContactMap = () => {
   const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({
     name: "",
     email: "",
     message: "",
@@ -21,17 +47,46 @@ const ContactMap = () => {
   const accentButton = "bg-[#CBA240] hover:bg-[#b49536]";
   const accentButtonText = "text-[#183852]";
 
+  // Validaciones
+  const validate = () => {
+    let newErrors = { name: "", email: "", message: "" };
+    if (!form.name.trim()) {
+      newErrors.name = "El nombre es obligatorio.";
+    }
+    if (!form.email.trim()) {
+      newErrors.email = "El email es obligatorio.";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(form.email.trim())
+    ) {
+      newErrors.email = "El email no es válido.";
+    }
+    if (!form.message.trim()) {
+      newErrors.message = "El mensaje es obligatorio.";
+    }
+    setErrors(newErrors);
+    // Si todos los errores están vacíos, retorna true
+    return !newErrors.name && !newErrors.email && !newErrors.message;
+  };
+
   const handleChange = (e) => {
     setForm((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
     }));
+    // Limpiar error al escribir
+    setErrors((prev) => ({
+      ...prev,
+      [e.target.name]: "",
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setForm({ name: "", email: "", message: "" });
+    if (validate()) {
+      setSubmitted(true);
+      setForm({ name: "", email: "", message: "" });
+      setErrors({ name: "", email: "", message: "" });
+    }
   };
 
   return (
@@ -50,7 +105,7 @@ const ContactMap = () => {
               ¡Gracias por tu mensaje! Nos pondremos en contacto pronto.
             </p>
           ) : (
-            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
+            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4" noValidate>
               <div className="flex flex-col gap-1">
                 <label
                   htmlFor="name"
@@ -67,7 +122,15 @@ const ContactMap = () => {
                   required
                   className={`w-full bg-transparent rounded-lg border-2 ${accentBorder} ${accentFocus} text-base outline-none ${darkText} py-2 px-4 leading-8 transition-colors duration-200 ease-in-out placeholder-[#CBA240]/70`}
                   placeholder="Tu nombre"
+                  aria-invalid={!!errors.name}
+                  aria-describedby={errors.name ? "name-error" : undefined}
                 />
+                {errors.name && (
+                  <small id="name-error" className="text-red-600 flex items-center mt-1">
+                    <ErrorIcon />
+                    {errors.name}
+                  </small>
+                )}
               </div>
               <div className="flex flex-col gap-1">
                 <label
@@ -85,7 +148,15 @@ const ContactMap = () => {
                   required
                   className={`w-full bg-transparent rounded-lg border-2 ${accentBorder} ${accentFocus} text-base outline-none ${darkText} py-2 px-4 leading-8 transition-colors duration-200 ease-in-out placeholder-[#CBA240]/70`}
                   placeholder="tu@email.com"
+                  aria-invalid={!!errors.email}
+                  aria-describedby={errors.email ? "email-error" : undefined}
                 />
+                {errors.email && (
+                  <small id="email-error" className="text-red-600 flex items-center mt-1">
+                    <ErrorIcon />
+                    {errors.email}
+                  </small>
+                )}
               </div>
               <div className="flex flex-col gap-1">
                 <label
@@ -102,7 +173,15 @@ const ContactMap = () => {
                   required
                   className={`w-full bg-transparent rounded-lg border-2 ${accentBorder} ${accentFocus} h-32 text-base outline-none ${darkText} py-2 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out placeholder-[#CBA240]/70`}
                   placeholder="Escribe tu mensaje aquí..."
+                  aria-invalid={!!errors.message}
+                  aria-describedby={errors.message ? "message-error" : undefined}
                 ></textarea>
+                {errors.message && (
+                  <small id="message-error" className="text-red-600 flex items-center mt-1">
+                    <ErrorIcon />
+                    {errors.message}
+                  </small>
+                )}
               </div>
               <button
                 type="submit"
