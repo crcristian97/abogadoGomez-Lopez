@@ -34,7 +34,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-primary shadow-md w-full z-20 top-0 left-0">
+    <nav
+      className="bg-primary shadow-md w-full z-20 top-0 left-0 transition-colors duration-300"
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         {/* Logo */}
         <a href="/" className="flex items-center cursor-pointer" onClick={handleMenuLinkClick}>
@@ -98,33 +100,33 @@ export default function Navbar() {
           id="navbar-menu"
         >
           <ul className="flex flex-col font-merriweather font-medium text-white lg:flex-row lg:space-x-8 lg:mt-0 lg:ml-auto">
-            <li>
+            <li className="group transition-colors">
               <Link
                 href="/"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
+                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 aria-current="page"
                 onClick={handleMenuLinkClick}
               >
                 Inicio
               </Link>
             </li>
-            <li>
+            <li className="group transition-colors">
               <Link
                 href="/sobre-la-firma"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
+                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 onClick={handleMenuLinkClick}
               >
                 Sobre la firma
               </Link>
             </li>
             <li
-              className={`relative ${dropdownOpen ? "z-30" : ""}`}
+              className={`relative group transition-colors ${dropdownOpen ? "z-30" : ""}`}
               onFocus={handleDropdownFocus}
               onBlur={handleDropdownBlur}
             >
               <button
                 type="button"
-                className="flex items-center w-full py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors focus:outline-none font-merriweather cursor-pointer"
+                className="flex items-center w-full py-2 pl-3 pr-4 text-white transition-colors focus:outline-none font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 onClick={handleDropdownToggle}
                 aria-haspopup="true"
                 aria-expanded={dropdownOpen}
@@ -149,47 +151,55 @@ export default function Navbar() {
                     mobileOpen
                       ? "static mt-2 w-full bg-primary"
                       : "absolute left-0 mt-2 w-56"
-                  } z-20 text-primary rounded shadow-lg font-merriweather bg-[#183852]`}
+                  } z-20 text-primary rounded-2xl shadow-lg font-merriweather bg-[#183852]`}
                 >
-                  <li>
+                  <li className="group transition-colors">
                     <Link
                       href="/servicios/derecho-penal"
-                      className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
-                        mobileOpen ? "text-white" : "text-primary"
-                      } cursor-pointer`}
+                      className={`block px-4 py-2 transition-colors ${
+                        mobileOpen
+                          ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
+                          : "text-white hover:bg-secondary hover:text-white hover:rounded-full"
+                      } cursor-pointer rounded-full`}
                       onClick={handleMenuLinkClick}
                     >
                       Derecho penal
                     </Link>
                   </li>
-                  <li>
+                  <li className="group transition-colors">
                     <Link
                       href="/servicios/derecho-laboral"
-                      className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
-                        mobileOpen ? "text-white" : "text-primary"
-                      } cursor-pointer`}
+                      className={`block px-4 py-2 transition-colors ${
+                        mobileOpen
+                          ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
+                          : "text-white hover:bg-secondary hover:text-white hover:rounded-full"
+                      } cursor-pointer rounded-full`}
                       onClick={handleMenuLinkClick}
                     >
                       Derecho laboral
                     </Link>
                   </li>
-                  <li>
+                  <li className="group transition-colors">
                     <Link
                       href="/servicios/derecho-civil"
-                      className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
-                        mobileOpen ? "text-white" : "text-primary"
-                      } cursor-pointer`}
+                      className={`block px-4 py-2 transition-colors ${
+                        mobileOpen
+                          ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
+                          : "text-white hover:bg-secondary hover:text-white hover:rounded-full"
+                      } cursor-pointer rounded-full`}
                       onClick={handleMenuLinkClick}
                     >
                       Derecho civil
                     </Link>
                   </li>
-                  <li>
+                  <li className="group transition-colors">
                     <Link
                       href="/servicios/peritajes-caligraficos"
-                      className={`block px-4 py-2 hover:bg-secondary hover:text-white transition-colors ${
-                        mobileOpen ? "text-white" : "text-primary"
-                      } cursor-pointer`}
+                      className={`block px-4 py-2 transition-colors ${
+                        mobileOpen
+                          ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
+                          : "text-white hover:bg-secondary hover:text-white hover:rounded-full"
+                      } cursor-pointer rounded-full`}
                       onClick={handleMenuLinkClick}
                     >
                       Peritajes caligráficos
@@ -198,19 +208,19 @@ export default function Navbar() {
                 </ul>
               )}
             </li>
-            <li>
+            <li className="group transition-colors">
               <Link
                 href="/contacto"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
+                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 onClick={handleMenuLinkClick}
               >
                 Contacto
               </Link>
             </li>
-            <li>
-                <Link
+            <li className="group transition-colors">
+              <Link
                 href="/blog"
-                className="block py-2 pl-3 pr-4 text-white hover:text-secondary transition-colors font-merriweather cursor-pointer"
+                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 onClick={handleMenuLinkClick}
               >
                 Blog
@@ -224,7 +234,7 @@ export default function Navbar() {
                 onClick={handleMenuLinkClick}
               >
                 Hablá con un abogado
-                </CustomButton>
+              </CustomButton>
             </li>
           </ul>
         </div>
