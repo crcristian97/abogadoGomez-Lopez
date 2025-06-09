@@ -2,6 +2,7 @@ import { Merriweather, Lato } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import WhatsAppButton from "./utils/WhatsApp";
 const merriweather = Merriweather({
   weight: ['300', '400', '700', '900'],
   subsets: ["latin"],
@@ -54,6 +55,7 @@ export default function RootLayout({ children }) {
       <body className="font-lato antialiased">
         <Navbar />
         {children}
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>

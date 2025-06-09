@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useRef } from "react";
 import Link from "next/link";
 import CustomButton from "../ui/CustomButton";
+import { handleClickWhatsApp } from "../utils/WhatsApp";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -39,7 +40,7 @@ export default function Navbar() {
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         {/* Logo */}
-        <Link href="/" prefetch={false} className="flex items-center cursor-pointer" onClick={handleMenuLinkClick}>
+        <Link href="/" prefetch={false} className="flex items-center cursor-pointer">
           <Image
             src="/logo.png"
             alt="Estudio López Gómez Logo"
@@ -83,6 +84,7 @@ export default function Navbar() {
         {/* Right side button */}
         <div className="hidden lg:flex items-center lg:order-2">
           <button
+            onClick={() => handleClickWhatsApp('Quiero asesoramiento legal')}
             className="rounded-full px-6 py-2 font-merriweather font-bold cursor-pointer"
             style={{
               backgroundColor: "#CBA240",
@@ -106,7 +108,6 @@ export default function Navbar() {
                 prefetch={false}
                 className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 aria-current="page"
-                onClick={handleMenuLinkClick}
               >
                 Inicio
               </Link>
@@ -116,7 +117,6 @@ export default function Navbar() {
                 href="/sobre-la-firma"
                 prefetch={false}
                 className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
-                onClick={handleMenuLinkClick}
               >
                 Sobre la firma
               </Link>
@@ -164,7 +164,6 @@ export default function Navbar() {
                           ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
                           : "text-white hover:bg-secondary hover:text-white hover:rounded-full"
                       } cursor-pointer rounded-full`}
-                      onClick={handleMenuLinkClick}
                     >
                       Derecho penal
                     </Link>
@@ -178,7 +177,6 @@ export default function Navbar() {
                           ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
                           : "text-white hover:bg-secondary hover:text-white hover:rounded-full"
                       } cursor-pointer rounded-full`}
-                      onClick={handleMenuLinkClick}
                     >
                       Derecho laboral
                     </Link>
@@ -192,7 +190,6 @@ export default function Navbar() {
                           ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
                           : "text-white hover:bg-secondary hover:text-white hover:rounded-full"
                       } cursor-pointer rounded-full`}
-                      onClick={handleMenuLinkClick}
                     >
                       Derecho civil
                     </Link>
@@ -206,7 +203,6 @@ export default function Navbar() {
                           ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
                           : "text-white hover:bg-secondary hover:text-white hover:rounded-full"
                       } cursor-pointer rounded-full`}
-                      onClick={handleMenuLinkClick}
                     >
                       Peritajes caligráficos
                     </Link>
@@ -219,7 +215,6 @@ export default function Navbar() {
                 href="/contacto"
                 prefetch={false}
                 className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
-                onClick={handleMenuLinkClick}
               >
                 Contacto
               </Link>
@@ -229,7 +224,6 @@ export default function Navbar() {
                 href="/blog"
                 prefetch={false}
                 className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
-                onClick={handleMenuLinkClick}
               >
                 Blog
               </Link>
@@ -239,7 +233,7 @@ export default function Navbar() {
               <CustomButton
                 className="w-full rounded-full px-6 py-2 font-merriweather font-bold cursor-pointer"
                 variant="primary"
-                onClick={handleMenuLinkClick}
+                onClick={() => handleClickWhatsApp('Quiero asesoramiento legal')}
               >
                 Hablá con un abogado
               </CustomButton>
