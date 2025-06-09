@@ -1,4 +1,5 @@
 import HeroServices from "../components/HeroServices";
+import BlogsHeadline from "../components/BlogsHeadline";
 
 export default function BlogPage() {
   return (
@@ -10,7 +11,7 @@ export default function BlogPage() {
         description="Artículos, novedades y análisis legales de nuestros abogados expertos. Mantente informado sobre derecho penal, civil, laboral y más."
         buttonShow={false}
       />
-      {/* Aquí puedes agregar la lista de artículos del blog en el futuro */}
+      <BlogsHeadline />
     </div>
   );
 }
