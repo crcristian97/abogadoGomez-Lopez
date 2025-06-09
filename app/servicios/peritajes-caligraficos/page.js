@@ -7,6 +7,7 @@ import StatsService from "./components/StatsService";
 import BanneCTALaboral from "../derecho-laboral/components/BanneCTALaboral";
 import WeDo from "./components/WeDo";
 import WhoDo from "./components/WhoDo";
+import HowWeDo from "./components/HowWeDo";
 
 export default function PeritajesCaligraficos() {
   return (
@@ -22,15 +23,14 @@ Determinamos la autenticidad de firmas y documentos con rigor técnico y experie
         </>}
       />
       <StatsService />
-      <span>
-        <BanneCTALaboral 
-          title='¿Qué es una pericia caligráfica?' 
-          description='Una pericia caligráfica es un análisis técnico que determina la autenticidad de una firma o documento escrito a mano. Se utiliza en casos de sucesiones, contratos, escritos de testamento, escritos de divorcio, escritos de poderes, entre otros. La pericia caligráfica es un servicio que se ofrece en el estudio jurídico de la firma de abogados en Buenos Aires.'
-        />
-      </span>
-      <BannerProduct />
+      <BanneCTALaboral 
+        title='¿Qué es una pericia caligráfica?' 
+        description='Una pericia caligráfica es un análisis técnico que determina la autenticidad de una firma o documento escrito a mano. Se utiliza en casos de sucesiones, contratos, escritos de testamento, escritos de divorcio, escritos de poderes, entre otros. La pericia caligráfica es un servicio que se ofrece en el estudio jurídico de la firma de abogados en Buenos Aires.'
+      />
       <WeDo />
       <WhoDo />
+      <HowWeDo />
+      <BannerProduct />
       <Ourblog />
     </div>
   );

@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 
 // Subcomponente para cada beneficio/amparo
-function BenefitCard({ icon: Icon, title, description }) {
+export function BenefitCard({ icon: Icon, title, description }) {
   return (
     <div className="flex items-center bg-[#CBA240] rounded-xl shadow p-5 transition-transform transition-shadow duration-200 ease-in-out hover:scale-[1.03] hover:shadow-2xl hover:bg-[#e2c77a] group cursor-pointer">
       <div className="flex flex-col flex-grow">

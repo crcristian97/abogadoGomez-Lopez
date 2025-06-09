@@ -44,7 +44,6 @@ export default function ListLaboral() {
       style={{
         background: "#B0B9C2",
         border: "none",
-        boxShadow: "0 8px 32px 0 rgba(24,56,82,0.10)",
         borderRadius: 0,
         margin: "0",
       }}
