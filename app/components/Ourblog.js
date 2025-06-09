@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Agregamos un campo slug para cada blog
 const blogPosts = [
   {
     id: 1,
@@ -10,6 +11,7 @@ const blogPosts = [
     image:
       "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/derecho-a-la-salud-en-buenos-aires.webp",
     highlight: true,
+    slug: "el-derecho-a-la-salud-el-amparo-como-remedio",
   },
   {
     id: 2,
@@ -20,6 +22,7 @@ const blogPosts = [
     image:
       "https://res.cloudinary.com/dgzi8i2ji/image/upload/trabajo-freelancer-abogado-buenos-aires.webp",
     highlight: false,
+    slug: "trabajo-freelance-en-argentina",
   },
   {
     id: 3,
@@ -29,6 +32,7 @@ const blogPosts = [
     image:
       "https://res.cloudinary.com/dgzi8i2ji/image/upload/delito-contrabando-en-buenos-aires.webp",
     highlight: false,
+    slug: "delito-encubrimiento-contrabando",
   },
 ];
 
@@ -43,7 +47,12 @@ export default function Ourblog() {
       </h2>
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* Left big card with image */}
-        <div className="rounded-xl bg-[#8E98A3] p-0 overflow-hidden flex flex-col justify-end min-h-[260px] md:row-span-2 shadow-lg relative">
+        <Link
+          href={`/blog/${blogPosts[0].slug}`}
+          className="rounded-xl bg-[#8E98A3] p-0 overflow-hidden flex flex-col justify-end min-h-[260px] md:row-span-2 shadow-lg relative group transition-transform duration-150 hover:scale-[1.02] focus:outline-none"
+          aria-label={blogPosts[0].title}
+          prefetch={false}
+        >
           {blogPosts[0].image && (
             <>
               <Image
@@ -57,18 +66,23 @@ export default function Ourblog() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority={true}
               />
-              <div className="absolute inset-0 bg-[#183852] opacity-65 z-0" />
+              <div className="absolute inset-0 bg-[#183852] opacity-65 z-0 group-hover:opacity-75 transition-opacity duration-200" />
             </>
           )}
           <div className="relative z-10 px-8 py-6 flex flex-col gap-2 h-auto justify-end">
-            <h3 className="text-[#CBA240] text-lg md:text-xl font-bold mb-1 leading-snug">
+            <h3 className="text-[#CBA240] text-lg md:text-xl font-bold mb-1 leading-snug group-hover:underline">
               {blogPosts[0].title}
             </h3>
             <p className="text-[#ededed] text-base">{blogPosts[0].excerpt}</p>
           </div>
-        </div>
+        </Link>
         {/* Top right card */}
-        <div className="rounded-xl overflow-hidden relative min-h-[120px] shadow-lg flex flex-col justify-end">
+        <Link
+          href={`/blog/${blogPosts[1].slug}`}
+          className="rounded-xl overflow-hidden relative min-h-[120px] shadow-lg flex flex-col justify-end group transition-transform duration-150 hover:scale-[1.02] focus:outline-none"
+          aria-label={blogPosts[1].title}
+          prefetch={false}
+        >
           {blogPosts[1].image && (
             <>
               <Image
@@ -82,18 +96,23 @@ export default function Ourblog() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority={false}
               />
-              <div className="absolute inset-0 bg-[#183852] opacity-65 z-0" />
+              <div className="absolute inset-0 bg-[#183852] opacity-65 z-0 group-hover:opacity-75 transition-opacity duration-200" />
             </>
           )}
           <div className="relative z-10 p-6">
-            <h3 className="text-[#CBA240] text-base md:text-lg font-bold mb-1 leading-snug">
+            <h3 className="text-[#CBA240] text-base md:text-lg font-bold mb-1 leading-snug group-hover:underline">
               {blogPosts[1].title}
             </h3>
             <p className="text-[#ededed] text-sm mt-0">{blogPosts[1].excerpt}</p>
           </div>
-        </div>
+        </Link>
         {/* Bottom right card */}
-        <div className="rounded-xl overflow-hidden relative min-h-[120px] shadow-lg flex flex-col justify-end">
+        <Link
+          href={`/blog/${blogPosts[2].slug}`}
+          className="rounded-xl overflow-hidden relative min-h-[120px] shadow-lg flex flex-col justify-end group transition-transform duration-150 hover:scale-[1.02] focus:outline-none"
+          aria-label={blogPosts[2].title}
+          prefetch={false}
+        >
           {blogPosts[2].image && (
             <>
               <Image
@@ -107,16 +126,16 @@ export default function Ourblog() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority={false}
               />
-              <div className="absolute inset-0 bg-[#183852] opacity-65 z-0" />
+              <div className="absolute inset-0 bg-[#183852] opacity-65 z-0 group-hover:opacity-75 transition-opacity duration-200" />
             </>
           )}
           <div className="relative z-10 p-6">
-            <h3 className="text-[#CBA240] text-base md:text-lg font-bold mb-2 leading-snug">
+            <h3 className="text-[#CBA240] text-base md:text-lg font-bold mb-2 leading-snug group-hover:underline">
               {blogPosts[2].title}
             </h3>
             <p className="text-[#ededed] text-sm">{blogPosts[2].excerpt}</p>
           </div>
-        </div>
+        </Link>
       </div>
       <div className="flex justify-center mt-10">
         <Link
