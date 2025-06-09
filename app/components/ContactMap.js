@@ -34,7 +34,6 @@ const ContactMap = () => {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
-  const [submitError, setSubmitError] = useState(""); // For error messages
 
   // Palette colors
   const primaryBg = "bg-[#183852]";
@@ -79,12 +78,10 @@ const ContactMap = () => {
       ...prev,
       [e.target.name]: "",
     }));
-    setSubmitError(""); // Clear submit error on change
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitError(""); // Clear previous error
     if (!validate()) return;
 
     const { name, email, message } = form;
@@ -100,16 +97,16 @@ const ContactMap = () => {
       const result = await res.json();
 
       if (res.ok) {
+        alert("¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.");
         setSubmitted(true);
         setForm({ name: "", email: "", message: "" });
         setErrors({ name: "", email: "", message: "" });
-        setSubmitError("");
       } else {
-        setSubmitError(result.error || 'Por favor, intenta nuevamente');
+        alert(`Error al enviar: ${result.error || 'Por favor, intenta nuevamente'}`);
       }
     } catch (error) {
       console.error('Error:', error);
-      setSubmitError("Error al enviar el mensaje. Por favor, intenta nuevamente más tarde.");
+      alert("Error al enviar el mensaje. Por favor, intenta nuevamente más tarde.");
     }
   };
 
@@ -207,12 +204,6 @@ const ContactMap = () => {
                   </small>
                 )}
               </div>
-              {submitError && (
-                <div className="text-red-600 flex items-center mt-2 text-sm">
-                  <ErrorIcon />
-                  {submitError}
-                </div>
-              )}
               <button
                 type="submit"
                 title="Enviar mensaje"
