@@ -1,5 +1,6 @@
 import HeroServices from "../components/HeroServices";
 import BlogsHeadline from "../components/BlogsHeadline";
+import BannerProduct from "../components/BannerProduct";
 
 export default function BlogPage() {
   return (
@@ -12,6 +13,7 @@ export default function BlogPage() {
         buttonShow={false}
       />
       <BlogsHeadline />
+      <BannerProduct />
     </div>
   );
 }
