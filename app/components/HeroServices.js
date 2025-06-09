@@ -1,7 +1,7 @@
 import Image from "next/image";
 import CustomButton from "../ui/CustomButton";
 
-export default function HeroServices({ src, alt, title, description }) {
+export default function HeroServices({ src, alt, title, description, buttonShow = true }) {
   return (
     <section className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] h-auto">
       <Image
@@ -33,6 +33,7 @@ export default function HeroServices({ src, alt, title, description }) {
             {description}
           </p>
         )}
+        {buttonShow && (
         <CustomButton
           variant="primary"
           href="https://wa.me/"
@@ -41,9 +42,10 @@ export default function HeroServices({ src, alt, title, description }) {
           target="_blank"
           rel="noopener noreferrer"
           className="w-full sm:w-auto"
-        >
-          Solicitar consulta gratuita
-        </CustomButton>
+          >
+            Solicitar consulta gratuita
+          </CustomButton>
+        )}
       </div>
     </section>
   );
