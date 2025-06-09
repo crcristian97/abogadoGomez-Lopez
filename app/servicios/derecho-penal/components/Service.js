@@ -1,3 +1,4 @@
+"use client";
 import PenalCard from "../../../ui/PenalCard";
 import { serviceCards } from "../../../mock/serviceCards";
 
