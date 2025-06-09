@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 export default function CustomCard({ title = '', description = '', link = '', bg = '' }) {
   return (
@@ -23,6 +24,7 @@ export default function CustomCard({ title = '', description = '', link = '', bg
       </div>
       <Link
         href={link}
+        prefetch={false}
         className="relative z-10 text-[#CBA240] text-sm font-semibold hover:underline mt-auto"
       >
         Leer más &gt;

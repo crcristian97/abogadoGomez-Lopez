@@ -110,6 +110,7 @@ const BlogPost = ({
           <p className="mb-6">Nuestro equipo de abogados especialistas está listo para ayudarte con tu caso.</p>
           <Link 
             href="/contacto"
+            prefetch={false}
             className="inline-flex items-center gap-2 bg-[#cba240] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#b38f36] transition-colors"
           >
             Consulta Gratuita

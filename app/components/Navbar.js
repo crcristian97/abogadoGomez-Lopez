@@ -39,7 +39,7 @@ export default function Navbar() {
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         {/* Logo */}
-        <a href="/" className="flex items-center cursor-pointer" onClick={handleMenuLinkClick}>
+        <Link href="/" prefetch={false} className="flex items-center cursor-pointer" onClick={handleMenuLinkClick}>
           <Image
             src="/logo.png"
             alt="Estudio López Gómez Logo"
@@ -48,7 +48,7 @@ export default function Navbar() {
             priority={false}
             title="Estudio López Gómez Logo"
           />
-        </a>
+        </Link>
         {/* Mobile menu button */}
         <button
           className="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg lg:hidden hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer"
@@ -103,6 +103,7 @@ export default function Navbar() {
             <li className="group transition-colors">
               <Link
                 href="/"
+                prefetch={false}
                 className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 aria-current="page"
                 onClick={handleMenuLinkClick}
@@ -113,6 +114,7 @@ export default function Navbar() {
             <li className="group transition-colors">
               <Link
                 href="/sobre-la-firma"
+                prefetch={false}
                 className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 onClick={handleMenuLinkClick}
               >
@@ -156,6 +158,7 @@ export default function Navbar() {
                   <li className="group transition-colors">
                     <Link
                       href="/servicios/derecho-penal"
+                      prefetch={false}
                       className={`block px-4 py-2 transition-colors ${
                         mobileOpen
                           ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
@@ -169,6 +172,7 @@ export default function Navbar() {
                   <li className="group transition-colors">
                     <Link
                       href="/servicios/derecho-laboral"
+                      prefetch={false}
                       className={`block px-4 py-2 transition-colors ${
                         mobileOpen
                           ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
@@ -182,6 +186,7 @@ export default function Navbar() {
                   <li className="group transition-colors">
                     <Link
                       href="/servicios/derecho-civil"
+                      prefetch={false}
                       className={`block px-4 py-2 transition-colors ${
                         mobileOpen
                           ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
@@ -195,6 +200,7 @@ export default function Navbar() {
                   <li className="group transition-colors">
                     <Link
                       href="/servicios/peritajes-caligraficos"
+                      prefetch={false}
                       className={`block px-4 py-2 transition-colors ${
                         mobileOpen
                           ? "text-white hover:bg-secondary hover:text-white hover:rounded-full"
@@ -211,6 +217,7 @@ export default function Navbar() {
             <li className="group transition-colors">
               <Link
                 href="/contacto"
+                prefetch={false}
                 className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 onClick={handleMenuLinkClick}
               >
@@ -220,6 +227,7 @@ export default function Navbar() {
             <li className="group transition-colors">
               <Link
                 href="/blog"
+                prefetch={false}
                 className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
                 onClick={handleMenuLinkClick}
               >

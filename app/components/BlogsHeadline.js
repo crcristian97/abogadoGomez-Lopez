@@ -13,7 +13,7 @@ const blogPosts = [
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/derecho-a-la-salud-en-buenos-aires.webp",
     featured: true,
     avatar: "LG", // Simulated avatar
-    slug: "el-derecho-a-la-salud",
+    slug: "el-derecho-a-la-salud-el-amparo-como-remedio",
   },
   {
     id: 2,
@@ -90,6 +90,7 @@ export default function BlogsHeadline() {
                 <div className="mt-4">
                   <Link
                     href={`/blog/${post.slug}`}
+                    prefetch={false}
                     className="inline-block text-[#cba240] font-semibold text-sm hover:underline transition"
                   >
                     Leer más &rarr;
