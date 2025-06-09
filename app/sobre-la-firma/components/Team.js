@@ -1,4 +1,7 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 export default function CardTeam({
   image,
   title,
@@ -11,7 +14,7 @@ export default function CardTeam({
   // Determine card rounding class
   const cardRoundingClass = rounder ? "rounded-full" : "rounded-2xl";
 
-  // Overlay effect style (from @file_context_0)
+  // Overlay effect style
   const overlayStyle = {
     position: "absolute",
     inset: 0,
@@ -41,11 +44,34 @@ export default function CardTeam({
     );
   }
 
+  // Animation variants for the card
+  const cardVariants = {
+    hidden: { opacity: 0, y: 40, filter: "blur(8px)" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: { duration: 0.9, ease: "easeOut" },
+    },
+  };
+
   return (
-    <div className={`flex flex-col md:flex-row items-center bg-[#183852] ${cardRoundingClass} overflow-hidden my-8`}>
+    <motion.div
+      className={`flex flex-col md:flex-row items-center bg-[#183852] ${cardRoundingClass} overflow-hidden my-8`}
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+    >
       {/* Image on the left */}
       {imagePosition === "left" && (
-        <div className="w-full md:w-1/2 flex justify-center items-center p-6 md:p-10 bg-[#183852]">
+        <motion.div
+          className="w-full md:w-1/2 flex justify-center items-center p-6 md:p-10 bg-[#183852]"
+          initial={{ opacity: 0, x: -40, filter: "blur(6px)" }}
+          whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.4 }}
+        >
           <ImageWithOverlay
             src={image}
             alt={title}
@@ -54,26 +80,40 @@ export default function CardTeam({
             style={{ backgroundColor: "#183852", opacity: 2.5 }}
             loading="lazy"
           />
-        </div>
+        </motion.div>
       )}
       {/* Text content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-10">
+      <motion.div
+        className="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-10"
+        initial={{ opacity: 0, y: 30, filter: "blur(6px)" }}
+        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ duration: 0.9, ease: "easeOut", delay: 0.1 }}
+        viewport={{ once: true, amount: 0.4 }}
+      >
         <h2 className="text-xl md:text-2xl font-bold font-merriweather text-white mb-4">
           {title}
         </h2>
         <p className="text-white text-base md:text-lg mb-6 whitespace-pre-line">
           {description}
         </p>
-        <button
+        <motion.button
           className="bg-[#CBA240] hover:bg-[#b89a3a] text-[#183852] font-bold py-2 px-6 rounded-lg transition-colors duration-200 w-fit cursor-pointer"
           onClick={onButtonClick}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
         >
           {buttonText}
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
       {/* Image on the right */}
       {imagePosition === "right" && (
-        <div className="w-full md:w-1/2 flex justify-center items-center p-6 md:p-10 bg-[#183852]">
+        <motion.div
+          className="w-full md:w-1/2 flex justify-center items-center p-6 md:p-10 bg-[#183852]"
+          initial={{ opacity: 0, x: 40, filter: "blur(6px)" }}
+          whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.4 }}
+        >
           <ImageWithOverlay
             src={image}
             alt={title}
@@ -82,8 +122,8 @@ export default function CardTeam({
             style={{ backgroundColor: "#183852", opacity: 0.95 }}
             loading="lazy"
           />
-        </div>
+        </motion.div>
       )}
-    </div>
+    </motion.div>
   );
 }

@@ -2,6 +2,36 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+
+const faqContainerVariants = {
+  hidden: { opacity: 0, y: 40, filter: "blur(6px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 1, ease: "easeOut" },
+  },
+};
+
+const faqItemVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.98 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      delay: i * 0.08,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+};
+
+const answerVariants = {
+  collapsed: { opacity: 0, height: 0, y: 10, transition: { duration: 0.25, ease: "easeIn" } },
+  open: { opacity: 1, height: "auto", y: 0, transition: { duration: 0.4, ease: "easeOut" } },
+};
 
 export default function FAQHome({ faqs = [] }) {
   const [openIndex, setOpenIndex] = useState(null);
@@ -12,10 +42,23 @@ export default function FAQHome({ faqs = [] }) {
   }
 
   return (
-    <div className="relative isolate overflow-hidden bg-custom" id="faq">
+    <motion.div
+      className="relative isolate overflow-hidden bg-custom"
+      id="faq"
+      variants={faqContainerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <div className="py-12 px-4 max-w-5xl mx-auto flex flex-col md:flex-row gap-8">
         {/* Left column: Title, description, and contact button */}
-        <div className="flex flex-col text-left basis-1/2">
+        <motion.div
+          className="flex flex-col text-left basis-1/2"
+          initial={{ opacity: 0, x: -40, filter: "blur(6px)" }}
+          whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-base-content mb-2">
             Preguntas
           </h2>
@@ -33,11 +76,19 @@ export default function FAQHome({ faqs = [] }) {
               Mira lo que dicen nuestros expertos
             </Link>
           </div>
-        </div>
+        </motion.div>
         {/* Right column: FAQ accordion */}
         <ul className="basis-1/2">
           {faqs.map((faq, idx) => (
-            <li className="group" key={faq.question}>
+            <motion.li
+              className="group"
+              key={faq.question}
+              variants={faqItemVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              custom={idx}
+            >
               <button
                 className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
                 aria-expanded={openIndex === idx}
@@ -51,20 +102,26 @@ export default function FAQHome({ faqs = [] }) {
                   }`}
                 />
               </button>
-              <div
-                className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  openIndex === idx ? "max-h-60" : "max-h-0"
-                }`}
-                style={{ transition: "max-height 0.3s ease-in-out 0s" }}
-              >
-                <div className="pb-5 leading-relaxed">
-                  <div className="space-y-2 leading-relaxed">{faq.answer}</div>
-                </div>
-              </div>
-            </li>
+              <AnimatePresence initial={false}>
+                {openIndex === idx && (
+                  <motion.div
+                    key="answer"
+                    initial="collapsed"
+                    animate="open"
+                    exit="collapsed"
+                    variants={answerVariants}
+                    className="overflow-hidden"
+                  >
+                    <div className="pb-5 leading-relaxed">
+                      <div className="space-y-2 leading-relaxed">{faq.answer}</div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.li>
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
