@@ -6,6 +6,7 @@ import Team from "./components/Team";
 import BannerProduct from "../components/BannerProduct";
 import Ourblog from "../components/Ourblog";  
 import { handleClickWhatsApp } from "../utils/WhatsApp";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function SobreLaFirma() {
   return (
@@ -15,6 +16,7 @@ export default function SobreLaFirma() {
             alt="Sobre el estudio juridico en buenos aires"
             title="Sobre la firma"
         />
+        <Breadcrumbs />
         <SobreFirma />
         <Team 
             image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg"

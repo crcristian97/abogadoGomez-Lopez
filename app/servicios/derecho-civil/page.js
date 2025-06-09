@@ -10,6 +10,7 @@ import Stats from "../../ui/Stats";
 import FAQHome from "../../components/FAQHome";
 import { faqDC } from "../../mock/faqDC";
 import { handleClickWhatsApp } from "../../utils/WhatsApp";
+import Breadcrumbs from "../../components/Breadcrumbs";
 
 export default function DerechoCivil() {
   return (
@@ -20,6 +21,7 @@ export default function DerechoCivil() {
         title="Asesoría en Derecho Civil – Amparos, Familia y Sucesiones – Responsabilidad Civil. "
         description={<>Asesoría legal en Derecho Civil en Ciudad Autónoma de Buenos Aires y Provincia. Especialistas en sucesiones, divorcios, amparos y contratos. </>}
       />
+      <Breadcrumbs />
       <Team
         image="https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749392575/buenos-aires-derecho-civil.webp"
         title="Sobre el derecho civil"

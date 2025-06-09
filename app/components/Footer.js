@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
-          <a href="/" aria-label="Go home" title="Estudio López Gómez" className="inline-flex items-center">
+          <a href="/" aria-label="Go home" title="Estudio Gómez&López" className="inline-flex items-center">
             <Image
               src="/logo.png"
-              alt="Estudio López Gómez Logo"
-              title="Estudio López Gómez"
+              alt="Estudio Gómez&López Logo"
+              title="Estudio Gómez&López"
               width={80}
               height={80}
               className="w-20 h-20"
@@ -86,7 +86,7 @@ export default function Footer() {
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p className="text-sm text-white">
-          © {new Date().getFullYear()} Estudio López Gómez. Todos los derechos reservados.
+          © {new Date().getFullYear()} Estudio Gómez&López. Todos los derechos reservados.
         </p>
         <div className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <span className="text-sm text-white">

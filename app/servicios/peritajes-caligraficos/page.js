@@ -13,6 +13,7 @@ import FAQHome from "../../components/FAQHome";
 import { analyses } from "../../mock/analysesPericia";  
 import { caseSolicities } from "../../mock/caseSolicities";
 import { faqPC } from "../../mock/faqPC";
+import Breadcrumbs from "../../components/Breadcrumbs";
 
 export default function PeritajesCaligraficos() {
   return (
@@ -27,6 +28,7 @@ Determinamos la autenticidad de firmas y documentos con rigor técnico y experie
 
         </>}
       />
+      <Breadcrumbs />
       <StatsService />
       <BanneCTALaboral 
         title='¿Qué es una pericia caligráfica?' 

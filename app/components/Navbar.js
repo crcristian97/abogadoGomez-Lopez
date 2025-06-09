@@ -43,11 +43,11 @@ export default function Navbar() {
         <Link href="/" prefetch={false} className="flex items-center cursor-pointer" onClick={handleMenuLinkClick}>
           <Image
             src="/logo.png"
-            alt="Estudio López Gómez Logo"
+            alt="Estudio Gómez&López Logo"
             width={80}
             height={80}
             priority={false}
-            title="Estudio López Gómez Logo"
+            title="Estudio Gómez&López Logo"
           />
         </Link>
         {/* Mobile menu button */}

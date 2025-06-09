@@ -18,7 +18,7 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "Estudio López Gómez",
+  title: "Estudio Gómez&López - Abogados especialistas en derecho penal y civil",
   description: "Estudio de arquitectura y diseño",
   icons: {
     icon: '/favicon.ico',

@@ -8,6 +8,7 @@ import ListLaboral from "./components/ListLaboral";
 import Stats from "../../ui/Stats";
 import FAQHome from "../../components/FAQHome";
 import { faqDL } from "../../mock/faqDL";
+import Breadcrumbs from "../../components/Breadcrumbs";
 
 export default function DerechoLaboral() {
   return (
@@ -21,6 +22,7 @@ En nuestro estudio jurídico somos especialistas en derecho laboral. Representam
 Si sufriste un despido injustificado, estás en un contexto de trabajo en negro o necesitás asesoría para evitar juicios, estamos acá para ayudarte.
 </>}
       />  
+      <Breadcrumbs />
       <ReclamoLaboral />
       <BanneCTALaboral  title="¿Cómo iniciar un reclamo laboral?" description="Los reclamos laborales se inician ante la SECLO (Servicio de Conciliación Laboral Obligatoria). Esta instancia permite llegar a un acuerdo previo al inicio de un juicio, con la posibilidad de resolver el conflicto de manera ágil y sin desgaste. Si no se logra un acuerdo, te asesoramos para continuar con la demanda laboral de forma segura y eficiente."/>
       <ListLaboral />

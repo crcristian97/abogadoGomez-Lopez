@@ -8,6 +8,7 @@ import InfoService from "./components/InfoService";
 import Stats from "../../ui/Stats";
 import FAQHome from "../../components/FAQHome";
 import { faqsDP } from "../../mock/faqsDP";
+import Breadcrumbs from "../../components/Breadcrumbs";
 
 export default function DerechoPenal() {
   return (
@@ -18,6 +19,7 @@ export default function DerechoPenal() {
         title="Asesoría en Derecho Penal – Defensa Técnica"
         description="Defensa penal técnica y comprometida con más de 30 años de experiencia. Protegemos tus derechos en todas las instancias del proceso penal."
       />
+      <Breadcrumbs />
       <Team
         image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-penal-en-buenos-aires.webp"
         title="Abogado penal urgente en la Ciudad Autónoma de Buenos Aires"
