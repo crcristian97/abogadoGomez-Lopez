@@ -49,11 +49,12 @@ export default function WhoDo() {
             </li>
           </ul>
           <a
-            href="https://wa.me/"
+            href={`https://wa.me/5491161280168?text=${encodeURIComponent('Hola, me comunico porque quisiera asesoramiento legal')}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#CBA240] text-[#183852] font-semibold px-7 py-3 rounded-lg shadow-md transition-all duration-300 hover:bg-[#e2c77a] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#CBA240] focus:ring-offset-2"
+            title="Contactar ahora por WhatsApp"
             aria-label="Contactar ahora por WhatsApp"
+            className="inline-block bg-[#CBA240] text-[#183852] font-semibold px-7 py-3 rounded-lg shadow-md transition-all duration-300 hover:bg-[#e2c77a] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#CBA240] focus:ring-offset-2"
           >
             Contactar ahora
           </a>

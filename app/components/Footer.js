@@ -18,15 +18,35 @@ export default function Footer() {
           </a>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-white">
-              Estudio Jurídico López Gómez: especialistas en Derecho Penal y Civil en Buenos Aires. Defendemos tus derechos con compromiso, experiencia y asesoramiento legal personalizado.
+              Estudio Jurídico López&nbsp;Gómez: especialistas en Derecho Penal y Civil en Buenos Aires. <br /> Defendemos tus derechos con compromiso, experiencia y asesoramiento legal personalizado.
             </p>
           </div>
         </div>
         <div className="space-y-2 text-sm">
           <p className="text-base font-bold tracking-wide text-white">Contacto</p>
-          <div className="flex">
-            <p className="mr-1 text-white">Teléfono:</p>
-            <a href="tel:+541123456789" aria-label="Nuestro teléfono" title="Nuestro teléfono" className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]">+54 11 2345-6789</a>
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center">
+              <span className="mr-1 text-white">Teléfono:</span>
+              <a
+                href="tel:+541161280168"
+                aria-label="Teléfono Dra. Estefanía Gómez"
+                title="Teléfono Dra. Estefanía Gómez"
+                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536] ml-1"
+              >
+                +54 11 6128-0168
+              </a>
+            </div>
+            <div className="flex items-center">
+              <span className="mr-1 text-white invisible sm:visible">Teléfono:</span>
+              <a
+                href="tel:+541154645620"
+                aria-label="Teléfono Dr. José Luis López"
+                title="Teléfono Dr. José Luis López"
+                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536] ml-1"
+              >
+                +54 11 5464-5620
+              </a>
+            </div>
           </div>
           <div className="flex">
             <p className="mr-1 text-white">Email:</p>
@@ -34,8 +54,8 @@ export default function Footer() {
           </div>
           <div className="flex">
             <p className="mr-1 text-white">Dirección:</p>
-            <a href="https://maps.google.com/?q=Av. Corrientes 1234, CABA, Argentina" target="_blank" rel="noopener noreferrer" aria-label="Nuestra dirección" title="Nuestra dirección" className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]">
-              Av. Corrientes 1234, CABA
+            <a href="https://maps.google.com/?q=Av. Carlos Pellegrini 465, Piso 9°, Oficina 71, CABA" target="_blank" rel="noopener noreferrer" aria-label="Nuestra dirección" title="Nuestra dirección" className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]">
+            Av. Carlos Pellegrini 465, Piso 9°, Oficina 71, CABA
             </a>
           </div>
         </div>

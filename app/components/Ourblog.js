@@ -1,5 +1,6 @@
 import Image from "next/image";
-import CustomButton from "../ui/CustomButton";
+import Link from "next/link";
+
 const blogPosts = [
   {
     id: 1,
@@ -117,12 +118,26 @@ export default function Ourblog() {
           </div>
         </div>
       </div>
-      <CustomButton
-        variant="primary"
-        className="rounded-full px-12 py-5 font-merriweather font-bold text-xl md:text-2xl mt-8 cursor-pointer hover:bg-[#CBA240] hover:text-[#183852] transition-colors  min-w-[220px]"
-      >
-        Leer más
-      </CustomButton>
+      <div className="flex justify-center mt-10">
+        <Link
+          href="/blog"
+          prefetch={false}
+          className="group inline-flex items-center gap-3 rounded-full px-10 py-4 font-merriweather font-bold text-lg md:text-xl bg-[#183852] text-[#CBA240] shadow-lg transition-all duration-200 min-w-[200px] focus:outline-none focus:ring-4 focus:ring-[#CBA240]/40 hover:bg-[#CBA240] hover:text-[#183852] hover:scale-105 active:scale-100"
+          aria-label="Ir al blog"
+        >
+          Leer más
+          <svg
+            className="w-6 h-6 text-[#CBA240] group-hover:text-[#183852] transition-colors duration-200"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.2"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </Link>
+      </div>
     </section>
   );
 }

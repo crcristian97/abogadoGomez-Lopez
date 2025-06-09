@@ -4,7 +4,9 @@ import HeroSection from "../components/HeroSection";
 import SobreFirma from "./components/SobreFirma";
 import Team from "./components/Team";
 import BannerProduct from "../components/BannerProduct";
-import Ourblog from "../components/Ourblog";
+import Ourblog from "../components/Ourblog";  
+import { handleClickWhatsApp } from "../utils/WhatsApp";
+
 export default function SobreLaFirma() {
   return (
     <div>
@@ -24,6 +26,7 @@ Su enfoque ético, compromiso con el cliente y profundo conocimiento en materia 
             buttonText="Hablar con el Dr. José Luis López"
             imagePosition="right"
             rounder={true}
+            onButtonClick={() => handleClickWhatsApp('Hola, Dr Luis López quiero asesoramiento legal', '5491154645620')}
         />
         <Team 
             image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg"
@@ -34,6 +37,7 @@ Actualmente, se desempeña como Secretaria del Colegio de Calígrafos de la Ciud
             buttonText="Hablar con la Dra. Estefanía Gómez"
             imagePosition="left"
             rounder={true}
+            onButtonClick={() => handleClickWhatsApp('Hola, Dra Estefanía Gómez quiero asesoramiento legal')}
         />
         <BannerProduct />
         <Ourblog />

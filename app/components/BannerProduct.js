@@ -29,7 +29,7 @@ export default function BannerProduct() {
         <div className="mt-8">
           <CustomButton
             variant="primary"
-            href="https://wa.me/"
+            href={`https://wa.me/5491161280168?text=${encodeURIComponent('Hola, me comunico porque quisiera asesoramiento legal')}`}
             title="Hablá ahora por WhatsApp"
             aria-label="Hablá ahora por WhatsApp"
             target="_blank"

@@ -1,5 +1,4 @@
 import Image from "next/image";
-// CardTeam component: receives props for image, title, description, button text, image position, and rounder
 export default function CardTeam({
   image,
   title,

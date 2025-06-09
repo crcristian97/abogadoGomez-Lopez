@@ -1,7 +1,6 @@
 'use client'
 
-export const handleClickWhatsApp = ( message) => {
-  const phoneNumber = '5491161280168';
+export const handleClickWhatsApp = (message, phoneNumber = '5491161280168') => {
   window.open(
     `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
     '_blank'

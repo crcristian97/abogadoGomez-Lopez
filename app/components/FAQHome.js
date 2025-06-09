@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import CustomButton from "../ui/CustomButton";
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQHome({ faqs = [] }) {
   const [openIndex, setOpenIndex] = useState(null);
@@ -23,15 +23,15 @@ export default function FAQHome({ faqs = [] }) {
             Aquí respondemos las preguntas más frecuentes sobre nuestros servicios legales y cómo podemos ayudarte.
           </p>
           <div>
-            <CustomButton
-              variant="outline"
-              href="#contact"
-              className="w-fit"
-              title="Contactanos"
-              aria-label="Contactanos"
+            <Link
+              href="/blog"
+              prefetch={false}
+              className="w-fit font-bold text-[#CBA240] hover:text-white transition-colors duration-200"
+              title="Mira lo que dicen nuestros expertos"
+              aria-label="Mira lo que dicen nuestros expertos"
             >
-              Contactanos
-            </CustomButton>
+              Mira lo que dicen nuestros expertos
+            </Link>
           </div>
         </div>
         {/* Right column: FAQ accordion */}
