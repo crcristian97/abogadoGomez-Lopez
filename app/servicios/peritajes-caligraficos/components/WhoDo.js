@@ -8,7 +8,7 @@ export default function WhoDo() {
         {/* Foto con efecto hover */}
         <div className="flex-shrink-0 group relative rounded-full overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
           <Image
-            src="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg"
+            src="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogada-especialista-caligrafia-derecho.webp"
             alt="Dra. Estefanía Gómez"
             title="Dra. Estefanía Gómez"
             width={260}

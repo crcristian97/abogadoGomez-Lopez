@@ -36,7 +36,7 @@ export default function HeroServices({ src, alt, title, description, buttonShow 
         {buttonShow && (
         <CustomButton
           variant="primary"
-          href="https://wa.me/"
+          href="https://wa.me/5491161280168?text=Hola, quiero asesoramiento legal"
           title="Hablá ahora por WhatsApp"
           aria-label="Hablá ahora por WhatsApp"
           target="_blank"

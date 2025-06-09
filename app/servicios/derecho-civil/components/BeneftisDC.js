@@ -49,7 +49,7 @@ export default function BeneftisDC({
   outro = "Nos aseguramos de que tu derecho sea protegido con rapidez, entendiendo la urgencia que estas situaciones requieren."
 }) {
   return (
-    <section className="w-full py-12 px-4 md:px-12 bg-[#f5f6fa]">
+    <section className="w-full py-12 px-4 md:px-12 bg-[#B0B9C2]">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-merriweather font-bold text-[#183852] mb-4 text-left drop-shadow-lg">
           {heading}

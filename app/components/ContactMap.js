@@ -80,12 +80,33 @@ const ContactMap = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validate()) {
-      setSubmitted(true);
-      setForm({ name: "", email: "", message: "" });
-      setErrors({ name: "", email: "", message: "" });
+    if (!validate()) return;
+
+    const { name, email, message } = form;
+    const data = { name, email, message };
+
+    try {
+      const res = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+
+      if (res.ok) {
+        alert("¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.");
+        setSubmitted(true);
+        setForm({ name: "", email: "", message: "" });
+        setErrors({ name: "", email: "", message: "" });
+      } else {
+        alert(`Error al enviar: ${result.error || 'Por favor, intenta nuevamente'}`);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert("Error al enviar el mensaje. Por favor, intenta nuevamente más tarde.");
     }
   };
 

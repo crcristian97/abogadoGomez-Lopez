@@ -9,6 +9,7 @@ import { benefitsOne, benefitsTwo, benefitsThree } from "../../mock/BenefitsDCOn
 import Stats from "../../ui/Stats";
 import FAQHome from "../../components/FAQHome";
 import { faqDC } from "../../mock/faqDC";
+import { handleClickWhatsApp } from "../../utils/WhatsApp";
 
 export default function DerechoCivil() {
   return (
@@ -22,8 +23,9 @@ export default function DerechoCivil() {
       <Team
         image="https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749392575/buenos-aires-derecho-civil.webp"
         title="Sobre el derecho civil"
-        buttonLink="https://wa.me/5491133333333"
+        buttonLink="https://wa.me/5491161280168?text=Hola, quiero asesoramiento legal"
         buttonText="Quiero hablar con un abogado"
+        onButtonClick={() => handleClickWhatsApp('Hola, quiero asesoramiento legal')}
         description={
           <>
            En nuestro estudio jurídico ubicado en Ciudad Autónoma de Buenos Aires y la provincia de Buenos Aires, ofrecemos <span className="font-bold text-[#CBA240]">asesoramiento integral en Derecho Civil</span>, con una atención personalizada y eficiente. Nuestra trayectoria y experiencia nos permiten brindar <span className="font-bold text-[#CBA240]">soluciones jurídicas claras y efectivas</span> para proteger tus derechos y defender tus intereses en una amplia variedad de situaciones legales civiles.

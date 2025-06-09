@@ -15,13 +15,13 @@ export default function DerechoPenal() {
       <HeroServices
         src="https://res.cloudinary.com/dgzi8i2ji/image/upload/asesoria-derecho-penal-en-buenos-aires.webp"
         alt="Derecho Penal en Buenos Aires"
-        title="Asesoría Especializada en Derecho Penal"
+        title="Asesoría Especializada en derecho penal"
         description="Defensa penal técnica y comprometida con más de 30 años de experiencia. Protegemos tus derechos en todas las instancias del proceso penal."
       />
       <Team
         image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-penal-en-buenos-aires.webp"
         title="Abogados penales en Buenos Aires"
-        buttonLink="https://wa.me/5491133333333"
+        buttonLink="https://wa.me/5491161280168?text=Hola, quiero asesoramiento legal"
         buttonText="Quiero hablar con un abogado"
         description={
           <>

@@ -51,21 +51,21 @@ export default function CardTeam({
             alt={title}
             title={title}
             className={`object-cover w-72 h-72 md:w-[28rem] md:h-[28rem] shadow-2xl ${cardRoundingClass}`}
-            style={{ backgroundColor: "#183852", opacity: 0.95 }}
+            style={{ backgroundColor: "#183852", opacity: 2.5 }}
             loading="lazy"
           />
         </div>
       )}
       {/* Text content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-10">
-        <h3 className="text-2xl md:text-3xl font-bold font-merriweather text-white mb-4">
+        <h2 className="text-xl md:text-2xl font-bold font-merriweather text-white mb-4">
           {title}
-        </h3>
+        </h2>
         <p className="text-white text-base md:text-lg mb-6 whitespace-pre-line">
           {description}
         </p>
         <button
-          className="bg-[#CBA240] hover:bg-[#b89a3a] text-[#183852] font-bold py-2 px-6 rounded-lg transition-colors duration-200 w-fit"
+          className="bg-[#CBA240] hover:bg-[#b89a3a] text-[#183852] font-bold py-2 px-6 rounded-lg transition-colors duration-200 w-fit cursor-pointer"
           onClick={onButtonClick}
         >
           {buttonText}

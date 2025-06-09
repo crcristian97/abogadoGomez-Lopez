@@ -29,13 +29,13 @@ Su enfoque ético, compromiso con el cliente y profundo conocimiento en materia 
             onButtonClick={() => handleClickWhatsApp('Hola, Dr Luis López quiero asesoramiento legal', '5491154645620')}
         />
         <Team 
-            image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg"
+            image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogada-especialista-caligrafia-derecho.webp"
             title="Dra. Estefanía Gómez"
             description="Abogada especializada en Derecho Sucesorio, Civil y Penal, con matrícula federal y egresada en 2019. Desde entonces, ejerce la profesión con compromiso y formación continua.
 Además, es Calígrafo Público Nacional en ejercicio desde 2014, matriculada en el Colegio de Calígrafos Públicos de la Ciudad de Buenos Aires (CPCBA) y en la Suprema Corte de Justicia de la Provincia de Buenos Aires (SCJBA).
 Actualmente, se desempeña como Secretaria del Colegio de Calígrafos de la Ciudad de Buenos Aires y como docente universitaria. También forma parte activa del Colegio Público de la Abogacía de la Capital Federal, con matrícula federal vigente."
             buttonText="Hablar con la Dra. Estefanía Gómez"
-            imagePosition="left"
+            imagePosition="right"
             rounder={true}
             onButtonClick={() => handleClickWhatsApp('Hola, Dra Estefanía Gómez quiero asesoramiento legal')}
         />
