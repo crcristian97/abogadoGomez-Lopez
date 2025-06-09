@@ -16,8 +16,8 @@ export default function DerechoCivil() {
     <div>
       <HeroServices
         src="https://res.cloudinary.com/dgzi8i2ji/image/upload/derecho-civil-en-buenos-aires.webp"
-        alt="Derecho Civil en Buenos Aires"
-        title="Estudio jurídico de derecho civil en CABA y Provincia"
+        alt="Asesoría en Derecho Civil – Amparos, Familia y Sucesiones – Responsabilidad Civil. "
+        title="Asesoría en Derecho Civil – Amparos, Familia y Sucesiones – Responsabilidad Civil. "
         description={<>Asesoría legal en Derecho Civil en Ciudad Autónoma de Buenos Aires y Provincia. Especialistas en sucesiones, divorcios, amparos y contratos. </>}
       />
       <Team

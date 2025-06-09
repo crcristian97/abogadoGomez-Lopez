@@ -5,11 +5,33 @@ import {
   Gavel,
   Scale
 } from "lucide-react";
+import { motion } from "framer-motion";
+
+// Animations
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40, scale: 0.95, filter: "blur(8px)" },
+  visible: { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", transition: { duration: 0.7, ease: "easeOut" } },
+};
 
 // Subcomponente para cada beneficio/amparo
 export function BenefitCard({ icon: Icon, title, description }) {
   return (
-    <div className="flex items-center bg-[#CBA240] rounded-xl shadow p-5 transition-transform transition-shadow duration-200 ease-in-out hover:scale-[1.03] hover:shadow-2xl hover:bg-[#e2c77a] group cursor-pointer">
+    <motion.div
+      className="flex items-center bg-[#CBA240] rounded-xl shadow p-5 transition-transform transition-shadow duration-200 ease-in-out hover:scale-[1.03] hover:shadow-2xl hover:bg-[#e2c77a] group cursor-pointer"
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <div className="flex flex-col flex-grow">
         <h3 className="font-bold text-lg text-[#183852] mb-1 text-left group-hover:text-[#8a6a1a] transition-colors duration-200">{title}</h3>
         <p className="text-[#183852] text-left">{description}</p>
@@ -17,7 +39,7 @@ export function BenefitCard({ icon: Icon, title, description }) {
       <div className="flex-shrink-0 ml-4 mt-1">
         <Icon className="w-8 h-8 text-[#183852] group-hover:text-[#8a6a1a] transition-colors duration-200" aria-hidden="true" />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -49,15 +71,39 @@ export default function BeneftisDC({
   outro = "Nos aseguramos de que tu derecho sea protegido con rapidez, entendiendo la urgencia que estas situaciones requieren."
 }) {
   return (
-    <section className="w-full py-12 px-4 md:px-12 bg-[#B0B9C2]">
+    <motion.section
+      className="w-full py-12 px-4 md:px-12 bg-[#B0B9C2]"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={containerVariants}
+    >
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-merriweather font-bold text-[#183852] mb-4 text-left drop-shadow-lg">
+        <motion.h2
+          className="text-3xl md:text-4xl font-merriweather font-bold text-[#183852] mb-4 text-left drop-shadow-lg"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           {heading}
-        </h2>
-        <p className="text-[#25476a] text-base md:text-lg mb-8 text-left">
+        </motion.h2>
+        <motion.p
+          className="text-[#25476a] text-base md:text-lg mb-8 text-left"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           {intro}
-        </p>
-        <div className="space-y-6">
+        </motion.p>
+        <motion.div
+          className="space-y-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {benefits.map((benefit, idx) => (
             <BenefitCard
               key={idx}
@@ -66,11 +112,17 @@ export default function BeneftisDC({
               description={benefit.description}
             />
           ))}
-        </div>
-        <p className="text-[#25476a] text-base md:text-lg mt-10 text-left">
+        </motion.div>
+        <motion.p
+          className="text-[#25476a] text-base md:text-lg mt-10 text-left"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           {outro}
-        </p>
+        </motion.p>
       </div>
-    </section>
+    </motion.section>
   );
 }
