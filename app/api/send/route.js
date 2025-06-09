@@ -23,8 +23,8 @@ export async function POST(request) {
     }
 
     const emailResult = await resend.emails.send({
-      from: 'Estudio Jurídico <crcristian97.cc@gmail.com>',
-      to: 'crcristian97.cc@gmail.com',
+      from: 'Estudio Jurídico <onboarding@resend.dev>',
+      to: 'jllopez!269@gmail.com',
       subject: `Nuevo mensaje de ${name}`,
       html: `
         <h2>Nuevo mensaje del formulario de contacto</h2>
