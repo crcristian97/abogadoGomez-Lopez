@@ -33,7 +33,8 @@ const Contact = () => {
               title="Teléfono de contacto"
               aria-label="Teléfono de contacto"
             >
-              096-011-3464-4620
+              011-61280168 <br />
+              011-54645620
             </a>
           </div>
           {/* Oficina */}

@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+
 import { Contact, Laptop, PenLine, Check } from "lucide-react";
 import CustomButton from "../ui/CustomButton";
+import { handleClickWhatsApp } from "../utils/WhatsApp";
 
 const steps = [
   {
@@ -48,8 +50,9 @@ export default function HowWork() {
           <CustomButton
             className="rounded-full px-4 py-2 font-merriweather font-bold mt-4 cursor-pointer"
             variant="primary"
+            onClick={() => handleClickWhatsApp('Hola, me comunico porque quisiera asesoramiento legal')}
           >
-            Hablar por whatsapp
+            Hablá con un abogado
           </CustomButton>
         </div>
         {/* Pasos en vertical a la derecha */}
