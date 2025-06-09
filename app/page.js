@@ -16,9 +16,9 @@ export default function Home() {
     <div>
       <HeroSection
         src="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp"
-        alt="Abogados especialistas en Derecho Penal y Civil en Buenos Aires"
-        title="Abogados especialistas en Derecho Penal y Civil"
-        subtitle="Defendemos tus derechos con compromiso y experiencia. Asesoramiento legal personalizado."
+        alt="Abogados especialistas en temas Penales y Civiles"
+        title="Abogados especialistas en temas Penales y Civiles"
+        subtitle="Brindamos un asesoramiento personalizado para cada necesidad."
       />
       <AboutUs />
       <WhatWeDo />

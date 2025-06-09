@@ -1,11 +1,19 @@
+"use client";
 import Image from "next/image";
-import { Shield, Users, Scale } from "lucide-react";    
+import { Shield, Users, Scale } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function AboutUs() {
   return (
     <section className="rounded-xl p-6 md:p-12 flex flex-col md:flex-row items-center gap-8 w-full max-w-none mx-0 my-8 md:my-16">
-      <div className="flex-1 min-w-0 p-2 md:p-4">
+      <motion.div
+        className="flex-1 min-w-0 p-2 md:p-4"
+        initial={{ opacity: 0, x: -80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <h2 className="text-white text-3xl md:text-4xl font-bold font-merriweather mb-6">
           G&amp;L Asesoramiento jurídico integral
         </h2>
@@ -50,8 +58,14 @@ export default function AboutUs() {
         >
           Conocé más sobre nosotros
         </Link>
-      </div>
-      <div className="flex-1 flex justify-center items-center min-w-0 mt-8 md:mt-0 p-2 md:p-4">
+      </motion.div>
+      <motion.div
+        className="flex-1 flex justify-center items-center min-w-0 mt-8 md:mt-0 p-2 md:p-4"
+        initial={{ opacity: 0, x: 80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+      >
         <div className="rounded-2xl overflow-hidden w-full max-w-xl bg-[#183852] opacity-80 z-[1] shadow-2xl">
           <Image
             src="https://res.cloudinary.com/dgzi8i2ji/image/upload/estudio-abogados-en-buenos-aires.webp"
@@ -63,7 +77,7 @@ export default function AboutUs() {
             title="estudio Gomez y Lopez de abogados en buenos aires"
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

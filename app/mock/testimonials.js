@@ -1,44 +1,23 @@
 export  const testimonials = [
   {
-    text: "Excelente atención y profesionalismo. Me ayudaron en todo momento y resolvieron mi caso rápidamente.",
-    name: "María González",
+    text: "Resolví mi caso con ellos y, además, me brindaron tranquilidad en un momento muy estresante. Son serios, responsables y muy eficientes. Gracias por hacer simple lo que me parecía difícil.",
+    name: "Margaryta Gatchenko",
     stars: 5,
-    role: "Cliente de Derecho Penal",
   },
   {
-    text: "Muy recomendables, claros y atentos. Explicaron todo el proceso y me sentí acompañado.",
-    name: "Juan Pérez",
-    stars: 4,
-    role: "Cliente de Derecho Civil",
-  },
-  {
-    text: "Gran equipo de abogados, resolvieron mi situación laboral de manera eficiente.",
-    name: "Lucía Fernández",
+    text: "Agradezco profundamente la dedicación y profesionalismo del Dr. José Luis López y a su equipo durante mi caso con resultado exitoso recomendado su servicio.",
+    name: "Blas Amado Báez",
     stars: 5,
-    role: "Cliente de Derecho Laboral",
   },
   {
-    text: "Me brindaron confianza y seguridad desde el primer momento. ¡Gracias!",
-    name: "Carlos López",
+    text: "Agradezco su profesionalismo, el cual me brindo tranquilidad y confianza. Su equipo demostró un gran compromiso.",
+    name: "Nancy Brazil",
     stars: 5,
-    role: "Cliente de Derecho Penal",
   },
   {
-    text: "Atención personalizada y resultados favorables. Los recomiendo.",
-    name: "Ana Torres",
-    stars: 4,
-    role: "Cliente de Pericias Caligráficas",
-  },
-  {
-    text: "Profesionales y humanos. Se ocuparon de mi caso con dedicación.",
-    name: "Sofía Ramírez",
+    text: "No encuentro palabras para expresar lo agradecida que estoy con este equipo de profesionales, que lucharon conmigo desde el momento cero para que la Obra Social se hiciera cargo de un tratamiento médico súper costoso. Además de lograrlo, sentando un precedente, hicieron suyas cada palabra y sentimientos que me atravesaban en ese momento. Gracias por defender mis derechos con tanta humanidad y convicción!",
+    name: "Laura Farrán",
     stars: 5,
-    role: "Cliente de Derecho Civil",
   },
-  {
-    text: "El estudio me acompañó en todo el proceso y resolvieron mi consulta con rapidez.",
-    name: "Martín Gómez",
-    stars: 5,
-    role: "Cliente de Derecho Laboral",
-  },
+ 
 ];

@@ -1,11 +1,18 @@
-import Link from "next/link";
+"use client";
+import Link from "next/link"; 
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 
 export default function CustomCard({ title = '', description = '', link = '', bg = '' }) {
   return (
-    <div className="rounded-xl overflow-hidden shadow-lg p-6 flex flex-col justify-between min-h-[260px] relative bg-[#183852]">
-    {bg && (    
+    <motion.div
+      className="rounded-xl overflow-hidden shadow-lg p-6 flex flex-col justify-between min-h-[260px] relative bg-[#183852]"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 1.5, ease: "easeOut" }} 
+    >
+      {bg && (
         <Image
           src={bg}
           alt={title}
@@ -29,6 +36,6 @@ export default function CustomCard({ title = '', description = '', link = '', bg
       >
         Leer más &gt;
       </Link>
-    </div>
+    </motion.div>
   );
 }

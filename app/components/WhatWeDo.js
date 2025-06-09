@@ -11,7 +11,7 @@ const whatWeDoData = [
   {
     title: "Derecho Civil",
     description:
-      "Amparos de salud, sucesiones, divorcios y contratos, tanto generales como de  sociedades..",
+      "Amparos de salud, sucesiones, divorcios y contratos, tanto generales como de  sociedades.",
     link: "/servicios/derecho-civil",
     bg: "https://res.cloudinary.com/dgzi8i2ji/image/upload/derecho-civil-en-bueno-aires.webp",
   },
@@ -25,7 +25,7 @@ const whatWeDoData = [
   {
     title: "Pericias caligráficas y documentológicas",
     description:
-      "Nuestro Departamento Pericial dispone de peritos de parte en materia penal y consultores técnicos en materia civil, especialistas en seguridad documental.",
+      "Nuestro departamento pericial dispone de peritos de parte en materia penal y consultores técnicos en materia civil, especialistas en seguridad documental.",
     link: "/servicios/peritajes-caligraficos",
     bg: "https://res.cloudinary.com/dgzi8i2ji/image/upload/pericias-caligr%C3%A1ficas-en-buenos-aires.webp",
   },

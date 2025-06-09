@@ -1,5 +1,35 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 60 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 1.2,
+      ease: "easeOut",
+    },
+  }),
+};
+
+const cards = [
+  {
+    title: "Experiencia",
+    text: "Más de 30 años brindando asesoramiento jurídico de excelencia en diversas áreas del derecho.",
+  },
+  {
+    title: "Compromiso",
+    text: "Nos comprometemos con cada cliente, ofreciendo atención personalizada y soluciones efectivas.",
+  },
+  {
+    title: "Confianza",
+    text: "Construimos relaciones basadas en la confianza, la ética profesional y la transparencia.",
+  },
+];
 
 const BannerCTA = () => {
   return (
@@ -29,18 +59,20 @@ const BannerCTA = () => {
         }}
       />
       <div className="max-w-7xl w-full flex flex-col md:flex-row gap-16 text-white relative z-10 justify-center items-center py-36 px-6">
-        <div className="rounded-xl p-16 flex flex-col items-center text-center  min-w-[340px] max-w-md  bg-white/0">
-          <h3 className="text-5xl font-bold mb-6">Experiencia</h3>
-          <p className="text-2xl font-medium">Más de 20 años brindando asesoramiento jurídico de excelencia en diversas áreas del derecho.</p>
-        </div>
-        <div className="rounded-xl p-16 flex flex-col items-center text-center  min-w-[340px] max-w-md  bg-white/0">
-          <h3 className="text-5xl font-bold mb-6">Compromiso</h3>
-          <p className="text-2xl font-medium">Nos comprometemos con cada cliente, ofreciendo atención personalizada y soluciones efectivas.</p>
-        </div>
-        <div className="rounded-xl p-16 flex flex-col items-center text-center  min-w-[340px] max-w-md  bg-white/0">
-          <h3 className="text-5xl font-bold mb-6">Confianza</h3>
-          <p className="text-2xl font-medium">Construimos relaciones basadas en la confianza, la ética profesional y la transparencia.</p>
-        </div>
+        {cards.map((card, idx) => (
+          <motion.div
+            key={card.title}
+            className="rounded-xl p-16 flex flex-col items-center text-center min-w-[340px] max-w-md bg-white/0"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            custom={idx}
+          >
+            <h3 className="text-5xl font-bold mb-6">{card.title}</h3>
+            <p className="text-2xl font-medium">{card.text}</p>
+          </motion.div>
+        ))}
       </div>
     </div>
   );

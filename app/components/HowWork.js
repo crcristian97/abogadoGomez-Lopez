@@ -3,6 +3,7 @@
 import { Contact, Laptop, PenLine, Check } from "lucide-react";
 import CustomButton from "../ui/CustomButton";
 import { handleClickWhatsApp } from "../utils/WhatsApp";
+import { motion } from "framer-motion";
 
 const steps = [
   {
@@ -58,9 +59,13 @@ export default function HowWork() {
         {/* Pasos en vertical a la derecha */}
         <div className="md:w-1/2 w-full flex flex-col gap-8">
           {steps.map((step, idx) => (
-            <div
+            <motion.div
               key={step.key}
-              className="flex items-start gap-4 relative "
+              className="flex items-start gap-4 relative"
+              initial={{ opacity: 0, y: -60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 1.8, ease: "easeOut", delay: idx * 0.2 }}
             >
               <div className="flex flex-col items-center mr-2">
                 <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#183852] text-[#CBA240] text-2xl font-bold shadow-lg border-4 border-[#CBA240] mb-2">
@@ -77,7 +82,7 @@ export default function HowWork() {
                 </h3>
                 <p className="text-[#183852] text-sm">{step.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
