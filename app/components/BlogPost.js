@@ -27,9 +27,12 @@ const BlogPost = ({
         <Image
           src={image}
           alt={title}
-          fill
+          width={1200}
+          height={630}
           className="object-cover"
-          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+          priority={false}
+          title={title}
         />
       </div>
 

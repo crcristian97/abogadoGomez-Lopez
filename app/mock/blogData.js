@@ -1,4 +1,6 @@
-export const blogData = [
+import Image from "next/image";
+
+  export const blogData = [
   {
     title: "SOBRE EL DELITO DE ENCUBRIMIENTO DE CONTRABANDO",
     description: "Vamos a analizar uno de los temas consultados en el estudio: el delito de encubrimiento de contrabando.",
@@ -39,11 +41,17 @@ export const blogData = [
             Como puede apreciarse de lo expresado en el punto 2) no se requiere promesa previa del encubridor, a diferencia de lo que regula el Código Penal, tratándose así de un delito posterior y en principio sin necesidad de conexión anterior; pues su conexión lo convertiría al presunto encubridor en partícipe o colaborador del contrabando. De modo que, primero resulta preciso demostrar la existencia del delito principal (contrabando) para entonces endilgar la figura del encubrimiento.
           </p>
           <div className="flex justify-center my-6">
-            <img
+            <Image
               src="https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/delito-contrabando-en-buenos-aires.webp"
               alt="Delito de contrabando en Buenos Aires"
+              title="Delito de contrabando en Buenos Aires"
+              width={1200}
+              height={630}
               className="rounded-lg shadow-lg max-w-full h-auto"
               style={{ maxHeight: 320, objectFit: "cover" }}
+              priority={false}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+              loading="lazy"
             />
           </div>
           <p className="text-[#183852] leading-relaxed text-lg mb-4">
@@ -81,13 +89,13 @@ export const blogData = [
   {
     slug: "el-derecho-a-la-salud-el-amparo-como-remedio",
     title: "EL DERECHO A LA SALUD — EL AMPARO COMO REMEDIO",
-    description: "Analizamos el derecho a la salud en Argentina y el amparo como herramienta fundamental para proteger a los afiliados de obras sociales y prepagas ante la negativa de medicamentos o prestaciones médicas.",
+    description: "El amparo es clave para exigir cobertura de salud ante negativas de obras sociales o prepagas en Argentina.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/derecho-a-la-salud-en-buenos-aires.webp",
     author: "Dr. López",
     date: "09 Junio 2025",
     category: "Derecho a la salud",
     readingTime: "5",
-    introduction: "Analizamos el derecho a la salud en Argentina y el amparo como herramienta fundamental para proteger a los afiliados de obras sociales y prepagas ante la negativa de medicamentos o prestaciones médicas.",
+    introduction: "El amparo es clave para exigir cobertura de salud ante negativas de obras sociales o prepagas en Argentina.",
     pregunta1: "¿Qué es el amparo en materia de salud?",
     respuesta1: "El amparo es una acción judicial rápida y efectiva prevista en la Ley 16.986, utilizada para proteger derechos fundamentales, como el acceso a la salud, cuando existen situaciones de urgencia o la vía ordinaria resulta ineficaz.",
     lista1: [
@@ -180,8 +188,8 @@ export const blogData = [
   },
   {
     slug: "trabajo-freelance-en-argentina",
-    title: "EL TRABAJO FREELANCE – DISTINCIÓN ENTRE EMPLEADO Y CONTRATISTA PRIVADO",
-    description: "Diferencias legales y prácticas entre empleados y contratistas independientes en Argentina tras la Ley 27.742 y el Decreto 847/24. Qué sectores emplean freelancers, cómo distinguir la relación laboral y claves para contratos de trabajo independiente.",
+    title: "DISTINCIÓN ENTRE EMPLEADO Y CONTRATISTA PRIVADO",
+    description: "Diferencias legales clave entre empleados y freelancers en Argentina tras la Ley 27.742 y el Decreto 847/24.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749250677/trabajo-freelancer-abogado-buenos-aires.webp",
     author: "Dra. Estefanía Gómez",
     date: "09 Junio 2025",
@@ -189,7 +197,7 @@ export const blogData = [
     readingTime: "5",
     avatar: "EG",
     featured: false,
-    introduction: "Diferencias legales y prácticas entre empleados y contratistas independientes en Argentina tras la Ley 27.742 y el Decreto 847/24. Qué sectores emplean freelancers, cómo distinguir la relación laboral y claves para contratos de trabajo independiente.",
+    introduction: "Diferencias legales clave entre empleados y freelancers en Argentina tras la Ley 27.742 y el Decreto 847/24.",
     pregunta1: "¿Qué es un trabajador freelance o contratista independiente?",
     respuesta1: "En Argentina, un freelancer es una persona que presta servicios de manera autónoma, sin estar bajo relación de dependencia, y que puede trabajar para uno o varios clientes. La figura del contratista independiente se diferencia del empleado tradicional porque no está sujeto a las directivas, horarios ni estructura organizacional del contratante, y asume sus propios riesgos y obligaciones fiscales y de seguridad social.",
     lista1: [

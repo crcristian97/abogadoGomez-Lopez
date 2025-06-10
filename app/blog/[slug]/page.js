@@ -12,6 +12,13 @@ export const generateMetadata = async ({ params }) => {
     title: postData?.title || "Blog Post",
     description: postData?.description || "Artículo del blog de Estudio López & Gómez",
     openGraph: {
+      images: [
+        {
+          url: postData?.image || "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/delito-contrabando-en-buenos-aires.webp",
+          width: 1200,
+          height: 630,
+        }
+      ],
       title: `${postData?.title || "Blog Post"} | Estudio López & Gómez`,
       description: postData?.description || "Artículo del blog de Estudio López & Gómez",
       url: `https://estudiolopezgomez.com/blog/${slug}`,

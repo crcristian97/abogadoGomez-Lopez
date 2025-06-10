@@ -19,11 +19,11 @@ export default function BannerProduct() {
         className="absolute inset-0 bg-[#183852] opacity-65 z-[1]"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 w-full h-full">
-        <h2 className="text-2xl text-white font-bold text-center">
+      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 w-full h-full px-4 md:px-8 py-8">
+        <h2 className="text-2xl text-white font-bold text-center mb-2">
           Solicitá asesoramiento legal hoy
         </h2>
-        <p className="text-base text-white mt-4 text-center max-w-2xl">
+        <p className="text-base text-white mt-4 text-center max-w-2xl mb-2">
           Estamos acá para brindarte soluciones legales personalizadas y acompañarte en cada paso del proceso.
         </p>
         <div className="mt-8">

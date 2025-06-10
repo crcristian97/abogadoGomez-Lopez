@@ -55,7 +55,7 @@ export default function SobreLaFirma() {
         <HeroSection
             src="https://res.cloudinary.com/dgzi8i2ji/image/upload/sobre-el-estudio-juridico-en-buenos-aires.webp"
             alt="Sobre el estudio jurídico en Buenos Aires, Capital Federal"
-            title="Sobre la firma"
+            title="Sobre la firma de abogados en Buenos Aires, Capital Federal"
         />
         <Breadcrumbs />
         <SobreFirma />

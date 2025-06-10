@@ -20,6 +20,7 @@ export default function Contacto() {
   return (
     <div>
       <Breadcrumbs />
+      <h1 className="text-4xl font-bold text-[#CBA240] mb-14 text-center mt-10">Nuestro estudio jurídico en Buenos Aires a su disposición</h1>
       <Contact />
       <ContactMap />
     </div>

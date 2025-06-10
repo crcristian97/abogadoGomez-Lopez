@@ -11,7 +11,8 @@ export default function HeroSection({ src = "", alt = "", title = "", subtitle =
         src={src}
         alt={alt}
         title={title}
-        fill
+        width={1200}
+        height={630}
         fetchPriority="high"
         className="absolute inset-0 w-full h-full object-cover"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
