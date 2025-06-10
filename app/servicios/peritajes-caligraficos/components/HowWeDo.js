@@ -51,7 +51,7 @@ export default function HowWeDo() {
         <motion.div className="md:w-1/2" variants={fadeUpVariants}>
           <ol className="space-y-8">
             <motion.li
-              className="flex items-start gap-4 bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer"
+              className="flex items-start gap-4 bg-white rounded-xl shadow p-4 hover:shadow-lg transition "
               variants={cardVariants}
               whileHover="whileHover"
             >
@@ -66,7 +66,7 @@ export default function HowWeDo() {
               </div>
             </motion.li>
             <motion.li
-              className="flex items-start gap-4 bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer"
+              className="flex items-start gap-4 bg-white rounded-xl shadow p-4 hover:shadow-lg transition "
               variants={cardVariants}
               whileHover="whileHover"
             >
@@ -81,7 +81,7 @@ export default function HowWeDo() {
               </div>
             </motion.li>
             <motion.li
-              className="flex items-start gap-4 bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer"
+              className="flex items-start gap-4 bg-white rounded-xl shadow p-4 hover:shadow-lg transition "
               variants={cardVariants}
               whileHover="whileHover"
             >
@@ -96,7 +96,7 @@ export default function HowWeDo() {
               </div>
             </motion.li>
             <motion.li
-              className="flex items-start gap-4 bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer"
+              className="flex items-start gap-4 bg-white rounded-xl shadow p-4 hover:shadow-lg transition "
               variants={cardVariants}
               whileHover="whileHover"
             >
@@ -119,7 +119,7 @@ export default function HowWeDo() {
           variants={containerVariants}
         >
           <motion.div
-            className="bg-white rounded-2xl shadow-lg p-7 flex flex-col items-start hover:scale-[1.03] hover:shadow-2xl transition-transform duration-200 border border-[#CBA240] cursor-pointer"
+            className="bg-white rounded-2xl shadow-lg p-7 flex flex-col items-start hover:scale-[1.03] hover:shadow-2xl transition-transform duration-200 border border-[#CBA240] "
             variants={cardVariants}
             whileHover="whileHover"
           >
@@ -132,7 +132,7 @@ export default function HowWeDo() {
             </p>
           </motion.div>
           <motion.div
-            className="bg-white rounded-2xl shadow-lg p-7 flex flex-col items-start hover:scale-[1.03] hover:shadow-2xl transition-transform duration-200 border border-[#CBA240] cursor-pointer"
+            className="bg-white rounded-2xl shadow-lg p-7 flex flex-col items-start hover:scale-[1.03] hover:shadow-2xl transition-transform duration-200 border border-[#CBA240] "
             variants={cardVariants}
             whileHover="whileHover"
           >

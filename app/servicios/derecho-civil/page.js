@@ -10,17 +10,17 @@ import { faqDC } from "../../mock/faqDC";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
 export const metadata = {
-  title: "Derecho Civil",
+  title: "Especialistas en derecho civil en Buenos Aires Capital Federal",
   description: "Expertos en derecho civil en Buenos Aires, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
   keywords: ["derecho civil", "abogados civiles", "contratos", "responsabilidad civil", "daños y perjuicios", "Buenos Aires"],
   openGraph: {
-    title: "Derecho Civil | Estudio Gómez & López",
+    title: "Especialistas en derecho civil en Buenos Aires Capital Federal",
     description: "Expertos en derecho civil en Buenos Aires, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
     url: 'https://estudiolopezgomez.com/servicios/derecho-civil',
     type: 'article',
   },
   twitter: {
-    title: "Derecho Civil | Estudio Gómez & López",
+    title: "Especialistas en derecho civil en Buenos Aires Capital Federal",
     description: "Expertos en derecho civil en Buenos Aires, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
   },
   other: {
@@ -43,7 +43,7 @@ export const metadata = {
         {
           '@type': 'ListItem',
           'position': 3,
-          'name': 'Derecho Civil',
+          'name': 'Especialistas en derecho civil en Buenos Aires Capital Federal',
           'item': 'https://estudiolopezgomez.com/servicios/derecho-civil'
         }
       ]

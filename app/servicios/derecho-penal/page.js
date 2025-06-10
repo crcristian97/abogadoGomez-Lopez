@@ -11,17 +11,17 @@ import { faqsDP } from "../../mock/faqsDP";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
 export const metadata = {
-  title: "Derecho Penal",
+  title: "Derecho Penal en la Ciudad de Buenos Aires",
   description: "Especialistas en derecho penal con amplia experiencia en defensa criminal, asesoramiento legal y representación en juicios penales.",
   keywords: ["derecho penal", "abogados penales", "defensa criminal", "juicios penales", "asesoramiento legal penal"],
   openGraph: {
-    title: "Derecho Penal | Estudio López & Gómez",
+    title: "Derecho Penal en la Ciudad de Buenos Aires",
     description: "Especialistas en derecho penal con amplia experiencia en defensa criminal, asesoramiento legal y representación en juicios penales.",
     url: 'https://estudiolopezgomez.com/servicios/derecho-penal',
     type: 'article',
   },
   twitter: {
-    title: "Derecho Penal | Estudio López & Gómez",
+    title: "Derecho Penal en la Ciudad de Buenos Aires",
     description: "Especialistas en derecho penal con amplia experiencia en defensa criminal, asesoramiento legal y representación en juicios penales.",
   },
   other: {
@@ -44,7 +44,7 @@ export const metadata = {
         {
           '@type': 'ListItem',
           'position': 3,
-          'name': 'Derecho Penal',
+          'name': 'Derecho Penal en la Ciudad de Buenos Aires',
           'item': 'https://estudiolopezgomez.com/servicios/derecho-penal'
         }
       ]

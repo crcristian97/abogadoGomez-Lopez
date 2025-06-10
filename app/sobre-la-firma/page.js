@@ -7,7 +7,7 @@ import Ourblog from "../components/Ourblog";
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export const metadata = {
-  title: "Sobre la Firma",
+  title: "Estudio jurídico en Buenos Aires, Capital Federal",
   description: "Conozca nuestro estudio jurídico en Buenos Aires, Capital Federal: nuestra historia, valores y el equipo de abogados especialistas en derecho penal y civil en CABA.",
   keywords: [
     "estudio jurídico Buenos Aires",
@@ -19,12 +19,12 @@ export const metadata = {
     "abogados derecho civil capital federal"
   ],
   openGraph: {
-    title: "Sobre la Firma | Estudio López & Gómez",
+    title: "Estudio jurídico en Buenos Aires, Capital Federal",
     description: "Conozca nuestro estudio jurídico en Buenos Aires, Capital Federal: nuestra historia, valores y el equipo de abogados especialistas en derecho penal y civil en CABA.",
     url: 'https://estudiolopezgomez.com/sobre-la-firma',
   },
   twitter: {
-    title: "Sobre la Firma | Estudio López & Gómez",
+    title: "Estudio jurídico en Buenos Aires, Capital Federal",
     description: "Conozca nuestro estudio jurídico en Buenos Aires, Capital Federal: nuestra historia, valores y el equipo de abogados especialistas en derecho penal y civil en CABA.",
   },
   other: {

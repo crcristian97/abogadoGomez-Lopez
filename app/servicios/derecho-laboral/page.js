@@ -10,7 +10,7 @@ import { faqDL } from "../../mock/faqDL";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
 export const metadata = {
-  title: "Derecho Laboral",
+  title: "Especialistas en derecho laboral en Buenos Aires Capital Federal",
   description: "Especialistas en derecho laboral en Buenos Aires Capital. Asesoramos en despidos, indemnizaciones, acoso laboral, trabajo en negro y todo tipo de conflictos laborales. Más de 30 años de experiencia defendiendo los derechos de trabajadores y empresas en la Ciudad Autónoma de Buenos Aires.",
   keywords: [
     "derecho laboral",
@@ -23,13 +23,13 @@ export const metadata = {
     "conflictos laborales"
   ],
   openGraph: {
-    title: "Derecho Laboral | Estudio López & Gómez",
+    title: "Especialistas en derecho laboral en Buenos Aires Capital Federal",
     description: "Especialistas en derecho laboral en Buenos Aires Capital. Asesoramos en despidos, indemnizaciones, acoso laboral, trabajo en negro y todo tipo de conflictos laborales. Más de 30 años de experiencia defendiendo los derechos de trabajadores y empresas en la Ciudad Autónoma de Buenos Aires.",
     url: 'https://estudiolopezgomez.com/servicios/derecho-laboral',
     type: 'article',
   },
   twitter: {
-    title: "Derecho Laboral | Estudio López & Gómez",
+    title: "Especialistas en derecho laboral en Buenos Aires Capital Federal",
     description: "Especialistas en derecho laboral en Buenos Aires Capital. Asesoramos en despidos, indemnizaciones, acoso laboral, trabajo en negro y todo tipo de conflictos laborales. Más de 30 años de experiencia defendiendo los derechos de trabajadores y empresas en la Ciudad Autónoma de Buenos Aires.",
   },
   other: {
@@ -52,7 +52,7 @@ export const metadata = {
         {
           '@type': 'ListItem',
           'position': 3,
-          'name': 'Derecho Laboral',
+          'name': 'Especialistas en derecho laboral en Buenos Aires Capital Federal',
           'item': 'https://estudiolopezgomez.com/servicios/derecho-laboral'
         }
       ]

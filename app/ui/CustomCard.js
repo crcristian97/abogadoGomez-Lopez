@@ -18,7 +18,7 @@ export default function CustomCard({ title = '', description = '', link = '', bg
           alt={title}
           fill
           title={title}
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-65"
           style={{ objectFit: "cover" }}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           priority={false}
@@ -32,7 +32,7 @@ export default function CustomCard({ title = '', description = '', link = '', bg
       <Link
         href={link}
         prefetch={false}
-        className="relative z-10 text-[#CBA240] text-sm font-semibold hover:underline mt-auto"
+        className="relative z-10 text-[#CBA240] text-sm font-semibold hover:underline mt-auto "
       >
         Leer más &gt;
       </Link>

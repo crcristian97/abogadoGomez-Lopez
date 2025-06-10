@@ -90,7 +90,7 @@ export default function FAQHome({ faqs = [] }) {
               custom={idx}
             >
               <button
-                className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+                className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10 cursor-pointer"
                 aria-expanded={openIndex === idx}
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                 type="button"

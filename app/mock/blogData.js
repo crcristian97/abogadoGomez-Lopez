@@ -1,6 +1,7 @@
 export const blogData = [
   {
     title: "SOBRE EL DELITO DE ENCUBRIMIENTO DE CONTRABANDO",
+    description: "Vamos a analizar uno de los temas consultados en el estudio: el delito de encubrimiento de contrabando.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/delito-contrabando-en-buenos-aires.webp",
     author: "Dra. Estefanía Gómez",
     date: "09 Junio 2025",
@@ -80,6 +81,7 @@ export const blogData = [
   {
     slug: "el-derecho-a-la-salud-el-amparo-como-remedio",
     title: "EL DERECHO A LA SALUD — EL AMPARO COMO REMEDIO",
+    description: "Analizamos el derecho a la salud en Argentina y el amparo como herramienta fundamental para proteger a los afiliados de obras sociales y prepagas ante la negativa de medicamentos o prestaciones médicas.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/derecho-a-la-salud-en-buenos-aires.webp",
     author: "Dr. López",
     date: "09 Junio 2025",
@@ -179,6 +181,7 @@ export const blogData = [
   {
     slug: "trabajo-freelance-en-argentina",
     title: "EL TRABAJO FREELANCE – DISTINCIÓN ENTRE EMPLEADO Y CONTRATISTA PRIVADO",
+    description: "Diferencias legales y prácticas entre empleados y contratistas independientes en Argentina tras la Ley 27.742 y el Decreto 847/24. Qué sectores emplean freelancers, cómo distinguir la relación laboral y claves para contratos de trabajo independiente.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749250677/trabajo-freelancer-abogado-buenos-aires.webp",
     author: "Dra. Estefanía Gómez",
     date: "09 Junio 2025",

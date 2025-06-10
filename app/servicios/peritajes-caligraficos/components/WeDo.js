@@ -21,7 +21,7 @@ const cardVariants = {
 function AnalysisCard({ icon, title, description }) {
   return (
     <motion.div
-      className="bg-[#CBA240] rounded-xl p-6 flex flex-col gap-2 shadow-md cursor-pointer"
+      className="bg-[#CBA240] rounded-xl p-6 flex flex-col gap-2 shadow-md "
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"

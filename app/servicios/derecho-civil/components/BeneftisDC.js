@@ -26,7 +26,7 @@ const cardVariants = {
 export function BenefitCard({ icon, title, description }) {
   return (
     <motion.div
-      className="flex items-center bg-[#CBA240] rounded-xl shadow p-5 transition-transform duration-200 ease-in-out hover:scale-[1.03] hover:shadow-2xl hover:bg-[#e2c77a] group cursor-pointer"
+      className="flex items-center bg-[#CBA240] rounded-xl shadow p-5 transition-transform duration-200 ease-in-out hover:scale-[1.03] hover:shadow-2xl hover:bg-[#e2c77a] group "
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"

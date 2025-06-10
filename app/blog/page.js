@@ -4,16 +4,16 @@ import BannerProduct from "../components/BannerProduct";
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export const metadata = {
-  title: "Blog Jurídico",
-  description: "Artículos y noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes.",
+  title: "Noticias y artículos sobre derecho penal y civil en Buenos Aires Capital Federal",
+  description: "Enterate de las últimas noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes en la Ciudad de Buenos Aires, Capital Federal.",
   openGraph: {
-    title: "Blog Jurídico | Estudio López & Gómez",
-    description: "Artículos y noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes.",
+    title: "Noticias y artículos sobre derecho penal y civil en Buenos Aires Capital Federal",
+    description: "Enterate de las últimas noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes en la Ciudad de Buenos Aires, Capital Federal.",
     url: 'https://estudiolopezgomez.com/blog',
   },
   twitter: {
-    title: "Blog Jurídico | Estudio López & Gómez",
-    description: "Artículos y noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes.",
+    title: "Noticias y artículos sobre derecho penal y civil en Buenos Aires Capital Federal",
+    description: "Enterate de las últimas noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes en la Ciudad de Buenos Aires, Capital Federal.",
   },
   other: {
     'application/ld+json': {
@@ -29,7 +29,7 @@ export const metadata = {
         {
           '@type': 'ListItem',
           'position': 2,
-          'name': 'Blog Jurídico',
+          'name': 'Noticias y artículos sobre derecho penal y civil en Buenos Aires Capital Federal',
           'item': 'https://estudiolopezgomez.com/blog'
         } 
       ]
