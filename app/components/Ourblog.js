@@ -83,8 +83,7 @@ function BlogCard({ post, custom, large = false }) {
               title={post.title}
               width={large ? 900 : 500}
               height={large ? 500 : 300}
-              className="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-300 group-hover:scale-105"
-              style={{ objectFit: "cover" }}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-65 z-0"
               sizes={large ? "(max-width: 768px) 100vw, 60vw" : "(max-width: 768px) 100vw, 40vw"}
               priority={large}
             />

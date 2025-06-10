@@ -72,7 +72,7 @@ export default function AboutUs() {
             alt="estudio Gomez y Lopez de abogados en buenos aires"
             width={1200}
             height={800}
-            className="object-cover w-full h-80 md:h-[28rem]"
+            className="object-cover w-full h-80 md:h-[28rem] opacity-65 z-0"
             priority={false}
             title="estudio Gomez y Lopez de abogados en buenos aires"
           />
