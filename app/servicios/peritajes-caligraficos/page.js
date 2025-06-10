@@ -29,30 +29,44 @@ export const metadata = {
     description: "Servicio profesional de pericias caligráficas con validez judicial en la Ciudad de Buenos Aires. Análisis técnico de firmas y documentos manuscritos para casos legales.",
   },
   other: {
-    'application/ld+json': {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      'itemListElement': [
-        {
-          '@type': 'ListItem',
-          'position': 1,
-          'name': 'Inicio',
-          'item': 'https://estudiolopezgomez.com'
-        },
-        {
-          '@type': 'ListItem',
-          'position': 2,
-          'name': 'Servicios',
-          'item': 'https://estudiolopezgomez.com/servicios'
-        },
-        {
-          '@type': 'ListItem',
-          'position': 3,
-          'name': 'Pericias Caligráficas en la Ciudad de Buenos Aires',
-          'item': 'https://estudiolopezgomez.com/servicios/peritajes-caligraficos'
-        }
-      ]
-    }
+    'application/ld+json': [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': 'Inicio',
+            'item': 'https://estudiolopezgomez.com'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': 'Servicios',
+            'item': 'https://estudiolopezgomez.com/servicios'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 3,
+            'name': 'Pericias Caligráficas en la Ciudad de Buenos Aires',
+            'item': 'https://estudiolopezgomez.com/servicios/peritajes-caligraficos'
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqPC.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
   }
 };
 

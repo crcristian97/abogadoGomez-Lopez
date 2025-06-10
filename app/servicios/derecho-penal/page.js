@@ -25,30 +25,44 @@ export const metadata = {
     description: "Especialistas en derecho penal con amplia experiencia en defensa criminal, asesoramiento legal y representación en juicios penales.",
   },
   other: {
-    'application/ld+json': {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      'itemListElement': [
-        {
-          '@type': 'ListItem',
-          'position': 1,
-          'name': 'Inicio',
-          'item': 'https://estudiolopezgomez.com'
-        },
-        {
-          '@type': 'ListItem',
-          'position': 2,
-          'name': 'Servicios',
-          'item': 'https://estudiolopezgomez.com/servicios'
-        },
-        {
-          '@type': 'ListItem',
-          'position': 3,
-          'name': 'Derecho Penal en la Ciudad de Buenos Aires',
-          'item': 'https://estudiolopezgomez.com/servicios/derecho-penal'
-        }
-      ]
-    }
+    'application/ld+json': [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': 'Inicio',
+            'item': 'https://estudiolopezgomez.com'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': 'Servicios',
+            'item': 'https://estudiolopezgomez.com/servicios'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 3,
+            'name': 'Derecho Penal en la Ciudad de Buenos Aires',
+            'item': 'https://estudiolopezgomez.com/servicios/derecho-penal'
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqsDP.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
   }
 };
 

@@ -33,30 +33,44 @@ export const metadata = {
     description: "Especialistas en derecho laboral en Buenos Aires Capital. Asesoramos en despidos, indemnizaciones, acoso laboral, trabajo en negro y todo tipo de conflictos laborales. Más de 30 años de experiencia defendiendo los derechos de trabajadores y empresas en la Ciudad Autónoma de Buenos Aires.",
   },
   other: {
-    'application/ld+json': {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      'itemListElement': [
-        {
-          '@type': 'ListItem',
-          'position': 1,
-          'name': 'Inicio',
-          'item': 'https://estudiolopezgomez.com'
-        },
-        {
-          '@type': 'ListItem',
-          'position': 2,
-          'name': 'Servicios',
-          'item': 'https://estudiolopezgomez.com/servicios'
-        },
-        {
-          '@type': 'ListItem',
-          'position': 3,
-          'name': 'Especialistas en derecho laboral en Buenos Aires Capital Federal',
-          'item': 'https://estudiolopezgomez.com/servicios/derecho-laboral'
-        }
-      ]
-    }
+    'application/ld+json': [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': 'Inicio',
+            'item': 'https://estudiolopezgomez.com'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': 'Servicios',
+            'item': 'https://estudiolopezgomez.com/servicios'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 3,
+            'name': 'Especialistas en derecho laboral en Buenos Aires Capital Federal',
+            'item': 'https://estudiolopezgomez.com/servicios/derecho-laboral'
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqDL.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
   }
 }; 
 

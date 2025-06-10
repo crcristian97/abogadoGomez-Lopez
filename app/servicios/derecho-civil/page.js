@@ -24,30 +24,44 @@ export const metadata = {
     description: "Expertos en derecho civil en Buenos Aires, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
   },
   other: {
-    'application/ld+json': {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      'itemListElement': [
-        {
-          '@type': 'ListItem',
-          'position': 1,
-          'name': 'Inicio',
-          'item': 'https://estudiolopezgomez.com'
-        },
-        {
-          '@type': 'ListItem',
-          'position': 2,
-          'name': 'Servicios',
-          'item': 'https://estudiolopezgomez.com/servicios'
-        },
-        {
-          '@type': 'ListItem',
-          'position': 3,
-          'name': 'Especialistas en derecho civil en Buenos Aires Capital Federal',
-          'item': 'https://estudiolopezgomez.com/servicios/derecho-civil'
-        }
-      ]
-    }
+    'application/ld+json': [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': 'Inicio',
+            'item': 'https://estudiolopezgomez.com'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': 'Servicios',
+            'item': 'https://estudiolopezgomez.com/servicios'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 3,
+            'name': 'Especialistas en derecho civil en Buenos Aires Capital Federal',
+            'item': 'https://estudiolopezgomez.com/servicios/derecho-civil'
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqDC.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
   }
 };
 
