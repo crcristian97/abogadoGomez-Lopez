@@ -2,7 +2,8 @@ export default function Stats() {
   return (
     <section className="bg-[#B0B9C2] py-16 md:py-24 px-6 md:px-12">
       <div className="max-w-5xl mx-auto">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-14 md:mb-20 gap-6">
+        {/* Cambiamos md:items-end por md:items-start para alinear arriba */}
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-14 md:mb-20 gap-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#183852] mb-2 md:mb-0 tracking-tight font-merriweather">
             Nuestra <span className="text-[#183852]">trayectoria</span>
           </h2>
