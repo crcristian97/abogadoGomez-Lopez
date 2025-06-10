@@ -10,6 +10,7 @@ export default function CardTeam({
   buttonText = "Ver perfil",
   imagePosition = "right", // "left" or "right"
   rounder = true, // new prop: if true, card is fully rounded
+  number = "5491154645620"
 }) {
   // Determine card rounding class
   const cardRoundingClass = rounder ? "rounded-full" : "rounded-2xl";
@@ -98,7 +99,7 @@ export default function CardTeam({
         </p>
         <motion.button
           className="bg-[#CBA240] hover:bg-[#b89a3a] text-[#183852] font-bold py-2 px-6 rounded-lg transition-colors duration-200 w-fit cursor-pointer"
-          onClick={() => handleClickWhatsApp('Hola, Dr Luis López quiero asesoramiento legal', '5491154645620')}
+          onClick={() => handleClickWhatsApp(`Hola, ${title} quiero asesoramiento legal`, number)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
         >

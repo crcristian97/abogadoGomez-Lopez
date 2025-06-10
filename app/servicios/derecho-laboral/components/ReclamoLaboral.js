@@ -1,4 +1,5 @@
-import PenalCard from "../../../ui/PenalCard";
+"use client";
+  import PenalCard from "../../../ui/PenalCard";
 import {
   Handshake,
   BadgeAlert,

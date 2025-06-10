@@ -60,6 +60,7 @@ Su enfoque ético, compromiso con el cliente y profundo conocimiento en materia 
             buttonText="Hablar con el Dr. José Luis López"
             imagePosition="right"
             rounder={true}
+            number="5491154645620"
         />
         <Team 
             image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogada-especialista-caligrafia-derecho.webp"
@@ -70,6 +71,7 @@ Actualmente, se desempeña como Secretaria del Colegio de Calígrafos de la Ciud
             buttonText="Hablar con la Dra. Estefanía Gómez"
             imagePosition="right"
             rounder={true}
+            number="5491161280168"
         />
         <BannerProduct />
         <Ourblog />
