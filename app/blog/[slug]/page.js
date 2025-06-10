@@ -1,16 +1,15 @@
-
 import BlogPost from "../../components/BlogPost";
 import {blogData} from "../../mock/blogData";
 import Breadcrumbs from "../../components/Breadcrumbs"; 
 
-
 export const generateMetadata = async ({ params }) => {
-  const { slug } = params;
+  const paramsData = await params;
+  const { slug } = paramsData;
   const postData = blogData.find(post => post.slug === slug);
 
   return {
     title: postData?.title || "Blog Post",
-    description: postData?.description || "Artículo del blog de Estudio López & Gómez",
+    description: postData?.description || "Blog post del estudio jurídico",
     openGraph: {
       images: [
         {
@@ -57,9 +56,11 @@ export const generateMetadata = async ({ params }) => {
   };
 }; 
 
-export default function ContrabandoBlogPost( { params } ) {
-  const { slug } = params;
+export default async function ContrabandoBlogPost({ params }) {
+  const paramsData = await params;
+  const { slug } = paramsData;
   const postData = blogData.find(post => post.slug === slug);
+  
   return (
     <main className="min-h-screen bg-white">  
       <Breadcrumbs />
