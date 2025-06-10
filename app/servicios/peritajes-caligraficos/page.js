@@ -13,6 +13,7 @@ import { caseSolicities } from "../../mock/caseSolicities";
 import { faqPC } from "../../mock/faqPC";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
+
 export const metadata = {
   title: "Pericias Caligráficas en la Ciudad de Buenos Aires",
   description: "Servicio profesional de pericias caligráficas con validez judicial en la Ciudad de Buenos Aires. Análisis técnico de firmas y documentos manuscritos para casos legales.",
