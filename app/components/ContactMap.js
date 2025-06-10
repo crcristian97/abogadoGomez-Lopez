@@ -59,6 +59,14 @@ const ContactMap = () => {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Loading spinner component
+  const LoadingSpinner = () => (
+    <div className="inline-block animate-spin rounded-full h-5 w-5 border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status">
+      <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+    </div>
+  );
 
   // Palette colors
   const primaryBg = "bg-[#183852]";
@@ -109,29 +117,25 @@ const ContactMap = () => {
     e.preventDefault();
     if (!validate()) return;
 
+    setIsLoading(true);
     const { name, email, message } = form;
     const data = { name, email, message };
-
     try {
       const res = await fetch('/api/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-
-      const result = await res.json();
-
+      
       if (res.ok) {
-        alert("¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.");
         setSubmitted(true);
         setForm({ name: "", email: "", message: "" });
         setErrors({ name: "", email: "", message: "" });
-      } else {
-        alert(`Error al enviar: ${result.error || 'Por favor, intenta nuevamente'}`);
       }
     } catch (error) {
       console.error('Error:', error);
-      alert("Error al enviar el mensaje. Por favor, intenta nuevamente más tarde.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -238,9 +242,17 @@ const ContactMap = () => {
               <button
                 type="submit"
                 title="Enviar mensaje"
-                className={`py-3 px-8 rounded-full text-lg font-bold ${accentButton} ${accentButtonText} border-0 focus:outline-none transition-colors duration-200 mt-2 shadow-md hover:bg-[#b08d36] hover:text-white`}
+                disabled={isLoading}
+                className={`py-3 px-8 rounded-full text-lg font-bold ${accentButton} ${accentButtonText} border-0 focus:outline-none transition-colors duration-200 mt-2 shadow-md hover:bg-[#b08d36] hover:text-white flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed`}
               >
-                Enviar
+                {isLoading ? (
+                  <>
+                    <LoadingSpinner />
+                    Enviando...
+                  </>
+                ) : (
+                  'Enviar'
+                )}
               </button>
             </form>
           )}
