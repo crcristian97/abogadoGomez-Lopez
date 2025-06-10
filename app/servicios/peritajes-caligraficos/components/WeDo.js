@@ -18,7 +18,7 @@ const cardVariants = {
 };
 
 // Subcomponente para cada análisis
-function AnalysisCard({ icon: Icon, title, description }) {
+function AnalysisCard({ icon, title, description }) {
   return (
     <motion.div
       className="bg-[#CBA240] rounded-xl p-6 flex flex-col gap-2 shadow-md cursor-pointer"
@@ -30,7 +30,7 @@ function AnalysisCard({ icon: Icon, title, description }) {
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
       <div className="flex items-center gap-3 mb-2">
-        <Icon className="text-[#183852]" size={28} />
+        {icon}
         <span className="font-semibold text-[#183852] text-lg">
           {title}
         </span>

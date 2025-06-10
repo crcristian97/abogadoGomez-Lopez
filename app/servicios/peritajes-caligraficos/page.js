@@ -1,5 +1,3 @@
-"use client";
-
 import HeroServices from "../../components/HeroServices";
 import BannerProduct from "../../components/BannerProduct";
 import Ourblog from "../../components/Ourblog";
@@ -16,18 +14,18 @@ import { faqPC } from "../../mock/faqPC";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
 export const metadata = {
-  title: "Pericias Caligráficas",
-  description: "Servicio profesional de pericias caligráficas con validez judicial. Análisis técnico de firmas y documentos manuscritos para casos legales.",
-  keywords: ["pericias caligráficas", "peritaje caligráfico", "análisis de firmas", "documentos manuscritos", "validez judicial"],
+  title: "Pericias Caligráficas en la Ciudad de Buenos Aires",
+  description: "Servicio profesional de pericias caligráficas con validez judicial en la Ciudad de Buenos Aires. Análisis técnico de firmas y documentos manuscritos para casos legales.",
+  keywords: ["pericias caligráficas", "peritaje caligráfico", "análisis de firmas", "documentos manuscritos", "validez judicial", "ciudad de buenos aires"],
   openGraph: {
-    title: "Pericias Caligráficas | Estudio López & Gómez",
-    description: "Servicio profesional de pericias caligráficas con validez judicial. Análisis técnico de firmas y documentos manuscritos para casos legales.",
+    title: "Pericias Caligráficas en la Ciudad de Buenos Aires",
+    description: "Servicio profesional de pericias caligráficas con validez judicial en la Ciudad de Buenos Aires. Análisis técnico de firmas y documentos manuscritos para casos legales.",
     url: 'https://estudiolopezgomez.com/servicios/peritajes-caligraficos',
     type: 'article',
   },
   twitter: {
-    title: "Pericias Caligráficas | Estudio López & Gómez",
-    description: "Servicio profesional de pericias caligráficas con validez judicial. Análisis técnico de firmas y documentos manuscritos para casos legales.",
+    title: "Pericias Caligráficas en la Ciudad de Buenos Aires",
+    description: "Servicio profesional de pericias caligráficas con validez judicial en la Ciudad de Buenos Aires. Análisis técnico de firmas y documentos manuscritos para casos legales.",
   },
   other: {
     'application/ld+json': {
@@ -49,7 +47,7 @@ export const metadata = {
         {
           '@type': 'ListItem',
           'position': 3,
-          'name': 'Pericias Caligráficas',
+          'name': 'Pericias Caligráficas en la Ciudad de Buenos Aires',
           'item': 'https://estudiolopezgomez.com/servicios/peritajes-caligraficos'
         }
       ]

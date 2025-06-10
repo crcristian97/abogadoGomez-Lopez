@@ -11,17 +11,17 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 
 export const metadata = {
   title: "Derecho Civil",
-  description: "Expertos en derecho civil, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
-  keywords: ["derecho civil", "abogados civiles", "contratos", "responsabilidad civil", "daños y perjuicios"],
+  description: "Expertos en derecho civil en Buenos Aires, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
+  keywords: ["derecho civil", "abogados civiles", "contratos", "responsabilidad civil", "daños y perjuicios", "Buenos Aires"],
   openGraph: {
-    title: "Derecho Civil | Estudio López & Gómez",
-    description: "Expertos en derecho civil, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
+    title: "Derecho Civil | Estudio Gómez & López",
+    description: "Expertos en derecho civil en Buenos Aires, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
     url: 'https://estudiolopezgomez.com/servicios/derecho-civil',
     type: 'article',
   },
   twitter: {
-    title: "Derecho Civil | Estudio López & Gómez",
-    description: "Expertos en derecho civil, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
+    title: "Derecho Civil | Estudio Gómez & López",
+    description: "Expertos en derecho civil en Buenos Aires, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
   },
   other: {
     'application/ld+json': {
