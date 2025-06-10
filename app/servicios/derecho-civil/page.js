@@ -12,6 +12,48 @@ import { faqDC } from "../../mock/faqDC";
 import { handleClickWhatsApp } from "../../utils/WhatsApp";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
+export const metadata = {
+  title: "Derecho Civil",
+  description: "Expertos en derecho civil, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
+  keywords: ["derecho civil", "abogados civiles", "contratos", "responsabilidad civil", "daños y perjuicios"],
+  openGraph: {
+    title: "Derecho Civil | Estudio López & Gómez",
+    description: "Expertos en derecho civil, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
+    url: 'https://estudiolopezgomez.com/servicios/derecho-civil',
+    type: 'article',
+  },
+  twitter: {
+    title: "Derecho Civil | Estudio López & Gómez",
+    description: "Expertos en derecho civil, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
+  },
+  other: {
+    'application/ld+json': {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Inicio',
+          'item': 'https://estudiolopezgomez.com'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Servicios',
+          'item': 'https://estudiolopezgomez.com/servicios'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 3,
+          'name': 'Derecho Civil',
+          'item': 'https://estudiolopezgomez.com/servicios/derecho-civil'
+        }
+      ]
+    }
+  }
+};
+
 export default function DerechoCivil() {
   return (
     <div>

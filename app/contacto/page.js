@@ -1,6 +1,21 @@
 import ContactMap from "../components/ContactMap";
 import Contact from "../components/Contact";
 import Breadcrumbs from "../components/Breadcrumbs";
+
+export const metadata = {
+  title: "Contacto",
+  description: "Contáctenos para una consulta legal personalizada. Estamos ubicados en Buenos Aires y atendemos casos en todo el país.",
+  openGraph: {
+    title: "Contacto | Estudio López & Gómez",
+    description: "Contáctenos para una consulta legal personalizada. Estamos ubicados en Buenos Aires y atendemos casos en todo el país.",
+    url: 'https://estudiolopezgomez.com/contacto',
+  },
+  twitter: {
+    title: "Contacto | Estudio López & Gómez",
+    description: "Contáctenos para una consulta legal personalizada. Estamos ubicados en Buenos Aires y atendemos casos en todo el país.",
+  },
+};
+
 export default function Contacto() {
   return (
     <div>

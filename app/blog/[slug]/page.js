@@ -2,7 +2,7 @@
 
 import BlogPost from "../../components/BlogPost";
 import {blogData} from "../../mock/blogData";
-import Breadcrumbs from "../../components/Breadcrumbs";
+import Breadcrumbs from "../../components/Breadcrumbs"; 
 
 export default function ContrabandoBlogPost( { params } ) {
   const { slug } = params;

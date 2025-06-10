@@ -18,8 +18,37 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "Estudio Gómez&López - Abogados especialistas en derecho penal y civil",
-  description: "Estudio de arquitectura y diseño",
+  title: {
+    default: "Estudio López & Gómez - Abogados Especialistas en Derecho Penal y Civil",
+    template: "%s | Estudio López & Gómez"
+  },
+  description: "Estudio jurídico especializado en derecho penal y civil, con amplia experiencia en litigios y asesoramiento legal personalizado.",
+  keywords: ["abogados", "derecho penal", "derecho civil", "estudio jurídico", "abogados especialistas", "Buenos Aires"],
+  authors: [{ name: "Estudio López & Gómez" }],
+  creator: "Estudio López & Gómez",
+  publisher: "Estudio López & Gómez",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://estudiolopezgomez.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: "Estudio López & Gómez - Abogados Especialistas",
+    description: "Estudio jurídico especializado en derecho penal y civil, con amplia experiencia en litigios y asesoramiento legal personalizado.",
+    url: 'https://estudiolopezgomez.com',
+    siteName: 'Estudio López & Gómez',
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Estudio López & Gómez - Abogados Especialistas",
+    description: "Estudio jurídico especializado en derecho penal y civil, con amplia experiencia en litigios y asesoramiento legal personalizado.",
+  },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',

@@ -10,6 +10,48 @@ import FAQHome from "../../components/FAQHome";
 import { faqsDP } from "../../mock/faqsDP";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
+export const metadata = {
+  title: "Derecho Penal",
+  description: "Especialistas en derecho penal con amplia experiencia en defensa criminal, asesoramiento legal y representación en juicios penales.",
+  keywords: ["derecho penal", "abogados penales", "defensa criminal", "juicios penales", "asesoramiento legal penal"],
+  openGraph: {
+    title: "Derecho Penal | Estudio López & Gómez",
+    description: "Especialistas en derecho penal con amplia experiencia en defensa criminal, asesoramiento legal y representación en juicios penales.",
+    url: 'https://estudiolopezgomez.com/servicios/derecho-penal',
+    type: 'article',
+  },
+  twitter: {
+    title: "Derecho Penal | Estudio López & Gómez",
+    description: "Especialistas en derecho penal con amplia experiencia en defensa criminal, asesoramiento legal y representación en juicios penales.",
+  },
+  other: {
+    'application/ld+json': {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Inicio',
+          'item': 'https://estudiolopezgomez.com'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Servicios',
+          'item': 'https://estudiolopezgomez.com/servicios'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 3,
+          'name': 'Derecho Penal',
+          'item': 'https://estudiolopezgomez.com/servicios/derecho-penal'
+        }
+      ]
+    }
+  }
+};
+
 export default function DerechoPenal() {
   return (
     <div>
