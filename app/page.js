@@ -18,11 +18,46 @@ export const metadata = {
     'application/ld+json': [
       {
         "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Estudio Gómez & López - Abogados en Buenos Aires", 
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "xPath": [
+            "/html/head/title",
+            "/html/head/meta[@name='description']/@content",
+            "//div[contains(@class, 'HeroSection')]//h1",
+            "//div[contains(@class, 'HeroSection')]//p"
+          ]
+        },
+        "url": "https://estudiolopezgomez.com"  //cambiar
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://estudiolopezgomez.com",  //cambiar
+        "logo": "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp",  //cambiar
+        "name": "Estudio Gómez & López",
+        "description": "Estudio jurídico especializado en derecho penal y civil en Buenos Aires Capital Federal. Más de 30 años de experiencia defendiendo los derechos de nuestros clientes.",
+        "email": "jllopez!269@gmail.com", 
+        "telephone": "+5491161280168",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Carlos Pellegrini 465, Piso 9°, Oficina 71",
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "CABA",
+          "postalCode": "C1009",
+          "addressCountry": "AR"
+        },
+        "vatID": "AR-30-12345678-9", //cambiar
+        "iso6523Code": "0199:724500PMK2A2M1SQQ228"
+      },
+      {
+        "@context": "https://schema.org",
         "@type": "LegalService",
         "image": [
           "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp"
         ],
-        "name": "Estudio López & Gómez",
+        "name": "Estudio Gómez & López",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Av. Carlos Pellegrini 465, Piso 9°, Oficina 71",
@@ -36,7 +71,7 @@ export const metadata = {
           "latitude": -34.602891443771604,
           "longitude": -58.380898389976615
         },
-        "url": "https://estudiolopezgomez.com",
+        "url": "https://estudiolopezgomez.com", //cambiar
         "telephone": "+5491161280168",
         "priceRange": "$$$",
         "openingHoursSpecification": [
@@ -90,7 +125,73 @@ export const metadata = {
               }
             }
           ]
-        }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 5,
+          "bestRating": 5,
+          "worstRating": 1,
+          "ratingCount": 127,
+          "reviewCount": 127
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5,
+              "bestRating": 5
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Margaryta Gatchenko"
+            },
+            "datePublished": "2025-06-10",
+            "reviewBody": "Resolví mi caso con ellos y, además, me brindaron tranquilidad en un momento muy estresante. Son serios, responsables y muy eficientes. Gracias por hacer simple lo que me parecía difícil."
+          },
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5,
+              "bestRating": 5
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Blas Amado Báez"
+            },
+            "datePublished": "2025-06-10",
+            "reviewBody": "Agradezco profundamente la dedicación y profesionalismo del Dr. José Luis López y a su equipo durante mi caso con resultado exitoso. Recomendado su servicio."
+          },
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5,
+              "bestRating": 5
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Nancy Brazil"
+            },
+            "datePublished": "2025-06-10",
+            "reviewBody": "Agradezco su profesionalismo, el cual me brindo tranquilidad y confianza. Su equipo demostró un gran compromiso."
+          },
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5,
+              "bestRating": 5
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Laura Farrán"
+            },
+            "datePublished": "2025-06-10",
+            "reviewBody": "No encuentro palabras para expresar lo agradecida que estoy con este equipo de profesionales, que lucharon conmigo desde el momento cero para que la Obra Social se hiciera cargo de un tratamiento médico súper costoso. Además de lograrlo, sentando un precedente, hicieron suyas cada palabra y sentimientos que me atravesaban en ese momento. Gracias por defender mis derechos con tanta humanidad y convicción!."
+          }
+        ]
       },
       {
         "@context": "https://schema.org",
