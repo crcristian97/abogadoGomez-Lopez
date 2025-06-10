@@ -22,41 +22,55 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="space-y-2 text-sm">
-          <p className="text-base font-bold tracking-wide text-white">Contacto</p>
-          <div className="flex flex-col gap-1">
+        <div className="space-y-4 text-sm font-sans">
+          <p className="text-base font-bold tracking-wide text-white mb-2">Contacto</p>
+          <div className="flex flex-col gap-2">
             <div className="flex items-center">
-              <span className="mr-1 text-white">Teléfono:</span>
+              <span className="mr-2 text-white min-w-[70px]">Teléfono:</span>
               <a
                 href="tel:+541161280168"
                 aria-label="Teléfono Dra. Estefanía Gómez"
                 title="Teléfono Dra. Estefanía Gómez"
-                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536] ml-1"
+                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]"
               >
                 +54 11 6128-0168
               </a>
             </div>
             <div className="flex items-center">
-              <span className="mr-1 text-white invisible sm:visible">Teléfono:</span>
+              <span className="mr-2 text-white min-w-[70px]">Teléfono:</span>
               <a
                 href="tel:+541154645620"
                 aria-label="Teléfono Dr. José Luis López"
                 title="Teléfono Dr. José Luis López"
-                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536] ml-1"
+                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]"
               >
                 +54 11 5464-5620
               </a>
             </div>
-          </div>
-          <div className="flex">
-            <p className="mr-1 text-white">Email:</p>
-            <a href="mailto:jllopez!269@gmail.com" aria-label="Nuestro email" title="Nuestro email" className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]">jllopez!269@gmail.com</a>
-          </div>
-          <div className="flex">
-            <p className="mr-1 text-white">Dirección:</p>
-            <a href="https://maps.google.com/?q=Av. Carlos Pellegrini 465, Piso 9°, Oficina 71, CABA" target="_blank" rel="noopener noreferrer" aria-label="Nuestra dirección" title="Nuestra dirección" className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]">
-            Av. Carlos Pellegrini 465, Piso 9°, Oficina 71, CABA
-            </a>
+            <div className="flex items-center">
+              <span className="mr-2 text-white min-w-[70px]">Email:</span>
+              <a
+                href="mailto:jllopez!269@gmail.com"
+                aria-label="Nuestro email"
+                title="Nuestro email"
+                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]"
+              >
+                jllopez!269@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center">
+              <span className="mr-2 text-white min-w-[70px]">Dirección:</span>
+              <a
+                href="https://maps.google.com/?q=Av. Carlos Pellegrini 465, Piso 9°, Oficina 71, CABA"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Nuestra dirección"
+                title="Nuestra dirección"
+                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]"
+              >
+                Av. Carlos Pellegrini 465, Piso 9°, Oficina 71, CABA
+              </a>
+            </div>
           </div>
         </div>
         <div>
