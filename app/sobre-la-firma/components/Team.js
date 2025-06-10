@@ -57,7 +57,7 @@ export default function CardTeam({
 
   return (
     <motion.div
-      className={`flex flex-col md:flex-row items-center bg-[#183852] ${cardRoundingClass} overflow-hidden my-8`}
+      className={`flex flex-col md:flex-row items-center bg-[#183852] rounded-2xl overflow-hidden my-8`}
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"

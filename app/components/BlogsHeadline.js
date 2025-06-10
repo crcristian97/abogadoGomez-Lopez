@@ -7,7 +7,7 @@ const blogPosts = [
     category: "Derecho laboral",
     title: "EL DERECHO A LA SALUD — EL AMPARO COMO REMEDIO",
     description: "Saber mas sobre el remedio del que disponemos los abogados para proteger al afiliado a las obras sociales y/o sistemas de medicina prepaga cuando se les niegan medicamentos o prestaciones médicas.",
-    author: "Dr. López",
+    author: "Dr. José Luis López",
     date: "09 Junio 2025",
     time: "5 min read",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/derecho-a-la-salud-en-buenos-aires.webp",
