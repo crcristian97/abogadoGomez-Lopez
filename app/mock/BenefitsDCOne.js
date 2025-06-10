@@ -2,32 +2,32 @@ import { Landmark, FileText, PenLine, Signature, Users, Gavel, Scale, Home, Hand
 
 export const benefitsOne = [
   {
-    icon: Landmark,
+    icon: <Landmark className="w-8 h-8 text-[#183852]" />,
     title: "Declaratoria de herederos y particiones judiciales o extrajudiciales.",
     description: ""
   },
   {
-    icon: FileText,
+    icon: <FileText className="w-8 h-8 text-[#183852]" />,
     title: "Inscripción de bienes muebles e inmuebles en los registros correspondientes.",
     description: ""
   },
   {
-    icon: PenLine,
+    icon: <PenLine className="w-8 h-8 text-[#183852]" />,
     title: "Elaboración, asesoramiento y análisis de testamentos y legados.",
     description: ""
   },
   {
-    icon: Signature,
+    icon: <Signature className="w-8 h-8 text-[#183852]" />,
     title: "Especialistas en testamentos ológrafos: análisis caligráfico y documentológico para validar firmas y escrituras con apoyo profesional pericial.",
     description: ""
   },
   {
-    icon: Users,
+    icon: <Users className="w-8 h-8 text-[#183852]" />,
     title: "Asesoramiento a herederos residentes en el extranjero.",
     description: ""
   },
   {
-    icon: Gavel,
+    icon: <Gavel className="w-8 h-8 text-[#183852]" />,
     title: "Impugnación de testamentos y defensa de derechos hereditarios.",
     description: ""
   }
@@ -35,32 +35,32 @@ export const benefitsOne = [
 
 export const benefitsTwo = [
   {
-    icon: Scale,
+    icon: <Scale className="w-8 h-8 text-[#183852]" />,
     title: "Divorcios de común acuerdo o litigiosos.",
     description: ""
   },
   {
-    icon: Home,
+    icon: <Home className="w-8 h-8 text-[#183852]" />,
     title: "Cuidado personal y régimen de visitas para hijos.",
     description: ""
   },
   {
-    icon: Handshake,
+    icon: <Handshake className="w-8 h-8 text-[#183852]" />,
     title: "Reclamos de alimentos y fijación de cuotas alimentarias.",
     description: ""
   },
   {
-    icon: BookOpen,
+    icon: <BookOpen className="w-8 h-8 text-[#183852]" />,
     title: "Liquidación y administración de bienes gananciales.",
     description: ""
   },
   {
-    icon: Users,
+    icon: <Users className="w-8 h-8 text-[#183852]" />,
     title: "Mediación y resolución alternativa de conflictos familiares.",
     description: ""
   },
   {
-    icon: UserCheck,
+    icon: <UserCheck className="w-8 h-8 text-[#183852]" />,
     title: "Adopciones y reconocimiento de filiación.",
     description: ""
   }
@@ -68,32 +68,32 @@ export const benefitsTwo = [
 
 export const benefitsThree = [
   {
-    icon: Briefcase,
+    icon: <Briefcase className="w-8 h-8 text-[#183852]" />,
     title: "Contratos de compraventa, alquiler, comodato, préstamo, y más.",
     description: ""
   },
   {
-    icon: ClipboardList,
+    icon: <ClipboardList className="w-8 h-8 text-[#183852]" />,
     title: "Reclamos por incumplimiento contractual.",
     description: ""
   },
   {
-    icon: Shield,
+    icon: <Shield className="w-8 h-8 text-[#183852]" />,
     title: "Indemnizaciones por daños ocasionados por terceros.",
     description: ""
   },
   {
-    icon: Gavel,
+    icon: <Gavel className="w-8 h-8 text-[#183852]" />,
     title: "Defensa frente a demandas por responsabilidad civil.",
     description: ""
   },
   {
-    icon: Handshake,
+    icon: <Handshake className="w-8 h-8 text-[#183852]" />,
     title: "Mediación y resolución alternativa de conflictos civiles y comerciales.",
     description: ""
   },
   {
-    icon: FileText,
+    icon: <FileText className="w-8 h-8 text-[#183852]" />,
     title: "Redacción y revisión de contratos personalizados.",
     description: ""
   }

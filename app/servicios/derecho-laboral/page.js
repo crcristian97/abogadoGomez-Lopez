@@ -11,17 +11,26 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 
 export const metadata = {
   title: "Derecho Laboral",
-  description: "Especialistas en derecho laboral, asesorando en despidos, indemnizaciones, acoso laboral y conflictos laborales.",
-  keywords: ["derecho laboral", "abogados laborales", "despidos", "indemnizaciones", "acoso laboral"],
+  description: "Especialistas en derecho laboral en Buenos Aires Capital. Asesoramos en despidos, indemnizaciones, acoso laboral, trabajo en negro y todo tipo de conflictos laborales. Más de 30 años de experiencia defendiendo los derechos de trabajadores y empresas en la Ciudad Autónoma de Buenos Aires.",
+  keywords: [
+    "derecho laboral",
+    "abogados laborales",
+    "despidos",
+    "indemnizaciones",
+    "acoso laboral",
+    "Buenos Aires Capital",
+    "trabajo en negro",
+    "conflictos laborales"
+  ],
   openGraph: {
     title: "Derecho Laboral | Estudio López & Gómez",
-    description: "Especialistas en derecho laboral, asesorando en despidos, indemnizaciones, acoso laboral y conflictos laborales.",
+    description: "Especialistas en derecho laboral en Buenos Aires Capital. Asesoramos en despidos, indemnizaciones, acoso laboral, trabajo en negro y todo tipo de conflictos laborales. Más de 30 años de experiencia defendiendo los derechos de trabajadores y empresas en la Ciudad Autónoma de Buenos Aires.",
     url: 'https://estudiolopezgomez.com/servicios/derecho-laboral',
     type: 'article',
   },
   twitter: {
     title: "Derecho Laboral | Estudio López & Gómez",
-    description: "Especialistas en derecho laboral, asesorando en despidos, indemnizaciones, acoso laboral y conflictos laborales.",
+    description: "Especialistas en derecho laboral en Buenos Aires Capital. Asesoramos en despidos, indemnizaciones, acoso laboral, trabajo en negro y todo tipo de conflictos laborales. Más de 30 años de experiencia defendiendo los derechos de trabajadores y empresas en la Ciudad Autónoma de Buenos Aires.",
   },
   other: {
     'application/ld+json': {

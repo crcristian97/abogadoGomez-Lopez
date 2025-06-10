@@ -1,5 +1,3 @@
-"use client";
-
 import HeroServices from "../../components/HeroServices";
 import BannerProduct from "../../components/BannerProduct";
 import Ourblog from "../../components/Ourblog";
@@ -9,7 +7,6 @@ import { benefitsOne, benefitsTwo, benefitsThree } from "../../mock/BenefitsDCOn
 import Stats from "../../ui/Stats";
 import FAQHome from "../../components/FAQHome";
 import { faqDC } from "../../mock/faqDC";
-import { handleClickWhatsApp } from "../../utils/WhatsApp";
 import Breadcrumbs from "../../components/Breadcrumbs";
 
 export const metadata = {
@@ -69,7 +66,6 @@ export default function DerechoCivil() {
         title="Sobre el derecho civil"
         buttonLink="https://wa.me/5491161280168?text=Hola, quiero asesoramiento legal"
         buttonText="Quiero hablar con un abogado"
-        onButtonClick={() => handleClickWhatsApp('Hola, quiero asesoramiento legal')}
         description={
           <>
            En nuestro estudio jurídico ubicado en Ciudad Autónoma de Buenos Aires y la provincia de Buenos Aires, ofrecemos <span className="font-bold text-[#CBA240]">asesoramiento integral en Derecho Civil</span>, con una atención personalizada y eficiente. Nuestra trayectoria y experiencia nos permiten brindar <span className="font-bold text-[#CBA240]">soluciones jurídicas claras y efectivas</span> para proteger tus derechos y defender tus intereses en una amplia variedad de situaciones legales civiles.
@@ -91,7 +87,7 @@ Nos especializamos en causas relacionadas con <span className="font-bold text-[#
         heading="Derecho de familia y divorcios: acompañamiento en procesos delicados"
         intro="Sabemos que las cuestiones familiares requieren sensibilidad y profesionalismo. Brindamos asesoramiento y representación en:"
         benefits={benefitsTwo}
-        outro="Buscamos soluciones que prioricen el bienestar de las familias y fomenten acuerdos duraderos, evitando litigios prolongados y desgastantes."
+        outro="Buscamos soluciones que prioricen el bienestar de las familias y fomenten acuerdos duraderos, evitando litigios prolongados y desgastantes"
       />
       <BeneftisDC  
         heading="Contratos y responsabilidad civil: seguridad y defensa en tus relaciones jurídicas"

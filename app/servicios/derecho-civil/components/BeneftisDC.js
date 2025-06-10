@@ -23,7 +23,7 @@ const cardVariants = {
 };
 
 // Subcomponente para cada beneficio/amparo
-export function BenefitCard({ icon: Icon, title, description }) {
+export function BenefitCard({ icon, title, description }) {
   return (
     <motion.div
       className="flex items-center bg-[#CBA240] rounded-xl shadow p-5 transition-transform duration-200 ease-in-out hover:scale-[1.03] hover:shadow-2xl hover:bg-[#e2c77a] group cursor-pointer"
@@ -37,7 +37,7 @@ export function BenefitCard({ icon: Icon, title, description }) {
         <p className="text-[#183852] text-left">{description}</p>
       </div>
       <div className="flex-shrink-0 ml-4 mt-1">
-        <Icon className="w-8 h-8 text-[#183852] group-hover:text-[#8a6a1a] transition-colors duration-200" aria-hidden="true" />
+        {icon}
       </div>
     </motion.div>
   );
@@ -48,22 +48,22 @@ export default function BeneftisDC({
   intro = "En situaciones urgentes donde se vulneran derechos fundamentales garantizados por la Constitución Nacional, el recurso de amparo es una herramienta esencial. Nuestro estudio se especializa en presentar y gestionar los siguientes amparos:",
   benefits = [
     {
-      icon: Stethoscope,
+      icon: <Stethoscope className="w-8 h-8 text-[#183852]" />,
       title: "Amparos de salud",
       description: "Para garantizar el acceso a tratamientos médicos, medicamentos o prestaciones sanitarias."
     },
     {
-      icon: Landmark,
+      icon: <Landmark className="w-8 h-8 text-[#183852]" />,
       title: "Amparos ante entidades bancarias",
       description: "Defensa frente a cobros indebidos, ejecuciones o cláusulas abusivas."
     },
     {
-      icon: Gavel,
+      icon: <Gavel className="w-8 h-8 text-[#183852]" />,
       title: "Amparos por mora en la administración pública",
       description: "Reclamos contra retrasos injustificados o falta de respuestas."
     },
     {
-      icon: Scale,
+      icon: <Scale className="w-8 h-8 text-[#183852]" />,
       title: "Amparos tributarios",
       description: "Protección contra actos ilegales o arbitrarios en materia impositiva."
     }
