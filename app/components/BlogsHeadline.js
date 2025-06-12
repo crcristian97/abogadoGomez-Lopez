@@ -4,10 +4,10 @@ import Link from "next/link";
 const blogPosts = [
   {
     id: 1,
-    category: "Derecho laboral",
+    category: "Derecho civil",
     title: "EL DERECHO A LA SALUD — EL AMPARO COMO REMEDIO",
     description: "Saber mas sobre el remedio del que disponemos los abogados para proteger al afiliado a las obras sociales y/o sistemas de medicina prepaga cuando se les niegan medicamentos o prestaciones médicas.",
-    author: "Dr. José Luis López",
+    author: "Dra. Estefanía Gómez y Dr. José Luis López",
     date: "09 Junio 2025",
     time: "5 min read",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/derecho-a-la-salud-en-buenos-aires.webp",
@@ -34,7 +34,7 @@ const blogPosts = [
     category: "Derecho penal",
     title: "SOBRE EL DELITO DE ENCUBRIMIENTO DE CONTRABANDO",
     description: "El art. 864 del Código Aduanero-Ley 22.415: qué aspectos reviste básicamente este delito.",
-    author: "Dra. Estefanía Gómez",
+    author: "Dr. José Luis López",
     date: "09 Junio 2025",
     time: "6 min read",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/delito-contrabando-en-buenos-aires.webp",

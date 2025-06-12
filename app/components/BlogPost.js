@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Quote } from "lucide-react";
@@ -57,7 +58,7 @@ const BlogPost = ({
         </div>
         <div>
           <p className="font-semibold text-[#183852]">{author}</p>
-          <p className="text-sm text-gray-600">Abogado Especialista</p>
+          <p className="text-sm text-gray-600">Abogados Especialistas</p>
         </div>
       </div>
 
@@ -130,8 +131,10 @@ const BlogPost = ({
           <h3 className="text-2xl font-bold mb-4">¿Necesitas asesoramiento legal?</h3>
           <p className="mb-6">Nuestro equipo de abogados especialistas está listo para ayudarte con tu caso.</p>
           <Link 
-            href="/contacto"
+            href={`https://wa.me/5491161280168?text=${encodeURIComponent('Hola, me comunico porque quisiera asesoramiento legal')}`}
             prefetch={false}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#cba240] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#b38f36] transition-colors"
           >
             Consulta Gratuita
