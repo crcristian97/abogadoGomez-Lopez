@@ -108,7 +108,7 @@ export default function Testimonials() {
           <h2 className="text-4xl font-bold text-[#183852] mb-4">Testimonios de Clientes</h2>
           <div className="w-20 h-1 bg-[#CBA240] mx-auto mb-6"></div>
           <p className="text-xl text-[#183852] max-w-2xl mx-auto">
-            Escuchá lo que nuestros clientes dicen sobre su experiencia con nuestro estudio.
+            Conocé lo que nuestros clientes dicen sobre su experiencia con nuestro estudio.
           </p>
         </div>
         <div className="relative">

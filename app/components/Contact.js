@@ -37,7 +37,7 @@ const contactItems = [
   {
     icon: <MapPin className="w-8 h-8 text-[#CBA240] mb-4" />,
     title: "Oficina",
-    description: "Llámanos para recibir asesoramiento personalizado y profesional.",
+    description: "Llamanos para recibir asesoramiento personalizado y profesional.",
     content: (
       <address className="not-italic text-base text-[#CBA240]">
         Av. Carlos Pellegrini 465, Piso 9°, Oficina 71, CABA

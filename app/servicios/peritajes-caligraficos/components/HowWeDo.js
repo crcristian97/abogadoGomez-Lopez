@@ -30,7 +30,7 @@ const cardVariants = {
 export default function HowWeDo() {
   return (
     <motion.section
-      className="bg-[#B0B9C2] py-12 px-4 rounded-2xl shadow-lg"
+      className="bg-[#B0B9C2] py-12 px-4  shadow-lg"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}

@@ -25,13 +25,14 @@ const BlogPost = ({
     <article className="max-w-4xl mx-auto px-4 py-8">
       {/* Hero Section */}
       <div className="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden">
+        <div className="absolute inset-0 bg-[#183852] opacity-65 z-10 pointer-events-none" />
         <Image
           src={image}
           alt={title}
           width={1200}
           height={630}
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+          className="object-cover opacity-70 z-0"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw "
           priority={false}
           title={title}
         />
