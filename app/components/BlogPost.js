@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import AuthorBox from "./AuthorBox";
 
 const BlogPost = ({ 
   title,
@@ -19,7 +20,8 @@ const BlogPost = ({
   date,
   category,
   readingTime,
-  slug
+  slug,
+  imageAuthor
 }) => {
   // Function to scroll to section
   const scrollToSection = (id) => {
@@ -160,6 +162,19 @@ const BlogPost = ({
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
+
+          {/* Author Box */}
+          <AuthorBox
+            image={imageAuthor || "/avatar-placeholder.png"}
+            name={author || "Autor/a"}
+            description={
+              author === "Dr. José Luis López"
+                ? "Abogado egresado de la Universidad de Buenos Aires (UBA), en ejercicio desde 1991, con más de tres décadas de experiencia en Derecho Penal y Civil en la Ciudad Autónoma de Buenos Aires (CABA). Está matriculado en el Colegio Público de la Abogacía de la Capital Federal, con Matrícula Federal activa. Se ha desempeñado como docente universitario en la Facultad de Derecho y Ciencias Sociales de la UBA, aportando su conocimiento a las nuevas generaciones de abogados. Su enfoque ético, compromiso con el cliente y profundo conocimiento en materia Penal y Civil lo posicionan como un referente en la profesión en Buenos Aires, Capital Federal."
+                : author === "Dra. Estefanía Gómez"
+                ? "Abogada especializada en Derecho Sucesorio, Civil y Penal, con matrícula federal y egresada en 2019. Desde entonces, ejerce la profesión con compromiso y formación continua en la Ciudad Autónoma de Buenos Aires (CABA). Además, es Calígrafo Público Nacional en ejercicio desde 2014, matriculada en el Colegio de Calígrafos Públicos de la Ciudad de Buenos Aires (CPCBA) y en la Suprema Corte de Justicia de la Provincia de Buenos Aires (SCJBA). Actualmente, se desempeña como Secretaria del Colegio de Calígrafos de la Ciudad de Buenos Aires y como docente universitaria. También forma parte activa del Colegio Público de la Abogacía de la Capital Federal, con matrícula federal vigente.."
+                : "Abogado/a especialista en la materia, parte del equipo de Estudio López Gómez."
+            }
+          />
         </div>
       </article>
 
