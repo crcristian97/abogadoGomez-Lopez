@@ -298,5 +298,86 @@ import Image from "next/image";
         </p>
       </div>
     )
+  },
+  {
+    slug: "que-hace-un-caligrafo-publico",
+    title: "¿Qué hace un Perito Calígrafo?",
+    description: "Descubre las funciones, incumbencias legales y el rol del Calígrafo Público o Perito Calígrafo en la autenticación de documentos y firmas, tanto en el ámbito judicial como privado.",
+    image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/caligrafo-publico-duracion-carrera.webp",
+    author: "Dra. Estefanía Gómez",
+    imageAuthor: "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogada-especialista-caligrafia-derecho.webp",
+    datePublished: "2024-06-10T08:00:00+08:00",
+    dateModified: "2024-06-10T08:00:00+08:00",
+    category: "Peritajes caligráficos",
+    readingTime: "6",
+    avatar: "EG",
+    featured: false,
+    date: "18 Junio 2025",
+    introduction: "El Calígrafo Público o Perito Calígrafo tiene como función principal determinar la autenticidad o no de toda clase de documentos, firmas y textos manuscritos, tanto en el ámbito judicial como en el privado, brindando asesoramiento técnico especializado.",
+    pregunta1: "¿Qué hace un Perito Calígrafo?",
+    respuesta1: "Dicho trabajo incluye la comparación de escrituras, detección de falsificaciones, análisis de tintas y soportes, como así también dictámenes sobre la antigüedad de documentos y firmas.",
+    lista1: [
+      "Dictaminar sobre la autenticidad, falsedad y/o adulteración de escritos, documentos, instrumentos públicos o privados, o cualquier otro elemento manuscrito, dactilografiado o impreso.",
+      "Constatar por los medios técnicos de la profesión la autenticidad o falsedad de firmas de toda clase de documentos.",
+      "Dilucidar los problemas de la escritura, analizar los caracteres, establecer comparaciones o cotejos.",
+      "Determinar las diferencias de tintas o elementos gráficos.",
+      "Establecer las condiciones y cualidades del soporte, papel y demás elementos utilizados.",
+      "Verificar fotocopias, estableciendo su correspondencia con originales no adulterados."
+    ],
+    blockquote: "La ley 20.243, modificada por la ley 20.859, establece las incumbencias profesionales del título de Calígrafo Público.",
+    titleText1: "Avances tecnológicos y pericia caligráfica digital",
+    text1: "Los avances tecnológicos actuales derivaron en la inclusión de firmas capturadas digitalmente con signature pad o tableta de firma, es decir, la firma manuscrita capturada electrónicamente en un panel táctil, que se transmite a una computadora. En ese sentido, los peritajes realizados sobre imágenes digitales, impresiones y fotocopias también son admitidos.",
+    text1lista1: [
+      "El perito calígrafo debe insistir en el uso del material original, y solo en caso negativo deberá proceder a examinar los documentos o firmas digitalizadas (Opinión emitida por la Dirección de la Carrera de Calígrafo Público de la UBA y la Dirección de la Carrera de Calígrafo Público del Instituto Universitario de la Policía Federal Argentina sobre Imágenes digitalizadas).",
+      "En el caso de las fotocopias, no es posible analizar adecuadamente la presión ni la velocidad de escritura, lo que conlleva a brindar un dictamen pericial parcial.",
+      "El uso de equipos fotográficos de alta calidad, escáneres y tabletas electrónicas permite adquirir imágenes de calidad, observando detalles precisos en los grafismos."
+    ],
+    titleText2: "Elementos esenciales en la pericia caligráfica",
+    text2: "En el contexto de una pericia caligráfica, el perito evalúa al menos tres elementos esenciales: el diseño de las letras, la presión del elemento escritor sobre el soporte y la velocidad de escritura.",
+    text2lista1: [
+      "Cuando se trabaja con originales, es posible analizar todos los elementos esenciales.",
+      "Con fotocopias o imágenes digitales, el análisis puede ser limitado y el dictamen, parcial."
+    ],
+    titleText3: "Importancia de la labor pericial",
+    text3: "La labor pericial que cumple un Calígrafo Público es fundamental en los casos que impliquen seguridad documental y autoría de manuscritos, la cual se ha adaptado a los medios digitales actuales, lo que implica mayor intervención en el campo forense y privado.",
+    content: (
+      <div className="my-8 p-6 md:p-10 bg-[#f9f7f3] rounded-xl shadow-md">
+        <p className="text-[#183852] mb-4">
+          ¿Qué hace un Perito Calígrafo?
+        </p>
+        <p className="text-[#183852] mb-4">
+          El Calígrafo Público o Perito Calígrafo tiene como función principal determinar la autenticidad o no de toda clase de documentos, firmas y textos manuscritos, tanto en el ámbito judicial como en el privado, brindando asesoramiento técnico especializado.
+        </p>
+        <p className="text-[#183852] mb-4">
+          Dicho trabajo incluye la comparación de escrituras, detección de falsificaciones, análisis de tintas y soportes, como así también dictámenes sobre la antigüedad de documentos y firmas.
+        </p>
+        <p className="text-[#183852] mb-4">
+          La ley 20.243, modificada ley 20.859, establece las siguientes incumbencias profesionales del título:
+        </p>
+        <ul className="list-disc pl-6 text-[#183852] mb-4">
+          <li>a) Dictaminar sobre la autenticidad, falsedad y/o adulteración de escritos, documentos, instrumentos públicos o privados, o cualquier otro elemento manuscrito, dactilografiado o impreso;</li>
+          <li>b) Constatar por los medios técnicos de la profesión la autenticidad o falsedad de firmas de toda clase de documentos;</li>
+          <li>c) Dilucidar los problemas de la escritura, analizar los caracteres, establecer comparaciones o cotejos;</li>
+          <li>d) Determinar las diferencias de tintas o elementos gráficos;</li>
+          <li>e) Establecer las condiciones y cualidades del soporte, papel y demás elementos utilizados;</li>
+          <li>f) Verificar fotocopias, estableciendo su correspondencia con originales no adulterados.</li>
+        </ul>
+        <p className="text-[#183852] mb-4">
+          Los avances tecnológicos actuales derivaron en la inclusión de firmas capturadas digitalmente con signature pad, o tableta de firma, es decir a la firma manuscrita capturada electrónicamente en un panel táctil, que se transmite a una computadora.
+        </p>
+        <p className="text-[#183852] mb-4">
+          En ese sentido, los peritajes realizados sobre imágenes digitales, impresiones y fotocopias también son admitidos. Al respecto, es menester mencionar la “Opinión emitida por la Dirección de la Carrera de Calígrafo Público de la Universidad de Buenos Aires y la Dirección de la Carrera de Calígrafo Público del Instituto Universitario de la Policía Federal Argentina sobre Imágenes digitalizadas”, destacando que en principio el perito calígrafo debe insistir en el uso del material original, y solo en caso negativo deberá proceder a examinar los documentos o firmas digitalizadas.
+        </p>
+        <p className="text-[#183852] mb-4">
+          Además en el contexto de una pericia caligráfica, el perito evalúa al menos tres elementos esenciales: el diseño de las letras, la presión del elemento escritor sobre el soporte y la velocidad de escritura, pero en el caso de las fotocopia, no es posible analizar adecuadamente los dos últimos elementos mencionados, lo que conllevar brindar en estos casos un dictamen pericial parcial.
+        </p>
+        <p className="text-[#183852] mb-4">
+          En lo tocante a las imágenes digitales, el uso de equipos fotográficos de alta calidad, escáneres y tabletas electrónicas, permiten adquirir imágenes de calidad, permitiendo observarse detalles precisos en los grafismos.
+        </p>
+        <p className="text-[#183852] mb-4">
+          La labor pericial que cumple un Calígrafo Público es fundamental en los casos que impliquen seguridad documental y autoría de manuscritos, la cual se ha adaptado a los medios digitales actuales, lo que implica mayor intervención en el campo forense y privado.
+        </p>
+      </div>
+    ),
   }
 ];

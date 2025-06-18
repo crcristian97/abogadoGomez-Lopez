@@ -12,7 +12,7 @@ const blogPosts = [
     time: "5 min read",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/derecho-a-la-salud-en-buenos-aires.webp",
     featured: true,
-    avatar: "LG", // Simulated avatar
+    avatar: "LG", 
     slug: "el-derecho-a-la-salud-el-amparo-como-remedio",
   },
   {
@@ -26,7 +26,7 @@ const blogPosts = [
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749250677/trabajo-freelancer-abogado-buenos-aires.webp",
     featured: false,
     slug: "trabajo-freelance-en-argentina",
-    avatar: "EG", // Simulated avatar
+    avatar: "EG"
 
   },
   {
@@ -38,6 +38,19 @@ const blogPosts = [
     date: "09 Junio 2025",
     time: "6 min read",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/delito-contrabando-en-buenos-aires.webp",
+    featured: false,
+    slug: "delito-encubrimiento-contrabando",
+    avatar: "EG", // Simulated avatar
+  },
+  {
+    id: 4,
+    category: "Peritajes caligráficos",
+    title: "¿Qué hace un Calígrafo Público? Funciones y rol profesional",
+    description: "El Calígrafo Público o Perito Calígrafo es un profesional especializado en verificar la autenticidad de documentos, firmas y manuscritos. ",
+    author: "Dra. Estefanía Gómez",
+    date: "18 Junio 2025",
+    time: "6 min read",
+    image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/caligrafo-publico-en-buenos-aires.webp",
     featured: false,
     slug: "delito-encubrimiento-contrabando",
     avatar: "EG", // Simulated avatar
