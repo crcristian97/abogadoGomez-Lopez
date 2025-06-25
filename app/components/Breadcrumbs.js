@@ -16,6 +16,12 @@ const ChevronRight = ({ className = "w-4 h-4" }) => (
   </svg>
 );
 
+// Helper to lowercase all except first letter
+function capitalizeFirstOnly(str) {
+  if (!str) return '';
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
 const Breadcrumbs = () => {
   const pathname = usePathname();
 
@@ -26,10 +32,12 @@ const Breadcrumbs = () => {
 
   const breadcrumbs = segments.map((segment, index) => {
     const href = `/${segments.slice(0, index + 1).join('/')}`;
-    const label = segment
-      .split('-')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
+    // Lowercase all, then capitalize only the first letter
+    const label = capitalizeFirstOnly(
+      segment
+        .split('-')
+        .join(' ')
+    );
 
     return {
       href,
