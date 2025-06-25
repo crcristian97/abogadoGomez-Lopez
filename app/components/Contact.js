@@ -9,12 +9,12 @@ const contactItems = [
     description: "Listos/as para recibir tus consultas legales de manera rápida y efectiva.",
     content: (
       <a
-        href="mailto:contacto@slgabogados.com"
+        href="mailto:jllopez1269@gmail.com"
         className="text-[#CBA240] underline text-base break-all"
         title="Correo de contacto"
         aria-label="Correo de contacto"
       >
-        contacto@slgabogados.com
+        jllopez1269@gmail.com
       </a>
     ),
   },
@@ -29,8 +29,8 @@ const contactItems = [
         title="Teléfono de contacto"
         aria-label="Teléfono de contacto"
       >
-        011-61280168 <br />
-        011-54645620
+        011-54645620 <br />
+        011-61280168 
       </a>
     ),
   },

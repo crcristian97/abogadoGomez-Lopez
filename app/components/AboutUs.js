@@ -32,19 +32,19 @@ export default function AboutUs() {
           Nos destacamos por una atención cercana, profesional y eficaz tanto para personas físicas como jurídicas.
         </p>
         <ul className="mb-6 space-y-6">
-          <li className="flex items-center gap-2 text-lg">
+          <li className="flex items-center gap-2 text-lg text-white">
             <Shield className="text-[#CBA240] text-lg mt-1" />
             <span>
               <span className="text-[#CBA240] font-bold">Soluciones legales</span> a tu medida y con confianza.
             </span>
           </li>
-          <li className="flex items-center gap-2 text-lg">
+          <li className="flex items-center gap-2 text-lg text-white">
             <Users className="text-[#CBA240] text-lg" />
             <span>
               <span className="text-[#CBA240] font-bold">Asesoría integral</span> en Derecho Penal y más.
             </span>
           </li>
-          <li className="flex items-center gap-2 text-lg">
+          <li className="flex items-center gap-2 text-lg text-white">
             <Scale className="text-[#CBA240] text-lg" />
             <span>
               <span className="text-[#CBA240] font-bold">Comprometidos con honestidad</span> en el seguimiento del tema hasta su finalización.
@@ -72,7 +72,7 @@ export default function AboutUs() {
             alt="estudio Gomez y Lopez de abogados en buenos aires"
             width={1200}
             height={800}
-            className="object-cover w-full h-80 md:h-[28rem] opacity-65 z-0"
+            className="object-contain w-full h-80 md:h-[28rem] opacity-65 z-0"
             priority={false}
             title="estudio Gomez y Lopez de abogados en buenos aires"
           />

@@ -16,14 +16,14 @@ const whatWeDoData = [
     bg: "https://res.cloudinary.com/dgzi8i2ji/image/upload/derecho-civil-en-bueno-aires.webp",
   },
   {
-    title: "Derecho laboral",
+    title: "Derecho Laboral",
     description:
       "Atención a empresas en juicios laborales. Asesoramiento en contratación y desvinculación laboral, según normativa vigente. Representación ante el Servicio de Conciliación Laboral Obligatoria (SECLO).",
     link: "/servicios/derecho-laboral",
     bg: "https://res.cloudinary.com/dgzi8i2ji/image/upload/derecho-laboral-en-buenos-aires.webp",
   },
   {
-    title: "Pericias caligráficas y documentológicas",
+    title: "Pericias Caligráficas y Documentológicas",
     description:
       "Nuestro departamento pericial dispone de peritos de parte en materia penal y consultores técnicos en materia civil, especialistas en seguridad documental.",
     link: "/servicios/peritajes-caligraficos",

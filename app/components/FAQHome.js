@@ -59,10 +59,10 @@ export default function FAQHome({ faqs = [] }) {
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-base-content mb-2">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">
             Preguntas
           </h2>
-          <p className="mb-6 text-base text-base-content/80">
+          <p className="mb-6 text-base text-white/80">
             Aquí respondemos las preguntas más frecuentes sobre nuestros servicios legales y cómo podemos ayudarte.
           </p>
           <div>
@@ -78,7 +78,7 @@ export default function FAQHome({ faqs = [] }) {
           </div>
         </motion.div>
         {/* Right column: FAQ accordion */}
-        <ul className="basis-1/2">
+        <ul className="basis-1/2 text-white">
           {faqs.map((faq, idx) => (
             <motion.li
               className="group"
@@ -90,12 +90,12 @@ export default function FAQHome({ faqs = [] }) {
               custom={idx}
             >
               <button
-                className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10 cursor-pointer"
+                className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-white/10 cursor-pointer"
                 aria-expanded={openIndex === idx}
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                 type="button"
               >
-                <span className="flex-1 text-base-content">{faq.question}</span>
+                <span className="flex-1">{faq.question}</span>
                 <ChevronDown
                   className={`flex-shrink-0 w-5 h-5 ml-auto transition-transform duration-200 ${
                     openIndex === idx ? "rotate-180" : ""
