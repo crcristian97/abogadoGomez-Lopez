@@ -5,14 +5,14 @@ export default function Footer() {
     <footer className="px-4 pt-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="grid gap-y-14 gap-x-10 mb-12 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2 flex flex-col gap-6">
-          <a href="/" aria-label="Go home" title="Estudio Gómez&López" className="inline-flex items-center mb-4">
+          <a title="Estudio Gómez&López" className="inline-flex items-center mb-4">
             <Image
               src="/logo.png"
               alt="Estudio Gómez&López Logo"
               title="Estudio Gómez&López"
-              width={80}
-              height={80}
-              className="w-20 h-20"
+              width={120}
+              height={120}
+              className="w-32 h-32"
               priority={false}
             />
           </a>
@@ -22,7 +22,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="space-y-6 text-[1.1rem] font-sans">
+        <div className="space-y-4 text-[1.1rem] font-sans gap-4">
           <p className="text-base font-bold tracking-wide text-white mb-4">Contacto</p>
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
@@ -50,12 +50,12 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <span className="text-white min-w-[90px]">Email:</span>
               <a
-                href="mailto:jllopez!269@gmail.com"
+                href="mailto:jllopez1269@gmail.com"
                 aria-label="Nuestro email"
                 title="Nuestro email"
-                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536] break-all"
+                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536] break-words"
               >
-                jllopez!269@gmail.com
+                jllopez1269@gmail.com
               </a>
             </div>
             <div className="flex items-start gap-2">

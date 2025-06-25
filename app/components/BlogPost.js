@@ -85,18 +85,7 @@ const BlogPost = ({
             title={title}
           />
         </div>
-
-        {/* Meta Information */}
-
-
-        {/* Title */}
-       
-        {/* Author Info */}
-       
-
         <div className="prose prose-lg max-w-none">
-          
-
           {pregunta1 && (
             <>
               <h2 id="pregunta1" className="text-2xl font-bold text-[#183852] mb-4">
@@ -126,10 +115,10 @@ const BlogPost = ({
 
           {titleText1 && (
             <>
-              <h2 id="titleText1" className="text-2xl font-bold text-[#183852] mb-4">
+              <h2 id="titleText1" className="text-sm font-bold text-[#183852] mb-3">
                 {titleText1}
               </h2>
-              <p className="mb-4 text-[#183852]">
+              <p className="mb-3 text-sm text-[#183852]">
                 {text1}
               </p>
             </>

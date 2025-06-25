@@ -44,8 +44,8 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Estudio Gómez&López Logo"
-            width={80}
-            height={80}
+            width={120}
+            height={120}
             priority={false}
             title="Estudio Gómez&López Logo"
           />
