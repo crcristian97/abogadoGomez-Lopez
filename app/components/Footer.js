@@ -18,7 +18,7 @@ export default function Footer() {
           </a>
           <div className="lg:max-w-sm">
             <p className="text-white text-[1.1rem] leading-relaxed">
-              Estudio Jurídico López&nbsp;Gómez: especialistas en Derecho Penal y Civil en Buenos Aires. <br /> Defendemos tus derechos con compromiso, experiencia y asesoramiento legal personalizado.
+              Estudio Jurídico Gómez&nbsp;López: especialistas en Derecho Penal y Civil en Buenos Aires. <br /> Defendemos tus derechos con compromiso, experiencia y asesoramiento legal personalizado.
             </p>
           </div>
         </div>
