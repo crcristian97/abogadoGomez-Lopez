@@ -3,6 +3,8 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import WhatsAppButton from "./utils/WhatsApp";
+import Script from "next/script";
+
 const merriweather = Merriweather({
   weight: ['300', '400', '700', '900'],
   subsets: ["latin"],
@@ -77,9 +79,25 @@ export const metadata = {
   },
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${merriweather.variable} ${lato.variable}`}>
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-T4XSYS37PK"></Script>
+        <Script
+          id="google-analytics"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-T4XSYS37PK');
+            `,
+          }}
+        />
+      </head>
       <body className="font-lato antialiased">
         <Navbar />
         {children}
