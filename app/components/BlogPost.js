@@ -143,7 +143,7 @@ const BlogPost = ({
             <h3 className="text-2xl font-bold mb-4">¿Necesitas asesoramiento legal?</h3>
             <p className="mb-6">Nuestro equipo de abogados especialistas está listo para ayudarte con tu caso.</p>
             <Link 
-              href={`https://wa.me/5491161280168?text=${encodeURIComponent('Hola, me comunico porque quisiera asesoramiento legal')}`}
+              href={`https://wa.me/5491154645620?text=${encodeURIComponent('Hola, me comunico porque quisiera asesoramiento legal')}`}
               prefetch={false}
               target="_blank"
               rel="noopener noreferrer"

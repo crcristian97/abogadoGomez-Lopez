@@ -39,7 +39,7 @@ export const metadata = {
         "name": "Estudio Gómez & López",
         "description": "Estudio jurídico especializado en derecho penal y civil en Buenos Aires Capital Federal. Más de 30 años de experiencia defendiendo los derechos de nuestros clientes.",
         "email": "jllopez!269@gmail.com", 
-        "telephone": "+5491161280168",
+        "telephone": "+5491154645620",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Av. Carlos Pellegrini 465, Piso 9°, Oficina 71",
@@ -72,7 +72,7 @@ export const metadata = {
           "longitude": -58.380898389976615
         },
         "url": "https://estudiolopezgomez.com", //cambiar
-        "telephone": "+5491161280168",
+        "telephone": "+5491154645620",
         "priceRange": "$$$",
         "openingHoursSpecification": [
           {

@@ -92,7 +92,7 @@ export default function HeroServicesClient({ src, alt, title, description, butto
           <motion.div variants={buttonVariants}>
             <CustomButton
               variant="primary"
-              href="https://wa.me/5491161280168?text=Hola, quiero asesoramiento legal"
+              href="https://wa.me/5491154645620?text=Hola, quiero asesoramiento legal"
               title="Hablá ahora por WhatsApp"
               aria-label="Hablá ahora por WhatsApp"
               target="_blank"

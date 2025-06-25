@@ -47,7 +47,7 @@ export default function HeroSection({ src = "", alt = "", title = "", subtitle =
         >
           <CustomButton
             variant="outline"
-            href={`https://wa.me/5491161280168?text=${encodeURIComponent(
+            href={`https://wa.me/5491154645620?text=${encodeURIComponent(
               "Hola, me comunico porque quisiera asesoramiento legal"
             )}`}
             title="Hablá ahora por WhatsApp"

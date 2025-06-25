@@ -78,7 +78,7 @@ export default function DerechoCivil() {
       <Team
         image="https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749392575/buenos-aires-derecho-civil.webp"
         title="Sobre el derecho civil"
-        buttonLink="https://wa.me/5491161280168?text=Hola, quiero asesoramiento legal"
+        buttonLink="https://wa.me/5491154645620?text=Hola, quiero asesoramiento legal"
         buttonText="Quiero hablar con un abogado"
         description={
           <>

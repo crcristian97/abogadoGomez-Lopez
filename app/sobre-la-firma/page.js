@@ -125,7 +125,7 @@ Actualmente, se desempeña como Secretaria del Colegio de Calígrafos de la Ciud
             buttonText="Hablar con la Dra. Estefanía Gómez"
             imagePosition="right"
             rounder={true}
-            number="5491161280168"
+            number="5491154645620"
         />
         <BannerProduct />
         <Ourblog />
