@@ -68,29 +68,30 @@ export default function BlogsHeadline() {
         <p className="text-[#183852] text-center mb-10 text-base sm:text-lg">
           Explora nuestros artículos más recientes sobre derecho
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {blogPosts.map((post, idx) => (
             <div
               key={post.id}
-              className="flex flex-col bg-white rounded-xl shadow-md overflow-hidden"
+              className="flex flex-col bg-white rounded-xl shadow-md overflow-hidden min-h-[420px] sm:min-h-[440px] md:min-h-[470px] lg:min-h-[500px] w-full md:w-[520px] mx-auto"
             >
-              <div className="relative w-full h-48 min-h-[192px]">
+              <div className="relative w-full h-48 sm:h-56 md:h-60 min-h-[192px] sm:min-h-[224px] md:min-h-[240px]">
                 <Image
                   src={post.image}
                   alt={post.title}
                   fill
+                  title={post.title}
                   className="object-cover"
-                  sizes="(max-width: 640px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, 520px"
                   priority={idx === 0}
                 />
               </div>
-              <div className="flex flex-col justify-between p-6 w-full">
+              <div className="flex flex-col justify-between flex-1 p-6 sm:p-7 md:p-8 w-full">
                 <span className="text-xs text-[#183852] font-semibold mb-1">{post.category}</span>
-                <h3 className="text-lg sm:text-xl font-bold text-[#183852] mb-2">{post.title}</h3>
-                <p className="text-[#183852] text-sm mb-4">{post.description}</p>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#183852] mb-2 leading-tight">{post.title}</h3>
+                <p className="text-[#183852] text-base sm:text-lg mb-4 flex-1">{post.description}</p>
                 <div className="flex items-center gap-2 mt-auto">
                   {post.avatar && (
-                    <div className="w-7 h-7 rounded-full bg-[#cba240] flex items-center justify-center text-white font-bold text-base shadow">
+                    <div className="w-8 h-8 rounded-full bg-[#cba240] flex items-center justify-center text-white font-bold text-base shadow">
                       {post.avatar}
                     </div>
                   )}
@@ -104,7 +105,7 @@ export default function BlogsHeadline() {
                   <Link
                     href={`/blog/${post.slug}`}
                     prefetch={false}
-                    className="inline-block text-[#cba240] font-semibold text-sm hover:underline transition"
+                    className="inline-block text-[#cba240] font-semibold text-base hover:underline transition"
                   >
                     Leer más &rarr;
                   </Link>

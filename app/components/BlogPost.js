@@ -43,6 +43,34 @@ const BlogPost = ({
     <div className="flex gap-8 max-w-7xl mx-auto px-4 py-8">
       {/* Main Content */}
       <article className="flex-1 max-w-4xl">
+        {/* Introducción */}
+        <h1 className="text-4xl font-bold text-[#183852] mb-6">
+          {title}
+        </h1>
+
+        {introduction && (
+          <p className="mb-6 text-[#183852]">
+            {introduction}
+          </p>
+        )}
+
+        <div className="flex items-center gap-4 mb-2">
+          <span className="px-3 py-1 bg-[#cba240] text-white rounded-full text-sm">
+            {category}
+          </span>
+          <span className="text-gray-600">{date}</span>
+          <span className="text-gray-600">{readingTime} min read</span>
+        </div>
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-10 h-10 rounded-full bg-[#cba240] flex items-center justify-center text-white font-bold">
+            {author?.charAt(0)}
+          </div>
+          <div>
+            <p className="font-semibold text-[#183852]">{author}</p>
+            <p className="text-sm text-gray-600">Abogados Especialistas</p>
+          </div>
+        </div>
+
         {/* Hero Section */}
         <div className="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden">
           <div className="absolute inset-0 bg-[#183852] opacity-65 z-10 pointer-events-none" />
@@ -59,41 +87,15 @@ const BlogPost = ({
         </div>
 
         {/* Meta Information */}
-        <div className="flex items-center gap-4 mb-6">
-          <span className="px-3 py-1 bg-[#cba240] text-white rounded-full text-sm">
-            {category}
-          </span>
-          <span className="text-gray-600">{date}</span>
-          <span className="text-gray-600">{readingTime} min read</span>
-        </div>
+
 
         {/* Title */}
-        <h1 className="text-4xl font-bold text-[#183852] mb-6">
-          {title}
-        </h1>
-
+       
         {/* Author Info */}
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-10 h-10 rounded-full bg-[#cba240] flex items-center justify-center text-white font-bold">
-            {author?.charAt(0)}
-          </div>
-          <div>
-            <p className="font-semibold text-[#183852]">{author}</p>
-            <p className="text-sm text-gray-600">Abogados Especialistas</p>
-          </div>
-        </div>
+       
 
         <div className="prose prose-lg max-w-none">
-          {introduction && (
-            <>
-              <h2 id="introduccion" className="text-2xl font-bold text-[#183852] mb-4">
-                Introducción
-              </h2>
-              <p className="mb-6 text-[#183852]">
-                {introduction}
-              </p>
-            </>
-          )}
+          
 
           {pregunta1 && (
             <>

@@ -4,15 +4,15 @@ import BannerProduct from "../components/BannerProduct";
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export const metadata = {
-  title: "Noticias y artículos sobre derecho penal y civil en Buenos Aires Capital Federal",
+  title: "Blog jurídico: noticias y artículos legales en CABA",
   description: "Enterate de las últimas noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes en la Ciudad de Buenos Aires, Capital Federal.",
   openGraph: {
-    title: "Noticias y artículos sobre derecho penal y civil en Buenos Aires Capital Federal",
+    title: "Blog jurídico: noticias y artículos legales en CABA",
     description: "Enterate de las últimas noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes en la Ciudad de Buenos Aires, Capital Federal.",
     url: 'https://estudiolopezgomez.com/blog',
   },
   twitter: {
-    title: "Noticias y artículos sobre derecho penal y civil en Buenos Aires Capital Federal",
+    title: "Blog jurídico: noticias y artículos legales en CABA",
     description: "Enterate de las últimas noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes en la Ciudad de Buenos Aires, Capital Federal.",
   },
   other: {
