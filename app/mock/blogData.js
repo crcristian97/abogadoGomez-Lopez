@@ -1,6 +1,135 @@
 import Image from "next/image";
 
   export const blogData = [
+    {
+    title: "El caso Beatriz Sarlo: ¿Puede heredar el cónyuge separado de hecho?",
+    description: "Análisis jurídico y contexto reciente sobre la controversia sucesoria tras el fallecimiento de Beatriz Sarlo: testamentos ológrafos, exclusión del cónyuge separado de hecho y reflexiones sobre la vocación hereditaria.",
+    image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/herencia-beatriz-sarlo.webp",
+    author: "Dra. Estefanía Gómez",
+    imageAuthor: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/abogada-estefania-gomez.jpg",
+    datePublished: "2025-06-26T08:00:00+08:00",
+    dateModified: "2025-06-26T08:00:00+08:00",
+    date: "26 Junio 2025",
+    category: "Derecho civil",
+    introduction: "En los últimos días, el fallecimiento de la escritora y ensayista Beatriz Sarlo generó una controversia pública y jurídica: el encargado del edificio presentó dos testamentos ológrafos supuestamente firmados por ella, mientras que su exmarido, separado de hecho desde hacía más de 50 años, pidió ser considerado heredero. La Justicia excluyó a Sato del proceso sucesorio y el caso está en plena evaluación judicial.",
+    pregunta1: "¿Qué es un testamento ológrafo?",
+    respuesta1: "Es un testamento escrito a mano, fechado y firmado por la testadora, regulado por el artículo 2477 del Código Civil y Comercial. En el caso Sarlo, está siendo analizado con una pericia caligráfica para confirmar su validez.",
+    lista1: [
+      "Debe estar escrito íntegramente a mano por el testador.",
+      "Debe incluir la fecha y la firma.",
+      "Está regulado por el artículo 2477 del Código Civil y Comercial.",
+      "En este caso, se analiza su validez mediante pericia caligráfica."
+    ],
+    pregunta2: "¿Por qué se excluyó al cónyuge separado de hecho del derecho hereditario?",
+    respuesta2: "Aunque Sarlo nunca se divorció legalmente, la separación de hecho prolongada excluye al cónyuge del derecho hereditario, según el artículo 2437 del Código Civil y Comercial.",
+    lista2: [
+      "El divorcio, la separación de hecho sin voluntad de unirse y la decisión judicial que implica cese de la convivencia excluyen el derecho hereditario entre cónyuges.",
+      "La convivencia entre Sarlo y Sato había cesado hacía muchos años.",
+      "El juez dispuso la exclusión de Sato como heredero de Beatriz Sarlo."
+    ],
+    blockquote: "“...el divorcio, la separación de hecho sin voluntad de unirse y la decisión judicial de cualquier tipo que implica cese de la convivencia, excluyen el derecho hereditario entre cónyuges...” (art. 2437, Código Civil y Comercial).",
+    titleText1: "Contexto reciente del caso Sarlo",
+    text1: "El encargado del edificio donde vivía Sarlo, Melanio Meza, presentó dos testamentos ológrafos supuestamente firmados por ella en 2024, donde le dejaba su departamento y el cuidado de su gata. Por su parte, su exmarido Alberto Sato, con quien seguía legalmente casada aunque separados de hecho desde hacía más de 50 años, pidió ser considerado heredero. La Justicia excluyó a Sato del proceso sucesorio, y el caso está en plena evaluación judicial con pericias caligráficas en curso.",
+    text1lista1: [
+      "El testamento ológrafo está siendo analizado con pericia caligráfica.",
+      "La exclusión del cónyuge separado de hecho generó una fuerte reacción pública y legal.",
+      "Si los testamentos son inválidos y no hay herederos forzosos, el Estado podría intervenir.",
+      "Un grupo de intelectuales pidió preservar el patrimonio cultural de Sarlo para su custodia académica."
+    ],
+    pregunta3: "¿Conserva el cónyuge separado de hecho vocación hereditaria?",
+    respuesta3: "No. La separación de hecho prolongada, sin voluntad de unirse, excluye al cónyuge del derecho hereditario, aunque no exista divorcio legal.",
+    lista3: [
+      "La separación de hecho consiste en el cese permanente de la cohabitación sin decisión judicial.",
+      "El artículo 431 del Código Civil y Comercial establece el deber de convivencia.",
+      "El artículo 2437 excluye el derecho hereditario en caso de separación de hecho prolongada."
+    ],
+    readingTime: "12",
+    slug: "beatriz-sarlo-herencia-y-separacion-de-hecho",
+    content: (
+      <div>
+        <div className="bg-[#f5f7fa] rounded-xl p-6 md:p-10 my-8 shadow-md">
+          <h2 className="text-2xl font-bold mb-4 text-[#183852]">El caso Beatriz Sarlo: ¿Puede heredar el cónyuge separado de hecho?</h2>
+          <h3 className="text-xl font-semibold mb-2 text-[#183852]">Contexto reciente</h3>
+          <p className="mb-4 text-[#183852]">
+            En los últimos días, el fallecimiento de la escritora y ensayista Beatriz Sarlo generó una controversia pública y jurídica:
+          </p>
+          <ul className="list-disc ml-6 mb-4 text-[#183852]">
+            <li>
+              El encargado del edificio donde vivía Sarlo, Melanio Meza, presentó dos testamentos ológrafos supuestamente firmados por ella en 2024, donde le dejaba su departamento y el cuidado de su gata.
+            </li>
+            <li className="text-[#183852]">
+              Por su parte, su exmarido Alberto Sato, con quien seguía legalmente casada aunque separados de hecho desde hacía más de 50 años, pidió ser considerado heredero.
+            </li>
+            <li className="text-[#183852]"    >
+              La Justicia excluyó a Sato del proceso sucesorio, y el caso está en plena evaluación judicial con pericias caligráficas en curso.
+            </li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-2 text-[#183852]">Puntos jurídicos claves del caso Sarlo</h3>
+          <p className="mb-2 font-semibold text-[#183852]">Testamento ológrafo</p>
+          <ul className="list-disc ml-6 mb-4 text-[#183852]">
+            <li>Escrito a mano, fechado y firmado por la testadora.</li>
+            <li>Regulado por el artículo 2477 del Código Civil y Comercial.</li>
+            <li>Está siendo analizado con una pericia caligráfica para confirmar su validez.</li>
+          </ul>
+          <p className="mb-2 font-semibold text-[#183852]">La exclusión del cónyuge separado de hecho</p>
+          <ul className="list-disc ml-6 mb-4 text-[#183852]">
+            <li>Aunque Sarlo nunca se divorció legalmente, la separación de hecho prolongada excluye al cónyuge del derecho hereditario.</li>
+            <li>Esto generó una fuerte reacción pública y legal, dado que Sato mantenía una relación amistosa con la autora.</li>
+          </ul>
+          <p className="mb-2 font-semibold text-[#183852]">La herencia podría quedar vacante si no se valida el testamento</p>
+          <ul className="list-disc ml-6 mb-4 text-[#183852]">
+            <li>Si los testamentos son falsos o inválidos, y no hay herederos forzosos, el Estado podría intervenir.</li>
+            <li>Un grupo de intelectuales pidió preservar el patrimonio cultural de Sarlo (libros, discos, escritos) para su custodia académica.</li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-2 text-[#183852]">Análisis jurídico: la vocación hereditaria del cónyuge separado de hecho</h3>
+          <p className="mb-4 text-[#183852]">
+            <strong>Sobre el caso de Beatriz Sarlo – La vocación hereditaria entre cónyuges separados de hecho</strong>
+            <br />
+            Hemos visto en estos días una incesante cantidad de noticias con respecto a la escritora y ensayista Beatriz Sarlo a raíz de la presentación, por parte del encargado del edificio donde vivía la intelectual argentina, de unos escritos en donde la le dejaba su gata y ese departamento.
+          </p>
+          <p className="mb-4 text-[#183852]">
+            Los documentos, aparentemente de puño y letra de Sarlo, en caso de designar a una persona (en este caso el encargado del edificio) como heredero, se denominan jurídicamente como testamento ológrafo.
+          </p>
+          <p className="mb-4 text-[#183852]">
+            Según el artículo 2477 del Código Civil y Comercial, el testamento ológrafo es aquel escrito íntegramente a mano por el testador, incluyendo la fecha y la firma.
+          </p>
+          <p className="mb-4 text-[#183852]">
+            Sin embargo, fuera del tema de la validez del testamento ológrafo y la forma de determinar la misma (lo cual será tratado en otro blog), nos interesa aquí especialmente el tema de la exclusión del cónyuge supérstite en la vocación hereditaria de la persona fallecida.
+          </p>
+          <p className="mb-4 text-[#183852]">
+            En efecto, la escritora argentina se encontraba casada con el arquitecto Alberto Sato Kotani desde el año 1966, y si bien se encontraban separados de hecho desde hacía muchos años, Sarlo nunca se había divorciado de él y mantenían una relación amistosa.
+          </p>
+          <p className="mb-4 text-[#183852]">
+            Considerando la presentación de Sato ante la justicia para que se lo considere como heredero cabe preguntarse:
+            <br />
+            <strong>¿Conserva el cónyuge separado de hecho vocación hereditaria en el juicio sucesorio de su pareja fallecida?</strong>
+          </p>
+          <p className="mb-4 text-[#183852]">
+            Al respecto, es importante resaltar que la separación de hecho consiste ni más ni menos que en el estado jurídico en que pasan a encontrarse aquellos cónyuges que, sin previa decisión jurisdiccional definitiva, hubieran quebrado el deber de cohabitación en forma permanente, sin que una necesidad jurídica que así lo imponga y sin importar realmente que ello sea consecuencia de la voluntad de uno o de ambos esposos.
+            <br />
+            <span className="italic">
+              (Kemelmajer de Carlucci, Aída, "Separación de hecho entre cónyuges", Astrea, Buenos Aires, 1978, p. 3).
+            </span>
+          </p>
+          <p className="mb-4 text-[#183852]">
+            En ese sentido no puede perderse de vista que, en base al artículo 431 del Código Civil y Comercial de la Nación, los esposos se comprometen a realizar un proyecto de vida en común basado en la cooperación, la convivencia y el deber moral de fidelidad, estimando que la cohabitación es un deber jurídico; sin perjuicio de que su violación no pueda ocasionar ningún efecto, en atención a la lógica interna de un sistema incausado de divorcio, que ha eliminado el abandono voluntario y malicioso, y todas las causales subjetivas del divorcio.
+          </p>
+          <blockquote className="border-l-4 border-[#cba240] pl-4 my-4 text-[#183852] font-merriweather">
+            “...el divorcio, la separación de hecho sin voluntad de unirse y la decisión judicial de cualquier tipo que implica cese de la convivencia, excluyen el derecho hereditario entre cónyuges...” (art. 2437, Código Civil y Comercial).
+          </blockquote>
+          <p className="mb-4 text-[#183852]">
+            Es en base a esa normativa, y el hecho de que la convivencia entre los cónyuges había cesado hacía muchos años, que el juez de la causa dispuso la exclusión de Sato como heredero de Beatriz Sarlo.
+          </p>
+          <h3 className="text-xl font-semibold mb-2 text-[#183852]">Reflexión final</h3>
+          <ul className="list-disc ml-6 mb-4 text-[#183852]">
+            <li className="text-[#183852]">La importancia de formalizar separaciones para evitar conflictos sucesorios.</li>
+            <li className="text-[#183852]">La validez del testamento ológrafo y su valor como última voluntad.</li>
+            <li className="text-[#183852]">La tensión entre el afecto personal y el derecho hereditario cuando la convivencia ha cesado.</li>
+          </ul>
+        </div>
+      </div>
+    ),
+    },
   {
     title: "SOBRE EL DELITO DE ENCUBRIMIENTO DE CONTRABANDO",
     description: "Vamos a analizar uno de los temas consultados en el estudio: el delito de encubrimiento de contrabando.",
@@ -86,7 +215,7 @@ import Image from "next/image";
             Este fallo sienta un precedente importante y novedoso, dado que al reconocer la vigencia del art. 953 del Código Aduanero, soluciona el problema que viene generando la desactualización del importe sobre el cual una acción punible debe ser considerada delito y requerir la intervención de la Justicia.
           </p>
         </div>
-      </div>
+      </div>  
     )
   },
   {
