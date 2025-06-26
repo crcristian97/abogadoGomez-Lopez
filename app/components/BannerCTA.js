@@ -69,7 +69,7 @@ const BannerCTA = () => {
             viewport={{ once: true, amount: 0.4 }}
             custom={idx}
           >
-            <h3 className="text-5xl font-bold mb-6">{card.title}</h3>
+            <h4 className="text-5xl font-bold mb-6">{card.title}</h4>
             <p className="text-2xl font-medium">{card.text}</p>
           </motion.div>
         ))}

@@ -16,7 +16,7 @@ export default function TestimonialCard({ testimonial }) {
         </div>
         <div className="flex items-center mt-2">
           <div>
-            <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
+            <h3 className="font-semibold text-gray-800">{testimonial.name}</h3>
             <p className="text-gray-500 text-sm">{testimonial.role}</p>
           </div>
         </div>

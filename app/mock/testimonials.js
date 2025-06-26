@@ -1,4 +1,4 @@
-export  const testimonials = [
+export const testimonials = [
   {
     text: "Resolví mi caso con ellos y, además, me brindaron tranquilidad en un momento muy estresante. Son serios, responsables y muy eficientes. Gracias por hacer simple lo que me parecía difícil.",
     name: "Margaryta Gatchenko",
