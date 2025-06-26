@@ -44,6 +44,26 @@ export const metadata = {
     siteName: 'Estudio Gómez & López',
     locale: 'es_AR',
     type: 'website',
+    images: [
+      {
+        url: '/android-chrome-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Estudio Gómez & López - Abogados Especialistas en Buenos Aires',
+      },
+      {
+        url: '/android-chrome-192x192.png',
+        width: 192,
+        height: 192,
+        alt: 'Estudio Gómez & López - Abogados Especialistas en Buenos Aires',
+      },
+      {
+        url: '/apple-touch-icon.png',
+        width: 180,
+        height: 180,
+        alt: 'Estudio Gómez & López - Abogados Especialistas en Buenos Aires',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
