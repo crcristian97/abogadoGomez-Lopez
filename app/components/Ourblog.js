@@ -5,7 +5,16 @@ import { MoveRight } from "lucide-react";
 
 const blogPosts = [
   {
-    id: 1,
+    id: 1   ,
+    title: "Beatriz Sarlo y el derecho sucesorio: ¿puede heredar el cónyuge separado de hecho?",
+    excerpt:
+      "Analizamos el caso real de la escritora Beatriz Sarlo para explicar si un cónyuge separado de hecho conserva derechos hereditarios. Qué dice el Código Civil y qué ocurre con los testamentos ológrafos.",
+    image:
+      "https://res.cloudinary.com/dgzi8i2ji/image/upload/herencia-beatriz-sarlo.webp",
+    slug: "beatriz-sarlo-herencia-y-separacion-de-hecho"
+  },
+  {
+    id: 2,
     title: "El derecho a la salud — el amparo como remedio.",
     excerpt:
       "Saber más sobre el remedio del que disponemos los abogados para proteger al afiliado a las obras sociales y/o sistemas de medicina prepaga cuando se les niegan medicamentos o prestaciones médicas.",
@@ -14,7 +23,7 @@ const blogPosts = [
     slug: "el-derecho-a-la-salud-el-amparo-como-remedio",
   },
   {
-    id: 2,
+    id: 3,
     title:
       "El trabajo freelance — distinción entre empleado y contratista privado.",
     excerpt:
@@ -24,7 +33,7 @@ const blogPosts = [
     slug: "trabajo-freelance-en-argentina",
   },
   {
-    id: 3,
+    id: 4,
     title: "Sobre el delito de encubrimiento de contrabando",
     excerpt:
       "Se trata de una figura prevista en el artículo 874 del Código Aduanero (Ley 22.415) que se configura básicamente en dos supuestos: 1) Que exista un delito de contrabando, sin importar si es en grado de tentativa o consumado; 2) Que quien oficie de encubridor, lo haga sin necesidad de responder a una promesa previa en ese sentido.",
@@ -33,7 +42,7 @@ const blogPosts = [
     slug: "delito-encubrimiento-contrabando",
   },
   {
-    id: 4,
+    id: 5,
     title: "¿Qué hace un calígrafo público? Funciones y rol profesional",
     excerpt:
       "El Calígrafo Público o Perito Calígrafo es un profesional especializado en verificar la autenticidad de documentos, firmas y manuscritos. ",
