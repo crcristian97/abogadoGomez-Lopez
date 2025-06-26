@@ -49,9 +49,12 @@ const BlogPost = ({
         </h1>
 
         {introduction && (
-          <p className="mb-6 text-[#183852]">
-            {introduction}
-          </p>
+          <>
+           
+            <p id="introduccion" className="mb-6 text-[#183852]">
+              {introduction}
+            </p>
+          </>
         )}
 
         <div className="flex items-center gap-4 mb-2">
