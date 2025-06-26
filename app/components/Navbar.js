@@ -85,11 +85,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center lg:order-2">
           <button
             onClick={() => handleClickWhatsApp('Quiero asesoramiento legal')}
-            className="rounded-full px-6 py-2 font-merriweather font-bold cursor-pointer"
-            style={{
-              backgroundColor: "#CBA240",
-              color: "#183852",
-            }}
+            className="rounded-full px-6 py-2 font-merriweather font-bold cursor-pointer bg-[#CBA240] text-[#183852] transition-colors duration-200 hover:bg-[#b49438] hover:text-white"
           >
             Hablá con un abogado
           </button>
@@ -106,7 +102,7 @@ export default function Navbar() {
               <Link
                 href="/"
                 prefetch={false}
-                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
+                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#b49438] lg:rounded-full"
                 aria-current="page"
                 onClick={handleMenuLinkClick}
               >
@@ -117,7 +113,7 @@ export default function Navbar() {
               <Link
                 href="/sobre-la-firma"
                 prefetch={false}
-                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
+                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#b49438] lg:rounded-full"
                 onClick={handleMenuLinkClick}
               >
                 Sobre la firma
@@ -130,7 +126,7 @@ export default function Navbar() {
             >
               <button
                 type="button"
-                className="flex items-center w-full py-2 pl-3 pr-4 text-white transition-colors focus:outline-none font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
+                className="flex items-center w-full py-2 pl-3 pr-4 text-white transition-colors focus:outline-none font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#b49438] lg:rounded-full"
                 onClick={handleDropdownToggle}
                 aria-haspopup="true"
                 aria-expanded={dropdownOpen}
@@ -155,7 +151,7 @@ export default function Navbar() {
                     mobileOpen
                       ? "static mt-2 w-full bg-primary"
                       : "absolute left-0 mt-2 w-56"
-                  } z-20 text-primary rounded-2xl shadow-lg font-merriweather bg-[#183852]`}
+                  } z-20 text-primary rounded-2xl shadow-lg font-merriweather bg-[#20476a]`}
                 >
                   <li className="group transition-colors">
                     <Link
@@ -220,7 +216,7 @@ export default function Navbar() {
               <Link
                 href="/contacto"
                 prefetch={false}
-                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
+                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#b49438] lg:rounded-full"
                 onClick={handleMenuLinkClick}
               >
                 Contacto
@@ -230,7 +226,7 @@ export default function Navbar() {
               <Link
                 href="/blog"
                 prefetch={false}
-                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#20476a] lg:rounded-full"
+                className="block py-2 pl-3 pr-4 text-white transition-colors font-merriweather cursor-pointer group-hover:text-secondary group-hover:bg-[#b49438] lg:rounded-full"
                 onClick={handleMenuLinkClick}
               >
                 Blog

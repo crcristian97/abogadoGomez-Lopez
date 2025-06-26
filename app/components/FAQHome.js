@@ -70,10 +70,10 @@ export default function FAQHome({ faqs = [] }) {
               href="/blog"
               prefetch={false}
               className="w-fit font-bold text-[#CBA240] hover:text-white transition-colors duration-200"
-              title="Mira lo que dicen nuestros expertos"
-              aria-label="Mira lo que dicen nuestros expertos"
+              title="Conocé lo que dicen nuestros clientes"
+              aria-label="Conocé lo que dicen nuestros clientes"
             >
-              Mira lo que dicen nuestros expertos
+              Conocé lo que dicen nuestros clientes
             </Link>
           </div>
         </motion.div>
