@@ -40,7 +40,6 @@ const blogPosts = [
     featured: false,
     slug: "trabajo-freelance-en-argentina",
     avatar: "EG"
-
   },
   {
     id: 3,
@@ -67,11 +66,14 @@ const blogPosts = [
     featured: false,
     slug: "delito-encubrimiento-contrabando",
     avatar: "EG", // Simulated avatar
-
   }
 ];
 
 export default function BlogsHeadline() {
+  // Separamos la nota más importante (id:0) y el resto
+  const mainPost = blogPosts.find(post => post.id === 0);
+  const otherPosts = blogPosts.filter(post => post.id !== 0);
+
   return (
     <section className="w-full bg-[#cfd6df] py-12 px-2 sm:px-8">
       <div className="max-w-6xl mx-auto">
@@ -81,8 +83,53 @@ export default function BlogsHeadline() {
         <p className="text-[#183852] text-center mb-10 text-base sm:text-lg">
           Explora nuestros artículos más recientes sobre derecho
         </p>
+        {/* Nota principal destacada */}
+        {mainPost && (
+          <div className="mb-12">
+            <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-lg overflow-hidden min-h-[480px] w-full">
+              <div className="relative w-full md:w-1/2 h-64 md:h-auto min-h-[256px]">
+                <Image
+                  src={mainPost.image}
+                  alt={mainPost.title}
+                  fill
+                  title={mainPost.title}
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+              <div className="flex flex-col justify-between flex-1 p-8 w-full">
+                <span className="text-sm text-[#183852] font-semibold mb-2">{mainPost.category}</span>
+                <h3 className="text-2xl sm:text-3xl font-bold text-[#183852] mb-4 leading-tight">{mainPost.title}</h3>
+                <p className="text-[#183852] text-lg sm:text-xl mb-6 flex-1">{mainPost.description}</p>
+                <div className="flex items-center gap-2 mt-auto">
+                  {mainPost.avatar && (
+                    <div className="w-10 h-10 rounded-full bg-[#cba240] flex items-center justify-center text-white font-bold text-lg shadow">
+                      {mainPost.avatar}
+                    </div>
+                  )}
+                  <div className="flex flex-col">
+                    <span className="text-sm text-[#183852] font-semibold">{mainPost.author}</span>
+                    <span className="text-xs text-[#183852]">{mainPost.date}</span>
+                  </div>
+                  <span className="text-xs text-[#183852] ml-3">{mainPost.time}</span>
+                </div>
+                <div className="mt-6">
+                  <Link
+                    href={`/blog/${mainPost.slug}`}
+                    prefetch={false}
+                    className="inline-block text-[#cba240] font-semibold text-lg hover:underline transition"
+                  >
+                    Leer más &rarr;
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        {/* Resto de las notas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {blogPosts.map((post, idx) => (
+          {otherPosts.map((post, idx) => (
             <div
               key={post.id}
               className="flex flex-col bg-white rounded-xl shadow-md overflow-hidden min-h-[420px] sm:min-h-[440px] md:min-h-[470px] lg:min-h-[500px] w-full md:w-[520px] mx-auto"
@@ -95,7 +142,7 @@ export default function BlogsHeadline() {
                   title={post.title}
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 520px"
-                  priority={idx === 0}
+                  priority={false}
                 />
               </div>
               <div className="flex flex-col justify-between flex-1 p-6 sm:p-7 md:p-8 w-full">
