@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: "Estudio jurídico en Buenos Aires, Capital Federal",
     description: "Conozca nuestro estudio jurídico en Buenos Aires, Capital Federal: nuestra historia, valores y el equipo de abogados especialistas en derecho penal y civil en CABA.",
-    url: 'https://estudiolopezgomez.com/sobre-la-firma',
+    url: 'https://www.estudiodeabogadosgomezlopez.com.ar/sobre-la-firma',
   },
   twitter: {
     title: "Estudio jurídico en Buenos Aires, Capital Federal",
@@ -36,13 +36,13 @@ export const metadata = {
             '@type': 'ListItem',
             'position': 1,
             'name': 'Inicio',
-            'item': 'https://estudiolopezgomez.com'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': 'Sobre la Firma',
-            'item': 'https://estudiolopezgomez.com/sobre-la-firma'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/sobre-la-firma'
           }
         ]
       },
@@ -65,7 +65,7 @@ export const metadata = {
             "name": "Estudio Gómez & López "
           },
           "telephone": "+5491154645620",
-          "url": "https://estudiolopezgomez.com/sobre-la-firma"
+          "url": "https://www.estudiodeabogadosgomezlopez.com.ar/sobre-la-firma"
         }
       },
       {
@@ -87,7 +87,7 @@ export const metadata = {
             "name": "Estudio Gómez & López"
           },
           "telephone": "+5491161280168",
-          "url": "https://estudiolopezgomez.com/sobre-la-firma"
+          "url": "https://www.estudiodeabogadosgomezlopez.com.ar/sobre-la-firma"
         }
       }
     ]

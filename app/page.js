@@ -29,12 +29,12 @@ export const metadata = {
             "//div[contains(@class, 'HeroSection')]//p"
           ]
         },
-        "url": "https://estudiolopezgomez.com"  //cambiar
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/"  //cambiar
       },
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "url": "https://estudiolopezgomez.com",  //cambiar
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/",  //cambiar
         "logo": "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp",  //cambiar
         "name": "Estudio Gómez & López",
         "description": "Estudio jurídico especializado en derecho penal y civil en Buenos Aires Capital Federal. Más de 30 años de experiencia defendiendo los derechos de nuestros clientes.",
@@ -71,7 +71,7 @@ export const metadata = {
           "latitude": -34.602891443771604,
           "longitude": -58.380898389976615
         },
-        "url": "https://estudiolopezgomez.com", //cambiar
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/", //cambiar
         "telephone": "+5491154645620",
         "priceRange": "$$$",
         "openingHoursSpecification": [

@@ -25,7 +25,7 @@ export const metadata = {
   openGraph: {
     title: "Especialistas en derecho laboral en Buenos Aires Capital Federal",
     description: "Especialistas en derecho laboral en Buenos Aires Capital. Asesoramos en despidos, indemnizaciones, acoso laboral, trabajo en negro y todo tipo de conflictos laborales. Más de 30 años de experiencia defendiendo los derechos de trabajadores y empresas en la Ciudad Autónoma de Buenos Aires.",
-    url: 'https://estudiolopezgomez.com/servicios/derecho-laboral',
+    url: 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-laboral',
     type: 'article',
   },
   twitter: {
@@ -42,19 +42,19 @@ export const metadata = {
             '@type': 'ListItem',
             'position': 1,
             'name': 'Inicio',
-            'item': 'https://estudiolopezgomez.com'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': 'Servicios',
-            'item': 'https://estudiolopezgomez.com/servicios'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios'
           },
           {
             '@type': 'ListItem',
             'position': 3,
             'name': 'Especialistas en derecho laboral en Buenos Aires Capital Federal',
-            'item': 'https://estudiolopezgomez.com/servicios/derecho-laboral'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-laboral'
           }
         ]
       },

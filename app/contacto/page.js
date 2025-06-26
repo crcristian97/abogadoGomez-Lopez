@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: "Contacto | Estudio López & Gómez",
     description: "Contáctenos para una consulta legal personalizada. Estamos ubicados en Buenos Aires y atendemos casos en todo el país.",
-    url: 'https://estudiolopezgomez.com/contacto',
+    url: 'https://www.estudiodeabogadosgomezlopez.com.ar/contacto',
   },
   twitter: {
     title: "Contacto | Estudio López & Gómez",

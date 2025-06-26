@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Derecho Penal en la Ciudad de Buenos Aires",
     description: "Especialistas en derecho penal con amplia experiencia en defensa criminal, asesoramiento legal y representación en juicios penales.",
-    url: 'https://estudiolopezgomez.com/servicios/derecho-penal',
+    url: 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-penal',
     type: 'article',
   },
   twitter: {
@@ -34,19 +34,19 @@ export const metadata = {
             '@type': 'ListItem',
             'position': 1,
             'name': 'Inicio',
-            'item': 'https://estudiolopezgomez.com'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': 'Servicios',
-            'item': 'https://estudiolopezgomez.com/servicios'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios'
           },
           {
             '@type': 'ListItem',
             'position': 3,
             'name': 'Derecho Penal en la Ciudad de Buenos Aires',
-            'item': 'https://estudiolopezgomez.com/servicios/derecho-penal'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-penal'
           }
         ]
       },

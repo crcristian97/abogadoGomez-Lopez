@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: "Blog jurídico: noticias y artículos legales en CABA",
     description: "Enterate de las últimas noticias sobre derecho penal y civil, actualizaciones legales y análisis de casos relevantes en la Ciudad de Buenos Aires, Capital Federal.",
-    url: 'https://estudiolopezgomez.com/blog',
+    url: 'https://www.estudiodeabogadosgomezlopez.com.ar/blog',
   },
   twitter: {
     title: "Blog jurídico: noticias y artículos legales en CABA",
@@ -24,13 +24,13 @@ export const metadata = {
           '@type': 'ListItem',
           'position': 1,
           'name': 'Inicio',
-          'item': 'https://estudiolopezgomez.com'
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/'
         },
         {
           '@type': 'ListItem',
           'position': 2,
           'name': 'Noticias y artículos sobre derecho penal y civil en Buenos Aires Capital Federal',
-          'item': 'https://estudiolopezgomez.com/blog'
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar//blog'
         } 
       ]
     }

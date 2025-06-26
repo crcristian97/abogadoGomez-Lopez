@@ -1,13 +1,13 @@
 export const faqs = [
     {
-      question: "¿Puede un solo heredero iniciar la sucesión?",
+      question: "¿Cómo sé si una firma fue falsificada?",
       answer:
-        "Sí. En Argentina, según el Código Civil y Comercial, un solo heredero puede iniciar la sucesión sin necesidad de los demás. Posteriormente, se cita al resto para que acepten o rechacen la herencia.",
+        "Nuestros expertos analizan el documento con lupa, microscopio y software específico para detectar indicios de falsificación o simulación.",
     },
     {
-      question: "¿Es obligatorio hacer la sucesión para heredar?",
+      question: "¿Es necesaria la realización de una pericia caligráfica ante una sucesión?",
       answer:
-        "Sí. Para transferir legalmente los bienes del fallecido, es necesario iniciar un trámite de sucesión judicial o notarial, dependiendo del caso.",
+        "Es obligatoria la intervención de un perito calígrafo en las sucesiones cuando el testamento es ológrafo (de puño y letra del causante). El perito analiza las firmas y los escritos manuscritos para determinar la autenticidad del documento.",
     },
     {
       question: "¿Qué pasa después de la declaratoria de herederos?",
@@ -15,18 +15,25 @@ export const faqs = [
         "Una vez dictada la declaratoria, los herederos pueden inscribir los bienes a su nombre. También pueden repartirlos o venderlos según el acuerdo que haya entre ellos.",
     },
     {
-      question: "¿Cómo saber si una sucesión está iniciada en Argentina?",
+      question: "¿Qué pasa si la obra social me deniega la entrega de un medicamento prescripto por mi médico?",
       answer:
-        "Se puede consultar el estado de una expediente sucesorio en el sitio web del Poder Judicial correspondiente a cada provincia. En CABA, se usa el buscador de expedientes judiciales online.",
+        "Si el medicamento no es experimental y está prescripto por un médico dentro de la cartilla o de la especialidad, la obra social o la prepaga está obligada a entregarlo en tiempo y forma. En caso de negativa o demoras, se puede presentar un amparo en la Ciudad y en la Provincia de Buenos Aires para que la justicia ordene su entrega, hecho que suele lograrse con celeridad.",
     },
     {
-      question: "¿Una madre puede dejarle toda la herencia a un solo hijo?",
+      question: "¿Cuánto tiempo tengo para reclamar un despido?",
       answer:
-        "No completamente. La ley argentina protege la porción legítima de los herederos forzosos (hijos); por lo tanto no se puede desheredar sin justa causa. Se puede hacer donación en vida, pero con límites legales.",
+        "Tenés hasta 2 años desde el despido para iniciar acción judicial. Cuanto antes actúes, mejor. Podemos ayudarte a calcular lo que te corresponde.",
     },
     {
-      question: "¿Cuánto tiempo tarda una sucesión en Argentina?",
+      question: "¿Qué debe contener un contrato de trabajo?",
       answer:
-        "El tiempo varía según la complejidad y si hay acuerdo entre los herederos. En promedio, una sucesión simple puede demorar entre 6 meses y 1 año.",
+        "Debe incluir tareas, jornada, salario, categoría, obra social, ART, entre otros. Asesoramos a empresas para evitar futuros juicios laborales.",
     },
+    
+    {
+      question: "¿Qué es el derecho penal federal?",
+      answer:
+        "El derecho penal federal regula delitos que afectan normas nacionales, como narcotráfico, contrabando o delitos aduaneros. Nuestros abogados están matriculados para intervenir a nivel federal.",
+    },
+
   ];

@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Especialistas en derecho civil en Buenos Aires Capital Federal",
     description: "Expertos en derecho civil en Buenos Aires, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, y más.",
-    url: 'https://estudiolopezgomez.com/servicios/derecho-civil',
+    url: 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-civil',
     type: 'article',
   },
   twitter: {
@@ -33,19 +33,19 @@ export const metadata = {
             '@type': 'ListItem',
             'position': 1,
             'name': 'Inicio',
-            'item': 'https://estudiolopezgomez.com'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': 'Servicios',
-            'item': 'https://estudiolopezgomez.com/servicios'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios'
           },
           {
             '@type': 'ListItem',
             'position': 3,
             'name': 'Especialistas en derecho civil en Buenos Aires Capital Federal',
-            'item': 'https://estudiolopezgomez.com/servicios/derecho-civil'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-civil'
           }
         ]
       },

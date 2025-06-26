@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Pericias Caligráficas en la Ciudad de Buenos Aires",
     description: "Servicio profesional de pericias caligráficas con validez judicial en la Ciudad de Buenos Aires. Análisis técnico de firmas y documentos manuscritos para casos legales.",
-    url: 'https://estudiolopezgomez.com/servicios/peritajes-caligraficos',
+    url: 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/peritajes-caligraficos',
     type: 'article',
   },
   twitter: {
@@ -38,19 +38,19 @@ export const metadata = {
             '@type': 'ListItem',
             'position': 1,
             'name': 'Inicio',
-            'item': 'https://estudiolopezgomez.com'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': 'Servicios',
-            'item': 'https://estudiolopezgomez.com/servicios'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios'
           },
           {
             '@type': 'ListItem',
             'position': 3,
             'name': 'Pericias Caligráficas en la Ciudad de Buenos Aires',
-            'item': 'https://estudiolopezgomez.com/servicios/peritajes-caligraficos'
+            'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/peritajes-caligraficos'
           }
         ]
       },

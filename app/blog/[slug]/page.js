@@ -20,7 +20,7 @@ export const generateMetadata = async ({ params }) => {
       ],
       title: `${postData?.title || "Blog Post"} | Estudio López & Gómez`,
       description: postData?.description || "Artículo del blog de Estudio López & Gómez",
-      url: `https://estudiolopezgomez.com/blog/${slug}`,
+      url: `https://www.estudiodeabogadosgomezlopez.com.ar/blog/${slug}`,
       type: 'article',
     },
     twitter: {
@@ -37,19 +37,19 @@ export const generateMetadata = async ({ params }) => {
               '@type': 'ListItem',
               'position': 1,
               'name': 'Inicio',
-              'item': 'https://estudiolopezgomez.com'
+              'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
             },
             {
               '@type': 'ListItem',
               'position': 2,
               'name': 'Blog',
-              'item': 'https://estudiolopezgomez.com/blog'
+              'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/blog'
             },
             {
               '@type': 'ListItem',
               'position': 3,
               'name': postData?.title || 'Artículo',
-              'item': `https://estudiolopezgomez.com/blog/${slug}`
+              'item': `https://www.estudiodeabogadosgomezlopez.com.ar/blog/${slug}`
             }
           ]
         },
@@ -68,13 +68,13 @@ export const generateMetadata = async ({ params }) => {
             {
               "@type": "Person",
               "name": postData?.author || "Dr. Jose Luis López",
-              "url": "https://estudiolopezgomez.com/sobre-la-firma"
+              "url": "https://www.estudiodeabogadosgomezlopez.com.ar/sobre-la-firma"
             }
           ],
           "publisher": {
             "@type": "Organization",
             "name": "Estudio López & Gómez",
-            "url": "https://estudiolopezgomez.com"
+            "url": "https://www.estudiodeabogadosgomezlopez.com.ar"
           }
         }
       ]

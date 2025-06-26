@@ -33,14 +33,14 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://estudiolopezgomez.com'),
+  metadataBase: new URL('https://www.estudiodeabogadosgomezlopez.com.ar/'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Estudio Gómez & López - Abogados Especialistas",
     description: "Estudio jurídico especializado en derecho penal y civil, con amplia experiencia en litigios y asesoramiento legal personalizado.",
-    url: 'https://estudiolopezgomez.com',
+    url: 'https://www.estudiodeabogadosgomezlopez.com.ar/',
     siteName: 'Estudio Gómez & López',
     locale: 'es_AR',
     type: 'website',
