@@ -66,7 +66,7 @@ export default function AboutUs() {
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
       >
-        <div className="rounded-2xl overflow-hidden w-full max-w-xl bg-[#183852] opacity-80 z-[1] shadow-2xl">
+        <div className="rounded-2xl overflow-hidden w-full max-w-xl bg-[#183852] opacity-80 z-[1]">
           <Image
             src="https://res.cloudinary.com/dgzi8i2ji/image/upload/estudio-abogados-en-buenos-aires.webp"
             alt="estudio Gomez y Lopez de abogados en buenos aires"

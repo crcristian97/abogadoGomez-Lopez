@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="px-4 pt-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="grid gap-y-14 gap-x-10 mb-12 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2 flex flex-col gap-6">
-          <a title="Estudio Gómez&López" className="inline-flex items-center mb-4">
+          <a href="/" title="Estudio Gómez&López" className="inline-flex items-center mb-4">
             <Image
               src="/logo.png"
               alt="Estudio Gómez&López Logo"
@@ -105,7 +105,8 @@ export default function Footer() {
               target="_blank"
               rel="noopener"
               title="Desarrollado por We make it Lab"
-              className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536]"
+              className="transition-colors duration-300 text-[#FFD700] hover:text-[#CBA240] underline underline-offset-2 focus:outline-none focus:ring-2 focus:ring-[#FFD700] focus:ring-offset-2"
+              style={{ color: "#FFD700" }} // Alto contraste amarillo
             >
               We make it Lab
             </a>

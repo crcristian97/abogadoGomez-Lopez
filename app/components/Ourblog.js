@@ -48,9 +48,9 @@ export default function Ourblog() {
     <div className="w-full py-16 md:py-24 bg-gradient-to-b from-[#B0B9C2] via-[#e6e8ea] to-[#B0B9C2]">
       <div className="container mx-auto flex flex-col gap-14 px-4">
         <div className="flex w-full flex-col sm:flex-row sm:justify-between sm:items-center gap-8">
-          <h4 className="text-2xl md:text-4xl font-merriweather font-bold text-[#183852] tracking-tight max-w-xl">
+          <h3 className="text-2xl md:text-4xl font-merriweather font-bold text-[#183852] tracking-tight max-w-xl">
             Últimos artículos del blog
-          </h4>
+          </h3>
           <Link
             href="/blog"
             prefetch={false}
@@ -79,15 +79,15 @@ export default function Ourblog() {
                     fill
                     className="object-cover rounded-t-2xl group-hover:scale-105 transition-transform duration-300 opacity-80"
                     sizes="(max-width: 768px) 100vw, 25vw"
-                    priority={post.id === 1}
+                    priority={false}
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#183852]/80 via-[#183852]/40 to-transparent rounded-t-2xl" />
               </div>
               <div className="flex flex-col gap-2 px-5 pb-6">
-                <h3 className="text-xl font-bold font-merriweather text-[#CBA240] tracking-tight group-hover:underline">
+                <h4 className="text-xl font-bold font-merriweather text-[#CBA240] tracking-tight group-hover:underline">
                   {post.title}
-                </h3>
+                </h4>
                 <p className="text-[#183852] text-base font-medium">
                   {post.excerpt}
                 </p>
