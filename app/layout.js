@@ -104,7 +104,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${merriweather.variable} ${lato.variable}`}>
       <head>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-T4XSYS37PK"></Script>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-E0N96RMBHG"></Script>
         <Script
           id="google-analytics"
           strategy="lazyOnload"
@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-T4XSYS37PK');
+              gtag('config', 'G-E0N96RMBHG');
             `,
           }}
         />
