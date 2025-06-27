@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 
 const blogPosts = [
   {
-    id: 1   ,
+    id: 1,
     title: "Beatriz Sarlo y el derecho sucesorio: ¿puede heredar el cónyuge separado de hecho?",
     excerpt:
       "Analizamos el caso real de la escritora Beatriz Sarlo para explicar si un cónyuge separado de hecho conserva derechos hereditarios. Qué dice el Código Civil y qué ocurre con los testamentos ológrafos.",
@@ -53,6 +53,9 @@ const blogPosts = [
 ];
 
 export default function Ourblog() {
+  // Mostrar solo los primeros 3 artículos
+  const firstThreePosts = blogPosts.slice(0, 3);
+
   return (
     <div className="w-full py-16 md:py-24 bg-gradient-to-b from-[#B0B9C2] via-[#e6e8ea] to-[#B0B9C2]">
       <div className="container mx-auto flex flex-col gap-14 px-4">
@@ -70,13 +73,14 @@ export default function Ourblog() {
             <MoveRight className="w-5 h-5 text-[#CBA240] group-hover:text-[#183852] transition-colors duration-200" />
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {blogPosts.map((post) => (
+        {/* Cambiado a grid de 1 columna en mobile, 2 en sm, 3 en lg */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {firstThreePosts.map((post) => (
             <Link
               key={post.id}
               href={`/blog/${post.slug}`}
               prefetch={false}
-              className="flex flex-col gap-2 hover:opacity-85 cursor-pointer group bg-[#f7f8fa] rounded-2xl shadow-lg border border-[#e2e6ea] transition-transform duration-200 hover:scale-[1.025] overflow-hidden"
+              className="flex flex-col gap-2 hover:opacity-85 cursor-pointer group bg-[#f7f8fa] rounded-2xl shadow-lg border border-[#e2e6ea] transition-transform duration-200 hover:scale-[1.025] overflow-hidden h-full"
               aria-label={post.title}
             >
               <div className="relative w-full aspect-video mb-4 bg-[#B0B9C2]">
@@ -87,13 +91,13 @@ export default function Ourblog() {
                     title={post.title}
                     fill
                     className="object-cover rounded-t-2xl group-hover:scale-105 transition-transform duration-300 opacity-80"
-                    sizes="(max-width: 768px) 100vw, 25vw"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     priority={false}
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#183852]/80 via-[#183852]/40 to-transparent rounded-t-2xl" />
               </div>
-              <div className="flex flex-col gap-2 px-5 pb-6">
+              <div className="flex flex-col gap-2 px-5 pb-6 flex-1">
                 <h4 className="text-xl font-bold font-merriweather text-[#CBA240] tracking-tight group-hover:underline">
                   {post.title}
                 </h4>
