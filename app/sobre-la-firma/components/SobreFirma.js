@@ -9,7 +9,7 @@ function AnimatedLetters({ text, className = "" }) {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.045,
+        staggerChildren: 0.018, // Más rápido (antes 0.045)
       },
     },
   };
@@ -23,7 +23,8 @@ function AnimatedLetters({ text, className = "" }) {
       transition: {
         type: "spring",
         damping: 16,
-        stiffness: 220,
+        stiffness: 320, // Más stiffness para que rebote menos y sea más rápido
+        duration: 0.18, // Opcional: fuerza duración máxima por letra
       },
     },
   };
@@ -65,7 +66,7 @@ const sectionVariants = {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
-    transition: { duration: 1, ease: "easeOut" },
+    transition: { duration: 0.5, ease: "easeOut" }, // Más rápido (antes 1)
   },
 };
 
@@ -75,7 +76,7 @@ const leftColVariants = {
     opacity: 1,
     x: 0,
     filter: "blur(0px)",
-    transition: { duration: 1, ease: "easeOut" },
+    transition: { duration: 0.5, ease: "easeOut" }, // Más rápido (antes 1)
   },
 };
 
@@ -85,7 +86,7 @@ const rightColVariants = {
     opacity: 1,
     x: 0,
     filter: "blur(0px)",
-    transition: { duration: 1, ease: "easeOut", delay: 0.2 },
+    transition: { duration: 0.5, ease: "easeOut", delay: 0.08 }, // Más rápido y menos delay (antes 0.2)
   },
 };
 
