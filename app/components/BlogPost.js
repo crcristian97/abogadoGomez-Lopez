@@ -57,15 +57,23 @@ const BlogPost = ({
           </>
         )}
 
-        <div className="flex items-center gap-4 mb-2">
+        <div className="flex items-center gap-4 mb-2 flex-wrap">
           <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-[#cba240] text-white rounded-full text-xs sm:text-sm whitespace-nowrap">
             {category}
           </span>
-          <span className="text-gray-600">{date}</span>
-          <span className="text-gray-600">{readingTime} min read</span>
+          <div className="flex items-center gap-2">
+            <span className="text-gray-600 text-xs sm:text-sm">{date}</span>
+            <span className="flex items-center text-gray-600 text-xs sm:text-sm gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <circle cx="12" cy="12" r="10" strokeWidth="1.5" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 7v5l3 3" />
+              </svg>
+              {readingTime}'
+            </span>
+          </div>
         </div>
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-10 h-10 rounded-full bg-[#cba240] flex items-center justify-center text-white font-bold">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#cba240] flex items-center justify-center text-white font-bold text-base sm:text-lg">
             {author?.charAt(0)}
           </div>
           <div>
