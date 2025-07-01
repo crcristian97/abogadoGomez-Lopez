@@ -48,12 +48,21 @@ const Breadcrumbs = () => {
 
   return (
     <nav
-      className="py-3 px-4  backdrop-blur border-b "
+      className="py-2 px-2 sm:py-3 sm:px-4 backdrop-blur border-b"
       aria-label="Breadcrumb"
     >
       <div className="max-w-7xl mx-auto">
-        <ol className="flex items-center flex-wrap gap-1 text-sm font-lato" role="list">
-          <li>
+        <ol
+          className="
+            flex items-center flex-wrap gap-1
+            text-xs sm:text-sm font-lato
+            overflow-x-auto
+            whitespace-nowrap
+            scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent
+            "
+          role="list"
+        >
+          <li className="min-w-0">
             <Link
               href="/"
               className="inline-flex items-center gap-1 text-gray-500 hover:text-[#CBA240] transition-colors font-medium"
@@ -69,23 +78,26 @@ const Breadcrumbs = () => {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-9 9 9M4 10v10a1 1 0 001 1h3m10-11v11a1 1 0 01-1 1h-3m-6 0h6" />
               </svg>
-              Inicio
+              <span className="hidden xs:inline">Inicio</span>
+              <span className="inline xs:hidden">Inicio</span>
             </Link>
           </li>
           {breadcrumbs.map((breadcrumb, index) => (
-            <li key={breadcrumb.href} className="flex items-center">
-              <ChevronRight className="w-4 h-4 text-gray-300 mx-2" />
+            <li key={breadcrumb.href} className="flex items-center min-w-0">
+              <ChevronRight className="w-4 h-4 text-gray-300 mx-2 flex-shrink-0" />
               {breadcrumb.isLast ? (
                 <span
-                  className="text-[#CBA240] font-semibold cursor-default transition-colors"
+                  className="text-[#CBA240] font-semibold cursor-default transition-colors truncate max-w-[120px] sm:max-w-[200px]"
                   aria-current="page"
+                  title={breadcrumb.label}
                 >
                   {breadcrumb.label}
                 </span>
               ) : (
                 <Link
                   href={breadcrumb.href}
-                  className="text-gray-500 hover:text-[#CBA240] transition-colors font-medium"
+                  className="text-gray-500 hover:text-[#CBA240] transition-colors font-medium truncate max-w-[120px] sm:max-w-[200px]"
+                  title={breadcrumb.label}
                 >
                   {breadcrumb.label}
                 </Link>
