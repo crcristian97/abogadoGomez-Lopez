@@ -6,7 +6,7 @@ import Image from "next/image";
     description: "Análisis jurídico y contexto reciente sobre la controversia sucesoria tras el fallecimiento de Beatriz Sarlo: testamentos ológrafos, exclusión del cónyuge separado de hecho y reflexiones sobre la vocación hereditaria.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/herencia-beatriz-sarlo.webp",
     author: "Dra. Estefanía Gómez",
-    imageAuthor: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/abogada-estefania-gomez.jpg",
+    imageAuthor: "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogada-especialista-caligrafia-derecho.webp",
     datePublished: "2025-06-26T08:00:00+08:00",
     dateModified: "2025-06-26T08:00:00+08:00",
     date: "26 Junio 2025",
