@@ -58,7 +58,7 @@ const BlogPost = ({
         )}
 
         <div className="flex items-center gap-4 mb-2">
-          <span className="px-3 py-1 bg-[#cba240] text-white rounded-full text-sm">
+          <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-[#cba240] text-white rounded-full text-xs sm:text-sm whitespace-nowrap">
             {category}
           </span>
           <span className="text-gray-600">{date}</span>
