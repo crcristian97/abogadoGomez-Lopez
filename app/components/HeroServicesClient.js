@@ -40,12 +40,13 @@ const buttonVariants = {
 export default function HeroServicesClient({ src, alt, title, description, buttonShow = true }) {
   return (
     <motion.section
-      className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] h-auto"
+      className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] h-auto flex items-end"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
+      {/* Responsive image background */}
       <motion.div
         className="absolute inset-0 w-full h-full"
         variants={imageVariants}
@@ -63,33 +64,71 @@ export default function HeroServicesClient({ src, alt, title, description, butto
           priority={false}
         />
       </motion.div>
+      {/* Overlay for readability */}
       <motion.div
         className="absolute inset-0 bg-[#183852] z-[1]"
         aria-hidden="true"
         variants={overlayVariants}
       />
-      {/* Contenido más abajo a la izquierda, sin fondo */}
+      {/* Responsive content */}
       <motion.div
-        className="absolute left-0 bottom-0 z-20 flex flex-col items-start justify-end max-w-4xl px-4 sm:px-8 pb-12 sm:pb-20 md:pb-28 w-full"
+        className="
+          relative
+          z-20
+          flex flex-col items-start justify-end
+          w-full
+          max-w-4xl
+          px-4
+          sm:px-8
+          pb-8
+          sm:pb-16
+          md:pb-24
+          lg:pb-32
+          mx-auto
+          "
         style={{ minHeight: "unset" }}
         variants={containerVariants}
       >
         <motion.h1
-          className="text-2xl sm:text-3xl md:text-5xl font-merriweather font-bold text-white text-left mb-4 drop-shadow-lg break-words"
+          className="
+            text-xl
+            sm:text-3xl
+            md:text-5xl
+            font-merriweather font-bold
+            text-white text-left
+            mb-3
+            sm:mb-4
+            drop-shadow-lg
+            break-words
+            leading-tight
+            "
           variants={textVariants}
         >
           {title}
         </motion.h1>
         {description && (
           <motion.p
-            className="text-white text-lg sm:text-xl md:text-3xl text-left max-w-full mb-6 drop-shadow-md break-words"
+            className="
+              text-white
+              text-base
+              sm:text-xl
+              md:text-2xl
+              lg:text-3xl
+              text-left
+              max-w-full
+              mb-4
+              sm:mb-6
+              drop-shadow-md
+              break-words
+              leading-snug
+            "
             variants={descVariants}
           >
             {description}
           </motion.p>
         )}
         {buttonShow && (
-          <motion.div variants={buttonVariants}>
+          <motion.div variants={buttonVariants} className="w-full sm:w-auto">
             <CustomButton
               variant="primary"
               href="https://wa.me/5491154645620?text=Hola, quiero asesoramiento legal"
