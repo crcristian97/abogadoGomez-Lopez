@@ -64,8 +64,8 @@ const blogPosts = [
     time: "6 min read",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/caligrafo-publico-en-buenos-aires.webp",
     featured: false,
-    slug: "delito-encubrimiento-contrabando",
-    avatar: "EG", // Simulated avatar
+    slug: "que-hace-un-caligrafo-publico",
+    avatar: "EG", 
   }
 ];
 
