@@ -5,7 +5,7 @@ const blogPosts = [
   {
     id: 0,
     category: "Derecho civil",
-    title: "BEATRIZ SARRLO Y EL DERECHO SUCESORIO: ¿PUEDE HEREDAR EL CÓNYUGE SEPARADO DE HECHO?",
+    title: "BEATRIZ SARLO Y EL DERECHO SUCESORIO: ¿PUEDE HEREDAR EL CÓNYUGE SEPARADO DE HECHO?",
     description: "Analizamos el caso real de la escritora Beatriz Sarlo para explicar si un cónyuge separado de hecho conserva derechos hereditarios. Qué dice el Código Civil y qué ocurre con los testamentos ológrafos.",
     author: "Dra. Estefanía Gómez",
     date: "26 Junio 2025",
