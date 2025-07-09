@@ -104,6 +104,8 @@ export function generateOrganizationSchema() {
     "description": "Estudio jurídico especializado en derecho penal y civil en Buenos Aires, Capital Federal",
     "address": {
       "@type": "PostalAddress",
+      "postalCode": "C1009",
+      "streetAddress": "Av. Carlos Pellegrini 465",
       "addressLocality": "Buenos Aires",
       "addressRegion": "CABA",
       "addressCountry": "AR"
