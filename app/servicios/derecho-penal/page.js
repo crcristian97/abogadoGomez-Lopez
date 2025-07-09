@@ -9,6 +9,7 @@ import Stats from "../../ui/Stats";
 import FAQHome from "../../components/FAQHome";
 import { faqsDP } from "../../mock/faqsDP";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import SchemaMarkup from "../../components/SchemaMarkup";
 
 export const metadata = {
   title: "Derecho Penal en la Ciudad de Buenos Aires",
@@ -67,8 +68,114 @@ export const metadata = {
 };
 
 export default function DerechoPenal() {
+  // Schemas para la página de derecho penal
+  const penalSchemas = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Inicio',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Servicios',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 3,
+          'name': 'Derecho Penal en la Ciudad de Buenos Aires',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-penal'
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Derecho Penal - Estudio López & Gómez",
+      "description": "Especialistas en derecho penal con amplia experiencia en defensa criminal, asesoramiento legal y representación en juicios penales.",
+      "url": "https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-penal",
+      "provider": {
+        "@type": "Organization",
+        "name": "Estudio López & Gómez",
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Buenos Aires"
+      },
+      "serviceType": "Derecho Penal",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Derecho Penal",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Defensa Criminal"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Asesoramiento Legal Penal"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Representación en Juicios Penales"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Defensa de Imputados"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Representación de Víctimas"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Proceso Penal"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqsDP.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    }
+  ];
+
   return (
     <div>
+      <SchemaMarkup schemas={penalSchemas} />
       <HeroServices
         src="https://res.cloudinary.com/dgzi8i2ji/image/upload/asesoria-derecho-penal-en-buenos-aires.webp"
         alt="Derecho Penal en Buenos Aires"

@@ -4,6 +4,7 @@ import Team from "./components/Team";
 import BannerProduct from "../components/BannerProduct";
 import Ourblog from "../components/Ourblog";  
 import Breadcrumbs from "../components/Breadcrumbs";
+import SchemaMarkup from "../components/SchemaMarkup";
 
 export const metadata = {
   title: "Estudio jurídico en Buenos Aires, Capital Federal",
@@ -95,40 +96,174 @@ export const metadata = {
 }; 
 
 export default function SobreLaFirma() {
+  // Schemas para la página "Sobre la firma"
+  const sobreFirmaSchemas = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Inicio',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Sobre la Firma',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/sobre-la-firma'
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Estudio López & Gómez",
+      "url": "https://www.estudiodeabogadosgomezlopez.com.ar",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/logo.png"
+      },
+      "description": "Estudio jurídico especializado en derecho penal y civil en Buenos Aires Capital Federal. Más de 30 años de experiencia defendiendo los derechos de nuestros clientes.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Carlos Pellegrini 465, Piso 9°, Oficina 71",
+        "addressLocality": "Buenos Aires",
+        "addressRegion": "CABA",
+        "postalCode": "C1009",
+        "addressCountry": "AR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+5491154645620",
+        "availableLanguage": "Spanish"
+      },
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Dr. José Luis López",
+          "jobTitle": "Abogado Penalista y Civilista",
+          "description": "Abogado egresado de la Universidad de Buenos Aires (UBA), en ejercicio desde 1991, con más de tres décadas de experiencia en Derecho Penal y Civil en la Ciudad Autónoma de Buenos Aires (CABA).",
+          "image": "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg",
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidad de Buenos Aires",
+            "department": "Facultad de Derecho y Ciencias Sociales"
+          },
+          "telephone": "+5491154645620"
+        },
+        {
+          "@type": "Person",
+          "name": "Dra. Estefanía Gómez",
+          "jobTitle": "Abogada y Calígrafo Público Nacional",
+          "description": "Abogada especializada en Derecho Sucesorio, Civil y Penal, con matrícula federal y egresada en 2019. Calígrafo Público Nacional en ejercicio desde 2014.",
+          "image": "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogada-especialista-caligrafia-derecho.webp",
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidad de Buenos Aires",
+            "department": "Facultad de Derecho"
+          },
+          "telephone": "+5491161280168"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Dr. José Luis López",
+        "jobTitle": "Abogado Penalista y Civilista",
+        "description": "Abogado egresado de la Universidad de Buenos Aires (UBA), en ejercicio desde 1991, con más de tres décadas de experiencia en Derecho Penal y Civil en la Ciudad Autónoma de Buenos Aires (CABA).",
+        "image": "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad de Buenos Aires",
+          "department": "Facultad de Derecho y Ciencias Sociales"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Estudio López & Gómez"
+        },
+        "telephone": "+5491154645620",
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/sobre-la-firma",
+        "knowsAbout": [
+          "Derecho Penal",
+          "Derecho Civil",
+          "Defensa Criminal",
+          "Juicios Penales",
+          "Derecho Sucesorio"
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Dra. Estefanía Gómez",
+        "jobTitle": "Abogada y Calígrafo Público Nacional",
+        "description": "Abogada especializada en Derecho Sucesorio, Civil y Penal, con matrícula federal y egresada en 2019. Calígrafo Público Nacional en ejercicio desde 2014.",
+        "image": "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogada-especialista-caligrafia-derecho.webp",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad de Buenos Aires",
+          "department": "Facultad de Derecho"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Estudio López & Gómez"
+        },
+        "telephone": "+5491161280168",
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/sobre-la-firma",
+        "knowsAbout": [
+          "Derecho Sucesorio",
+          "Derecho Civil",
+          "Derecho Penal",
+          "Pericias Caligráficas",
+          "Análisis de Firmas"
+        ]
+      }
+    }
+  ];
+
   return (
     <div>
-        <HeroSection
-            src="https://res.cloudinary.com/dgzi8i2ji/image/upload/sobre-el-estudio-juridico-en-buenos-aires.webp"
-            alt="Sobre el estudio jurídico en Buenos Aires, Capital Federal"
-            title="Sobre la firma de abogados en Buenos Aires, Capital Federal"
-        />
-        <Breadcrumbs />
-        <SobreFirma />
-        <Team 
-            image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg"
-            title="Dr. José Luis López"
-            description="Abogado egresado de la Universidad de Buenos Aires (UBA), en ejercicio desde 1991, con más de tres décadas de experiencia en Derecho Penal y Civil en la Ciudad Autónoma de Buenos Aires (CABA).
+      <SchemaMarkup schemas={sobreFirmaSchemas} />
+      <HeroSection
+          src="https://res.cloudinary.com/dgzi8i2ji/image/upload/sobre-el-estudio-juridico-en-buenos-aires.webp"
+          alt="Sobre el estudio jurídico en Buenos Aires, Capital Federal"
+          title="Sobre la firma de abogados en Buenos Aires, Capital Federal"
+      />
+      <Breadcrumbs />
+      <SobreFirma />
+      <Team 
+          image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg"
+          title="Dr. José Luis López"
+          description="Abogado egresado de la Universidad de Buenos Aires (UBA), en ejercicio desde 1991, con más de tres décadas de experiencia en Derecho Penal y Civil en la Ciudad Autónoma de Buenos Aires (CABA).
 Está matriculado en el Colegio Público de la Abogacía de la Capital Federal, con Matrícula Federal activa.
 Se ha desempeñado como docente universitario en la Facultad de Derecho y Ciencias Sociales de la UBA, aportando su conocimiento a las nuevas generaciones de abogados.
 Su enfoque ético, compromiso con el cliente y profundo conocimiento en materia Penal y Civil lo posicionan como un referente en la profesión en Buenos Aires, Capital Federal."
-            buttonText="Hablar con el Dr. José Luis López"
-            imagePosition="right"
-            rounder={true}
-            number="5491154645620"
-        />
-        <Team 
-            image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogada-especialista-caligrafia-derecho.webp"
-            title="Dra. Estefanía Gómez"
-            description="Abogada especializada en Derecho Sucesorio, Civil y Penal, con matrícula federal y egresada en 2019. Desde entonces, ejerce la profesión con compromiso y formación continua en la Ciudad Autónoma de Buenos Aires (CABA).
+          buttonText="Hablar con el Dr. José Luis López"
+          imagePosition="right"
+          rounder={true}
+          number="5491154645620"
+      />
+      <Team 
+          image="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogada-especialista-caligrafia-derecho.webp"
+          title="Dra. Estefanía Gómez"
+          description="Abogada especializada en Derecho Sucesorio, Civil y Penal, con matrícula federal y egresada en 2019. Desde entonces, ejerce la profesión con compromiso y formación continua en la Ciudad Autónoma de Buenos Aires (CABA).
 Además, es Calígrafo Público Nacional en ejercicio desde 2014, matriculada en el Colegio de Calígrafos Públicos de la Ciudad de Buenos Aires (CPCBA) y en la Suprema Corte de Justicia de la Provincia de Buenos Aires (SCJBA).
 Actualmente, se desempeña como Secretaria del Colegio de Calígrafos de la Ciudad de Buenos Aires y como docente universitaria. También forma parte activa del Colegio Público de la Abogacía de la Capital Federal, con matrícula federal vigente."
-            buttonText="Hablar con la Dra. Estefanía Gómez"
-            imagePosition="right"
-            rounder={true}
-            number="5491154645620"
-        />
-        <BannerProduct />
-        <Ourblog />
+          buttonText="Hablar con la Dra. Estefanía Gómez"
+          imagePosition="right"
+          rounder={true}
+          number="5491154645620"
+      />
+      <BannerProduct />
+      <Ourblog />
     </div>
   );
 } 

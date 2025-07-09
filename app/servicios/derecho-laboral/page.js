@@ -8,6 +8,7 @@ import Stats from "../../ui/Stats";
 import FAQHome from "../../components/FAQHome";
 import { faqDL } from "../../mock/faqDL";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import SchemaMarkup from "../../components/SchemaMarkup";
 
 export const metadata = {
   title: "Especialistas en derecho laboral en Buenos Aires Capital Federal",
@@ -75,8 +76,114 @@ export const metadata = {
 }; 
 
 export default function DerechoLaboral() {
+  // Schemas para la página de derecho laboral
+  const laboralSchemas = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Inicio',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Servicios',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 3,
+          'name': 'Especialistas en derecho laboral en Buenos Aires Capital Federal',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-laboral'
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Derecho Laboral - Estudio López & Gómez",
+      "description": "Especialistas en derecho laboral en Buenos Aires Capital. Asesoramos en despidos, indemnizaciones, acoso laboral, trabajo en negro y todo tipo de conflictos laborales.",
+      "url": "https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-laboral",
+      "provider": {
+        "@type": "Organization",
+        "name": "Estudio López & Gómez",
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Buenos Aires"
+      },
+      "serviceType": "Derecho Laboral",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Derecho Laboral",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Despidos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Indemnizaciones"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Acoso Laboral"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trabajo en Negro"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Conflictos Laborales"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reclamos Laborales"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqDL.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    }
+  ];
+
   return (
     <div>
+      <SchemaMarkup schemas={laboralSchemas} />
       <HeroServices 
         src="https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-derecho-laboral-en-buenos-aires.webp"
         alt=" Especialistas en derecho laboral que defienden tus derechos"

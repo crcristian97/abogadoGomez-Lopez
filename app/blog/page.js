@@ -59,6 +59,7 @@ export const metadata = {
           'description': post.description,
           'url': `https://www.estudiodeabogadosgomezlopez.com.ar/blog/${post.slug}`,
           'datePublished': post.datePublished,
+          'url': `https://www.estudiodeabogadosgomezlopez.com.ar/blog/${post.slug}`,
           'dateModified': post.dateModified,
           'author': {
             '@type': 'Person',

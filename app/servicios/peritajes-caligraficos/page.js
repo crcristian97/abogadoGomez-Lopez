@@ -12,6 +12,7 @@ import { analyses } from "../../mock/analysesPericia";
 import { caseSolicities } from "../../mock/caseSolicities";
 import { faqPC } from "../../mock/faqPC";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import SchemaMarkup from "../../components/SchemaMarkup";
 
 
 export const metadata = {
@@ -71,8 +72,114 @@ export const metadata = {
 };
 
 export default function PeritajesCaligraficos() {
+  // Schemas para la página de pericias caligráficas
+  const periciaSchemas = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Inicio',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Servicios',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 3,
+          'name': 'Pericias Caligráficas en la Ciudad de Buenos Aires',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/peritajes-caligraficos'
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Pericias Caligráficas - Estudio López & Gómez",
+      "description": "Servicio profesional de pericias caligráficas con validez judicial en la Ciudad de Buenos Aires. Análisis técnico de firmas y documentos manuscritos para casos legales.",
+      "url": "https://www.estudiodeabogadosgomezlopez.com.ar/servicios/peritajes-caligraficos",
+      "provider": {
+        "@type": "Organization",
+        "name": "Estudio López & Gómez",
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Buenos Aires"
+      },
+      "serviceType": "Pericias Caligráficas",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Pericias Caligráficas",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Análisis de Firmas"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Análisis de Documentos Manuscritos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pericias Judiciales"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Análisis de Testamentos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Análisis de Contratos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pericias Privadas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqPC.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    }
+  ];
+
   return (
     <div>
+      <SchemaMarkup schemas={periciaSchemas} />
       <HeroServices
         src="https://res.cloudinary.com/dgzi8i2ji/image/upload/pericias-caligraficas-abogados-en-buenos-aires.webp"
         alt="Peritajes Caligráficos en Buenos Aires"

@@ -12,6 +12,8 @@ import BannerProduct from "./components/BannerProduct";
 import SchemaMarkup from "./components/SchemaMarkup";
 import { faqs } from "./mock/faqs";
 
+const LOGO_URL = "/logo.png";
+
 export const metadata = {
   title: "Estudio López & Gómez - Abogados en Buenos Aires Capital Federal",
   description: "Estudio jurídico especializado en derecho penal y civil en Buenos Aires Capital Federal. Más de 30 años de experiencia defendiendo los derechos de nuestros clientes.",
@@ -30,13 +32,13 @@ export const metadata = {
             "//div[contains(@class, 'HeroSection')]//p"
           ]
         },
-        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/"  //cambiar
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/"  
       },
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/",  //cambiar
-        "logo": "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp",  //cambiar
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar/",  
+        "logo": LOGO_URL,
         "name": "Estudio Gómez & López",
         "description": "Estudio jurídico especializado en derecho penal y civil en Buenos Aires Capital Federal. Más de 30 años de experiencia defendiendo los derechos de nuestros clientes.",
         "email": "jllopez!269@gmail.com", 
@@ -56,7 +58,7 @@ export const metadata = {
         "@context": "https://schema.org",
         "@type": "LegalService",
         "image": [
-          "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp"
+          LOGO_URL
         ],
         "name": "Estudio Gómez & López",
         "address": {
@@ -232,11 +234,12 @@ export default function Home() {
       "@context": "https://schema.org",
       "@type": "Organization",
       "url": "https://www.estudiodeabogadosgomezlopez.com.ar/",
-      "logo": "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp",
+      "logo": LOGO_URL,
       "name": "Estudio Gómez & López",
       "description": "Estudio jurídico especializado en derecho penal y civil en Buenos Aires Capital Federal. Más de 30 años de experiencia defendiendo los derechos de nuestros clientes.",
       "email": "jllopez!269@gmail.com", 
       "telephone": "+5491154645620",
+      "image": LOGO_URL,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Carlos Pellegrini 465, Piso 9°, Oficina 71",
@@ -252,7 +255,7 @@ export default function Home() {
       "@context": "https://schema.org",
       "@type": "LegalService",
       "image": [
-        "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogados-especialistas-en-derechopenalycivil-en-buenos-aires.webp"
+        LOGO_URL
       ],
       "name": "Estudio Gómez & López",
       "address": {
