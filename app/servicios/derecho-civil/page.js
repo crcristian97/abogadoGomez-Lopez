@@ -8,6 +8,7 @@ import Stats from "../../ui/Stats";
 import FAQHome from "../../components/FAQHome";
 import { faqDC } from "../../mock/faqDC";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import SchemaMarkup from "../../components/SchemaMarkup";
 
 export const metadata = {
   title: "Especialistas en derecho civil en Buenos Aires Capital Federal",
@@ -66,8 +67,107 @@ export const metadata = {
 };
 
 export default function DerechoCivil() {
+  // Schemas para la página de derecho civil
+  const civilSchemas = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Inicio',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Servicios',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios'
+        },
+        {
+          '@type': 'ListItem',
+          'position': 3,
+          'name': 'Especialistas en derecho civil en Buenos Aires Capital Federal',
+          'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-civil'
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Derecho Civil - Estudio López & Gómez",
+      "description": "Expertos en derecho civil en Buenos Aires, ofreciendo asesoramiento legal en contratos, responsabilidad civil, daños y perjuicios, sucesiones, divorcios y más.",
+      "url": "https://www.estudiodeabogadosgomezlopez.com.ar/servicios/derecho-civil",
+      "provider": {
+        "@type": "Organization",
+        "name": "Estudio López & Gómez",
+        "url": "https://www.estudiodeabogadosgomezlopez.com.ar"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Buenos Aires"
+      },
+      "serviceType": "Derecho Civil",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Derecho Civil",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sucesiones"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Divorcios"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Contratos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Responsabilidad Civil"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Daños y Perjuicios"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqDC.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    }
+  ];
+
   return (
     <div>
+      <SchemaMarkup schemas={civilSchemas} />
       <HeroServices
         src="https://res.cloudinary.com/dgzi8i2ji/image/upload/derecho-civil-en-buenos-aires.webp"
         alt="Asesoría en Derecho Civil – Amparos, Familia y Sucesiones – Responsabilidad Civil. "

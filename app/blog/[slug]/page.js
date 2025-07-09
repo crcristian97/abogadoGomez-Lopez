@@ -1,6 +1,7 @@
 import BlogPost from "../../components/BlogPost";
 import { blogData } from "../../mock/blogData";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import SchemaMarkup from "../../components/SchemaMarkup";
 import { generateBlogPostingSchema, generateBreadcrumbSchema, generateOrganizationSchema } from "../../utils/blogSchema";
 
 export const generateMetadata = async ({ params }) => {
@@ -48,8 +49,16 @@ export default async function ContrabandoBlogPost({ params }) {
   const { slug } = paramsData;
   const postData = blogData.find(post => post.slug === slug);
 
+  // Generar los schemas para el componente
+  const blogPostingSchema = generateBlogPostingSchema(postData, slug);
+  const breadcrumbSchema = generateBreadcrumbSchema(slug, postData?.title);
+  const organizationSchema = generateOrganizationSchema();
+
+  const schemas = [blogPostingSchema, breadcrumbSchema, organizationSchema];
+
   return (
     <main className="min-h-screen bg-white">
+      <SchemaMarkup schemas={schemas} />
       <Breadcrumbs />
       <BlogPost {...postData} />
     </main>
