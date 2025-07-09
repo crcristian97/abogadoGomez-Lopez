@@ -2,6 +2,103 @@ import Image from "next/image";
 
   export const blogData = [
     {
+      title: "El caso Felipe Petinatto - Incendio doloso u homicidio agravado por el medio empleado",
+      description: "Análisis jurídico sobre el caso Felipe Petinatto: ¿incendio doloso o homicidio agravado por el medio empleado? Diferencias penales, implicancias y claves del proceso.",
+      image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/el-caso-felipe-petinatto-incendio-doloso-u-homicidio-agravado-por-el-medio-empleado.webp",
+      author: "Dr. José Luis López",
+      imageAuthor: "https://res.cloudinary.com/dgzi8i2ji/image/upload/abogado-en-buenos-aires-jose-luis-lopez.jpg",
+      datePublished: "2025-07-09T08:00:00+08:00",
+      dateModified: "2025-07-09T08:00:00+08:00",
+      date: "09 Julio 2025",
+      category: "Derecho penal",
+      introduction: "En septiembre de este año se llevará a cabo el juicio contra Felipe Juan Petinatto, acusado de haber provocado intencionalmente un incendio en su departamento, hecho en el que falleció su neurólogo Melchor Rodrigo. El caso plantea un debate jurídico fundamental: ¿se trata de un incendio doloso o de un homicidio agravado por el medio empleado? Analizamos las diferencias, consecuencias penales y los puntos clave del proceso.",
+      pregunta1: "¿Cuál es la diferencia entre incendio doloso y homicidio agravado por el medio empleado?",
+      respuesta1: "La diferencia radica en el bien jurídico protegido y la pena aplicable. El incendio doloso (art. 186 inc. 5° del Código Penal) protege la seguridad común y se sanciona con 8 a 20 años de prisión. El homicidio agravado por el medio empleado (art. 80 inc. 5°) protege la vida y la seguridad común, y se castiga con prisión o reclusión perpetua.",
+      lista1: [
+        "Incendio doloso: pena de 8 a 20 años (art. 186 inc. 5° CP).",
+        "Homicidio agravado por el medio empleado: prisión o reclusión perpetua (art. 80 inc. 5° CP).",
+        "El incendio debe implicar peligro común para bienes o personas.",
+        "El homicidio agravado requiere que la muerte se produzca mediante un medio idóneo para crear peligro común (como el fuego)."
+      ],
+      pregunta2: "¿Qué se entiende por incendio doloso según la doctrina penal?",
+      respuesta2: "El Código Penal no define el incendio, pero la doctrina sostiene que no todo fuego es 'incendio' en términos penales. Para que se configure el delito, el fuego debe generar un peligro común para bienes ajenos o personas. Es un delito de peligro concreto, de resultado, y admite la tentativa.",
+      lista2: [
+        "No todo fuego es incendio penalmente relevante.",
+        "Debe existir peligro común para bienes o personas.",
+        "Es un delito de resultado y admite tentativa.",
+        "El dolo eventual es suficiente: aceptar la posibilidad de crear un peligro común."
+      ],
+      pregunta3: "¿Cuándo se configura el homicidio agravado por el medio empleado?",
+      respuesta3: "El homicidio agravado por el medio empleado se configura cuando se mata a una persona utilizando un medio capaz de crear peligro común (por ejemplo, el fuego). La ley sanciona con mayor severidad estos casos porque se afectan la vida de la víctima y la seguridad de terceros.",
+      lista3: [
+        "El medio debe ser idóneo para crear peligro común (fuego, explosivos, etc.).",
+        "Protege la vida y la seguridad común.",
+        "La pena es prisión o reclusión perpetua.",
+        "Se aplica el agravante del art. 52 CP (reclusión por tiempo indeterminado)."
+      ],
+      blockquote: "“...se sanciona con reclusión perpetua o prisión perpetua, pudiendo aplicarse lo dispuesto en el art. 52, al que matare… por un medio idóneo para crear un peligro común.” (art. 80 inc. 5°, Código Penal).",
+      titleText1: "Claves jurídicas del caso Petinatto",
+      text1: "Felipe Petinatto está acusado de haber provocado un incendio en su departamento utilizando un encendedor y un desodorante, mientras se encontraba junto a su neurólogo Melchor Rodrigo, quien murió calcinado. La acusación sostiene que Petinatto no hizo nada para salvar a la víctima. El debate penal gira en torno a si se trató de un incendio doloso con resultado fatal o de un homicidio agravado por el medio empleado.",
+      text1lista1: [
+        "El incendio doloso requiere peligro común y puede ser sancionado con 8 a 20 años de prisión.",
+        "El homicidio agravado por el medio empleado implica prisión o reclusión perpetua.",
+        "La intención (dolo) de Petinatto será clave: ¿buscó provocar un incendio o matar a la víctima?",
+        "La respuesta a esta pregunta determinará la calificación legal y la pena aplicable."
+      ],
+      pregunta4: "¿Qué elementos analizarán los jueces para calificar el hecho?",
+      respuesta4: "Los jueces deberán determinar si la intención de Petinatto fue provocar un incendio (dolo de incendio) o matar a su terapeuta (dolo de homicidio) utilizando el fuego como medio. También evaluarán si existió peligro común y si el medio empleado era idóneo para afectar a personas indeterminadas.",
+      lista4: [
+        "Intención o dolo del acusado.",
+        "Existencia de peligro común.",
+        "Relación causal entre el incendio y la muerte.",
+        "Idoneidad del medio empleado para crear peligro común."
+      ],
+      readingTime: "7",
+      slug: "el-caso-felipe-petinatto-incendio-doloso-u-homicidio-agravado-por-el-medio-empleado",
+      content: (
+        <div>
+          <div className="bg-[#f5f7fa] rounded-xl p-6 md:p-10 my-8 shadow-md">
+            <p className="mb-4 text-[#183852]">
+              En septiembre de este año se llevará a cabo el juicio en contra de Felipe Juan Pettinato, el hijo del reconocido músico y animador Roberto Pettinato, donde se lo acusa de haber prendido fuego intencionalmente su departamento mientras estaba junto a su neurólogo Melchor Rodrigo, que murió calcinado en el acto mientras dormía en un sillón. La acusación indica que el actor tomó un encendedor y un desodorante para crear una llamarada que incendió el lugar y que “no hizo nada” para salvar a quien lo trataba por sus adicciones.
+            </p>
+            <p className="mb-4 text-[#183852]">
+              El caso plantea una serie de interrogantes a nivel jurídico que intentaremos analizar, aunque someramente, en esta nota: 
+              <br />
+              ¿Hubo por parte de Petinatto un incendio doloso o un homicidio agravado por el medio empleado?
+            </p>
+            <p className="mb-4 text-[#183852]">
+              La calificación del delito acarrea consecuencias diferentes en cuanto a la pena aplicable: a) si se considera que se trata de incendio doloso, según el inciso 5 del artículo 186 del Código Penal la pena es de 8 a 20 años de reclusión o prisión; b) si se entiende que es un homicidio agravado por el medio empleado (incendio) la pena aplicable, según el inciso 5 del artículo 80 del Código Penal es de reclusión o prisión perpetua, pudiendo aplicarse el agravante del artículo 52 del código de fondo (reclusión por tiempo indeterminado).
+            </p>
+            <p className="mb-4 text-[#183852]">
+              En el primer supuesto debemos decir que el incendio no está definido por el Código Penal. No obstante, es pacífica la doctrina en cuanto a que no cualquier fuego debe ser considerado “incendio” en los términos contenidos en este delito, sino que, para conformar esta acción típica, la ignición debe estar asociada a la idea de peligro. El fuego para ser considerado una forma de estrago, debe tener una entidad tal que pueda generar peligro común para los bienes ajenos o las personas.
+            </p>
+            <p className="mb-4 text-[#183852]">
+              Por tratarse de un delito de peligro concreto, el incendio se trata de un delito de resultado, de comisión instantánea y, por supuesto, admite la tentativa.
+            </p>
+            <p className="mb-4 text-[#183852]">
+              Por otro lado, quedaría dentro del dolo requerido por la figura, el dolo eventual para aquel que, sin tener la intención concreta de crear un peligro común, acepta tal posibilidad originando un foco ígneo del cual se deriva, posteriormente, la creación de un peligro común.
+            </p>
+            <p className="mb-4 text-[#183852]">
+              En cuanto al delito de homicidio este se materializa al matar a otra persona, es decir, al terminar con su vida. 
+            </p>
+            <p className="mb-4 text-[#183852]">
+              En consecuencia, resulta fácil advertir que ese comportamiento lesiona el bien jurídico “vida humana”, que se encuentra protegido por la Constitución Nacional y por los Tratados Internacionales con jerarquía constitucional. También existe consenso en cuanto a que la figura de homicidio simple (art. 79 del Código Penal) admite cualquier medio de comisión. 
+            </p>
+            <p className="mb-4 text-[#183852]">
+              Sin embargo, la legislación incrimina con mayor severidad cuando el homicidio se comete por un medio capaz de afectar a bienes y a personas indeterminadas. En efecto, en el inciso 5º del artículo 80 se sanciona con “reclusión perpetua o prisión perpetua, pudiendo aplicarse lo dispuesto en el art. 52, al que matare… por un medio idóneo para crear un peligro común”. Con lo dicho, queda en evidencia que la conducta típica lesiona dos bienes jurídicos: la vida de la víctima, por un lado; y la seguridad común, por el otro, que comprende la vida, salud y propiedades de un conjunto indeterminado de personas.
+            </p>
+            <p className="mb-4 text-[#183852]">
+              Habiendo visto las dos figuras penales queda preguntarse: Felipe Petinatto ¿Quiso provocar un incendio (dolo) a consecuencia del cual murió su terapeuta? 
+              <br />
+              O, de otra manera, ¿Quiso asesinar a su terapeuta (dolo) y para ello provocó un incendio en su departamento (agravante del homicidio)?
+              <br />
+              De la respuesta que se de a estos interrogantes dependerá la pena que los jueces apliquen al caso.
+            </p>
+          </div>
+        </div>  
+      ),
+    },
+    {
     title: "El caso Beatriz Sarlo: ¿Puede heredar el cónyuge separado de hecho?",
     description: "Análisis jurídico y contexto reciente sobre la controversia sucesoria tras el fallecimiento de Beatriz Sarlo: testamentos ológrafos, exclusión del cónyuge separado de hecho y reflexiones sobre la vocación hereditaria.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/herencia-beatriz-sarlo.webp",
@@ -129,9 +226,9 @@ import Image from "next/image";
         </div>
       </div>
     ),
-    },
+  },
   {
-    title: "SOBRE EL DELITO DE ENCUBRIMIENTO DE CONTRABANDO",
+    title: "Sobre el delito de encubrimiento de contrabando",
     description: "Vamos a analizar uno de los temas consultados en el estudio: el delito de encubrimiento de contrabando.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252409/delito-contrabando-en-buenos-aires.webp",
     author: "Dr. José Luis López",
@@ -220,7 +317,7 @@ import Image from "next/image";
   },
   {
     slug: "el-derecho-a-la-salud-el-amparo-como-remedio",
-    title: "EL DERECHO A LA SALUD — EL AMPARO COMO REMEDIO",
+    title: "El derecho a la salud - El amparo como remedio",
     description: "El amparo es clave para exigir cobertura de salud ante negativas de obras sociales o prepagas en Argentina.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749252283/derecho-a-la-salud-en-buenos-aires.webp",
     author: "Dra. Estefanía Gómez y Dr. José Luis López",
@@ -323,7 +420,7 @@ import Image from "next/image";
   },
   {
     slug: "trabajo-freelance-en-argentina",
-    title: "DISTINCIÓN ENTRE EMPLEADO Y CONTRATISTA PRIVADO",
+    title: "Distinción entre empleado y contratista privado",
     description: "Diferencias legales clave entre empleados y freelancers en Argentina tras la Ley 27.742 y el Decreto 847/24.",
     image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/v1749250677/trabajo-freelancer-abogado-buenos-aires.webp",
     author: "Dra. Estefanía Gómez",
