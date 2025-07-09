@@ -5,6 +5,13 @@ import { MoveRight } from "lucide-react";
 
 const blogPosts = [
   {
+    id: 0,
+    title: "El caso Felipe Petinatto - Incendio doloso u homicidio agravado por el medio empleado",
+    excerpt: "Análisis jurídico sobre el caso Felipe Petinatto: ¿incendio doloso o homicidio agravado por el medio empleado? Diferencias penales, implicancias y claves del proceso.",
+    image: "https://res.cloudinary.com/dgzi8i2ji/image/upload/el-caso-felipe-petinatto-incendio-doloso-u-homicidio-agravado-por-el-medio-empleado.webp",
+    slug: "el-caso-felipe-petinatto-incendio-doloso-u-homicidio-agravado-por-el-medio-empleado",
+  },
+  {
     id: 1,
     title: "Beatriz Sarlo y el derecho sucesorio: ¿puede heredar el cónyuge separado de hecho?",
     excerpt:

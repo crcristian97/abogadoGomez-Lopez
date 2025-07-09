@@ -1,11 +1,17 @@
 import BlogPost from "../../components/BlogPost";
 import { blogData } from "../../mock/blogData";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import { generateBlogPostingSchema, generateBreadcrumbSchema, generateOrganizationSchema } from "../../utils/blogSchema";
 
 export const generateMetadata = async ({ params }) => {
   const paramsData = await params;
   const { slug } = paramsData;
   const postData = blogData.find(post => post.slug === slug);
+
+  // Generar los schemas de BlogPosting, BreadcrumbList y Organization
+  const blogPostingSchema = generateBlogPostingSchema(postData, slug);
+  const breadcrumbSchema = generateBreadcrumbSchema(slug, postData?.title);
+  const organizationSchema = generateOrganizationSchema();
 
   return {
     title: postData?.title || "Blog Post",
@@ -29,54 +35,9 @@ export const generateMetadata = async ({ params }) => {
     },
     other: {
       'application/ld+json': [
-        {
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          'itemListElement': [
-            {
-              '@type': 'ListItem',
-              'position': 1,
-              'name': 'Inicio',
-              'item': 'https://www.estudiodeabogadosgomezlopez.com.ar'
-            },
-            {
-              '@type': 'ListItem',
-              'position': 2,
-              'name': 'Blog',
-              'item': 'https://www.estudiodeabogadosgomezlopez.com.ar/blog'
-            },
-            {
-              '@type': 'ListItem',
-              'position': 3,
-              'name': postData?.title || 'Artículo',
-              'item': `https://www.estudiodeabogadosgomezlopez.com.ar/blog/${slug}`
-            }
-          ]
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "NewsArticle",
-          "headline": postData?.title || "Especialistas en derecho penal y civil en Buenos Aires Capital Federal",
-          "image": [
-            postData?.image || "https://example.com/photos/1x1/photo.jpg",
-            postData?.image || "https://example.com/photos/4x3/photo.jpg",
-            postData?.image || "https://example.com/photos/16x9/photo.jpg"
-          ],
-          "datePublished": postData?.datePublished || "2025-06-10T08:00:00+08:00",
-          "dateModified": postData?.dateModified || "2025-06-10T08:00:00+08:00",
-          "author": [
-            {
-              "@type": "Person",
-              "name": postData?.author || "Dr. Jose Luis López",
-              "url": "https://www.estudiodeabogadosgomezlopez.com.ar/sobre-la-firma"
-            }
-          ],
-          "publisher": {
-            "@type": "Organization",
-            "name": "Estudio López & Gómez",
-            "url": "https://www.estudiodeabogadosgomezlopez.com.ar"
-          }
-        }
+        blogPostingSchema,
+        breadcrumbSchema,
+        organizationSchema
       ]
     }
   };
