@@ -48,15 +48,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-white min-w-[90px]">Email:</span>
-              <a
-                href="mailto:info@estudiodeabogadosgomezlopez.com.ar"
-                aria-label="Nuestro email"
-                title="Nuestro email"
-                className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536] break-words"
-              >
-                info@estudiodeabogadosgomezlopez.com.ar
-              </a>
+              
             </div>
             <div className="flex items-start gap-2">
               <span className="text-white min-w-[90px] mt-1">Dirección:</span>
