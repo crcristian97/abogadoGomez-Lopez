@@ -50,12 +50,12 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <span className="text-white min-w-[90px]">Email:</span>
               <a
-                href="mailto:jllopez1269@gmail.com"
+                href="mailto:info@estudiodeabogadosgomezlopez.com.ar"
                 aria-label="Nuestro email"
                 title="Nuestro email"
                 className="transition-colors duration-300 text-[#CBA240] hover:text-[#b49536] break-words"
               >
-                jllopez1269@gmail.com
+                info@estudiodeabogadosgomezlopez.com.ar
               </a>
             </div>
             <div className="flex items-start gap-2">

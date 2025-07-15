@@ -24,7 +24,7 @@ export async function POST(request) {
 
     const emailResult = await resend.emails.send({
       from: 'Estudio Jurídico <info@estudiodeabogadosgomezlopez.com.ar>',
-      to: 'jllopez1269@gmail.com',
+      to: 'info@estudiodeabogadosgomezlopez.com.ar',
       subject: `Nuevo mensaje de ${name}`,
       html: `
         <h2>Nuevo mensaje del formulario de contacto</h2>

@@ -9,12 +9,12 @@ const contactItems = [
     description: "Listos/as para recibir tus consultas legales de manera rápida y efectiva.",
     content: (
       <a
-        href="mailto:jllopez1269@gmail.com"
+        href="mailto:info@estudiodeabogadosgomezlopez.com.ar"
         className="text-[#CBA240] underline text-base break-all"
         title="Correo de contacto"
         aria-label="Correo de contacto"
       >
-        jllopez1269@gmail.com
+        info@estudiodeabogadosgomezlopez.com.ar
       </a>
     ),
   },
